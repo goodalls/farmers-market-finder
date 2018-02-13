@@ -1,6 +1,7 @@
 import * as api from './api';
 
 describe('fetchParse', () => {
+  let mockUrl;
   beforeAll(() => {
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve({
