@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { NavLink, route } from 'react-router-dom';
 import * as actions from '../../actions/actions';
 import * as api from '../../utilities/api';
+import Control from '../Control/Control';
 import { connect } from 'react-redux';
+import Why from '../WhyWrapper/Why';
 import '../../styles/colors.css';
 import './App.css';
-import Why from '../WhyWrapper/Why';
-import { NavLink, route } from 'react-router-dom';
 
 export class App extends Component {
   constructor(props) {
@@ -37,7 +38,8 @@ export class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Why />
+        <Control />
+        <Route path='/' component={Why}/>
       </div>
     );
   }
