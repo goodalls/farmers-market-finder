@@ -7,7 +7,7 @@ export class Wrapper extends Component {
       <div>
         <img src={`https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&key=${key}`} />
       </div>
-    )
+    );
   }
 }
 

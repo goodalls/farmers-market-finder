@@ -10,7 +10,9 @@ export class Control extends Component {
     };
   }
 
-  handleChange() {
+  handleChange(event) {
+    console.log(event.target.name);
+    console.log(event.target.value);
     //setState
   }
 
@@ -19,12 +21,12 @@ export class Control extends Component {
     console.log('handleSubmit');
     //setState of the zip
   }
-
   render() {
+
     return (
       <section className="control">
-        <NavLink to={'/sign-in'}>{Sign - In}</NavLink>
-        <NavLink to={'/favorites'}>{Favorites}</NavLink>
+        {/* <NavLink to={'/sign-in'}>{Sign - In}</NavLink>
+        <NavLink to={'/favorites'}>{Favorites}</NavLink> */}
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="zip" />
           <input type="number" id="zip" maxLength="5" name="zip" value={this.state.zip} onChange={this.handleChange} />
