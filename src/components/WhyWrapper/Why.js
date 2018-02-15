@@ -38,7 +38,8 @@ const random = Math.round(Math.random() * 14);
 const Why = () => {
   return (
     <div className='why'>
-      {reasons[random]}
+    <h4>Why use a local Farmers Market?</h4>
+      <p>{reasons[random]}</p>
 
       <a href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html">
         Kimberly Snyder

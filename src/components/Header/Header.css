@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
-header {
+#header {
   grid-column: 1/6;
   grid-row: 1;
   font-family: "Open Sans", sans-serif;
   font-weight: 800; }
+
+#header h1 {
+  font-size: 3em;
+  color: black; }
+
+#header span {
+  display: block; }
+
+.farmers {
+  color: #d97426;
+  margin-left: 2%; }
+
+.market {
+  color: #d97426;
+  margin-left: 6%; }
+
+.finder {
+  color: #d97426;
+  margin-left: 12%; }
