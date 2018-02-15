@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import './Control.css';
 
 export class Control extends Component {
   constructor(props) {
@@ -11,9 +12,9 @@ export class Control extends Component {
 
   render() {
     return (
-      <div>
+      <div className='control'>
         
-      
+        control
       </div>
     )
   }

@@ -1,4 +1,8 @@
+@import '../../styles/colors.scss';
+
 header {
+  grid-column: 1/6;
+  grid-row: 1;
   font-family: $font-stack;
   font-weight: 800;
 }

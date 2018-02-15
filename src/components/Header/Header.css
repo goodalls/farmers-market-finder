@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+header {
+  grid-column: 1/6;
+  grid-row: 1;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800; }

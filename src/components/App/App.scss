@@ -1,11 +1,14 @@
-@import '../../styles/colors.scss'
+@import '../../styles/colors.scss';
 
-.App {
+.app {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 200px auto;
   background-image: url('./sven-scheuermeier-58010.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
+}
+
+.app image {
+  opacity: .5;
 }

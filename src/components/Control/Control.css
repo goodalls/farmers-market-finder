@@ -1,0 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+.control {
+  grid-column: 1/6;
+  grid-row: 2;
+  height: 100vh; }

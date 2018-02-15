@@ -37,7 +37,7 @@ const reasons = [
 const random = Math.round(Math.random() * 14);
 const Why = () => {
   return (
-    <div>
+    <div className='why'>
       {reasons[random]}
 
       <a href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html">

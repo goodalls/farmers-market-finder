@@ -1,1 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+.app {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px auto;
+  background-image: url("./sven-scheuermeier-58010.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.app image {
+  opacity: .5; }
