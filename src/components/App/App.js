@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import * as actions from '../../actions/actions';
 import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
-import '../../styles/colors.scss';
+import '../../styles/colors.css';
 import './App.css';
+import Why from '../WhyWrapper/Why';
+import { NavLink, route } from 'react-router-dom';
 
 export class App extends Component {
   constructor(props) {
@@ -32,7 +34,12 @@ export class App extends Component {
   };
 
   render() {
-    return <div className="App">Hello</div>;
+    return (
+      <div className="App">
+        <Header />
+        <Why />
+      </div>
+    );
   }
 }
 
