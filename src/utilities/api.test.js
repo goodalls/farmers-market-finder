@@ -34,6 +34,6 @@ describe('fetchParse', () => {
       })
     );
     const error = await api.fetchParse(mockUrl);
-    expect(error).toEqual('fetchParse Err');
+    expect(error).toEqual('fetchParse error');
   });
 });

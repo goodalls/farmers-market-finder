@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+import * as actions from '../../actions/actions';
 import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
-import * as actions from '../../actions/actions';
+import '../../styles/colors.scss';
+import './App.css';
 
 export class App extends Component {
   constructor(props) {
@@ -27,7 +28,6 @@ export class App extends Component {
   getNearbyMarkets = async (latitude, longitude) => {
     const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
     const initial = await api.fetchParse(url);
-    console.log(initial);
     this.props.markets(initial.results);
   };
 
