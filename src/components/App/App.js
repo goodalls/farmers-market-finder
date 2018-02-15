@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import * as actions from '../../actions/actions';
 import * as api from '../../utilities/api';
 import Control from '../Control/Control';
@@ -7,6 +7,8 @@ import { connect } from 'react-redux';
 import Why from '../WhyWrapper/Why';
 import '../../styles/colors.css';
 import './App.css';
+import Header from '../Header/Header';
+
 
 export class App extends Component {
   constructor(props) {
@@ -18,7 +20,7 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    this.initialFetch();
+    
   }
 
   async initialFetch() {

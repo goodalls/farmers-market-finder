@@ -22,8 +22,8 @@ describe('fetchParse', () => {
   });
 
   it('should return a parsed data object for a given URL', () => {
-    const expectedMovies = [{ results: [{}, {}] }];
-    expect(api.fetchParse(mockUrl)).resolves.toEqual(expectedMovies);
+    const expected = [{ results: [{}, {}] }];
+    expect(api.fetchParse(mockUrl)).resolves.toEqual(expected);
   });
 
   it('should error if the request is rejected', async () => {
