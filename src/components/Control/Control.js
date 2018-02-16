@@ -4,7 +4,7 @@ import './Control.css';
 import * as api from '../../utilities/api';
 import * as actions from '../../actions/actions';
 import { connect } from 'react-redux';
-
+import { withRouter } from 'react-router';
 
 export class Control extends Component {
   constructor(props) {
@@ -13,7 +13,8 @@ export class Control extends Component {
       zip: '',
       searchByZip: false,
       searchByLocation: false,
-      position: {}
+      position: {},
+      error: []
     };
   }
 
@@ -28,25 +29,34 @@ export class Control extends Component {
     this.setState({ searchByZip: true, searchByLocation: false });
   };
 
-  handleCurrentLocation = async event => {
-    await navigator.geolocation.getCurrentPosition(response => {
-      const { latitude, longitude } = response.coords;
-      this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
-      this.setState({
-        position: {
-          latitude: parseFloat(latitude),
-          longitude: parseFloat(longitude),
-          searchByZip: false,
-          searchByLocation: true
-        }
+  handleCurrentLocation = async() => {
+    try {
+      await navigator.geolocation.getCurrentPosition(response => {
+        const { latitude, longitude } = response.coords;
+        this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
+        this.setState({
+          position: {
+            latitude: parseFloat(latitude),
+            longitude: parseFloat(longitude),
+            searchByZip: false,
+            searchByLocation: true
+          }
+        });
       });
-    });
+    } catch (error) {
+      this.setState({ error: [...this.state.error, { error }] });
+    }
   };
 
   getNearbyMarkets = async (latitude, longitude) => {
-    const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
-    const initial = await api.fetchParse(url);
-    this.props.markets(initial.results);
+    try {
+      const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
+      const initial = await api.fetchParse(url);
+      this.props.markets(initial.results);
+      this.props.history.push('/market-list');
+    } catch (error) {
+      this.setState({ error: [...this.state.error, { error }] });
+    }
   };
 
   render() {
@@ -86,4 +96,6 @@ export const mapDispatchToProps = dispatch => ({
     dispatch(actions.populateMarkets(markets));
   }
 });
-export default connect(mapStateToProps, mapDispatchToProps)(Control);
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(Control)
+);

@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
-import key from '../../../key';
+import { connect } from 'react-redux';
+
 
 export class Wrapper extends Component {
+  markets = () => {
+console.log(this.props.markets);
+
+    // return this.props.markets.markets.map(({Marketname}, index)=> {
+    //   return <p key={index}>marketName</p>
+  // })
+}
   render() {
     return (
       <div>
-        <img src={`https://maps.googleapis.com/maps/api/staticmap?center=Berkeley,CA&zoom=14&size=400x400&key=${key}`} />
+        {this.markets}
       </div>
     );
   }
 }
 
-export default Wrapper;
+export const mapStateToProps = store => ({
+  markets: store.markets
+});
+
+export const mapDispatchToProps = dispatch => ({});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Wrapper);
+

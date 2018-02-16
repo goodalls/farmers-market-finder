@@ -8,18 +8,17 @@ import { connect } from 'react-redux';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
 import './App.css';
+import Container from '../Container/Container';
 
 export class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      error: [],
+      error: []
     };
   }
 
   componentDidMount() {}
-
-  
 
   render() {
     return (
@@ -28,6 +27,7 @@ export class App extends Component {
           <Header />
           <Control />
           <Route path="/" component={Why} />
+          <Route path="/market-list" component={Container} />
         </div>
       </div>
     );
