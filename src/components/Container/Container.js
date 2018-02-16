@@ -6,11 +6,11 @@ import loading from './carrot-gif.gif';
 
 export class Container extends Component {
   markets = () => {
-    console.log(this.props.markets);
     return this.props.markets.map((market, index) => {
       return (
         <li key={index} onClick={() => this.handleSingleMarket(market.id)}>
-          {market.marketname}
+          <p>Distance: {market.distance}</p>
+          <p>{market.marketname}</p>
         </li>
       );
     });
@@ -19,7 +19,9 @@ export class Container extends Component {
   componentDidMount() {
   }
 
-  handleSingleMarket = id => {};
+  handleSingleMarket = id => {
+    console.log('handleSingleMarket Clicked');
+  };
 
   loadingRenderCheck = () => {
     if (!this.props.markets.length) {
