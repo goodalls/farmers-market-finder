@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Control.css';
+import * as api from '../../utilities/api';
+import * as actions from '../../actions/actions';
+import { connect } from 'react-redux';
+
 
 export class Control extends Component {
   constructor(props) {
@@ -8,7 +12,8 @@ export class Control extends Component {
     this.state = {
       zip: '',
       searchByZip: false,
-      searchByLocation: false
+      searchByLocation: false,
+      position: {}
     };
   }
 
@@ -20,17 +25,28 @@ export class Control extends Component {
   handleSubmit = event => {
     event.preventDefault();
     console.log('handleSubmit');
-    this.setState({
-      searchByZip: true,
-      searchByLocation: false
+    this.setState({ searchByZip: true, searchByLocation: false });
+  };
+
+  handleCurrentLocation = async event => {
+    await navigator.geolocation.getCurrentPosition(response => {
+      const { latitude, longitude } = response.coords;
+      this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
+      this.setState({
+        position: {
+          latitude: parseFloat(latitude),
+          longitude: parseFloat(longitude),
+          searchByZip: false,
+          searchByLocation: true
+        }
+      });
     });
   };
 
-  handleCurrentLocation = event => {
-    this.setState({ 
-      searchByZip: false, 
-      searchByLocation: true 
-    });
+  getNearbyMarkets = async (latitude, longitude) => {
+    const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
+    const initial = await api.fetchParse(url);
+    this.props.markets(initial.results);
   };
 
   render() {
@@ -63,4 +79,11 @@ export class Control extends Component {
   }
 }
 
-export default Control;
+export const mapStateToProps = store => ({});
+
+export const mapDispatchToProps = dispatch => ({
+  markets: markets => {
+    dispatch(actions.populateMarkets(markets));
+  }
+});
+export default connect(mapStateToProps, mapDispatchToProps)(Control);

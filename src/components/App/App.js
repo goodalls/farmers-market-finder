@@ -5,7 +5,7 @@ import Control from '../Control/Control';
 import { Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import { connect } from 'react-redux';
-import Why from '../WhyWrapper/Why';
+import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
 import './App.css';
 
@@ -14,30 +14,12 @@ export class App extends Component {
     super(props);
     this.state = {
       error: [],
-      position: {}
     };
   }
 
   componentDidMount() {}
 
-  async initialFetch() {
-    await navigator.geolocation.getCurrentPosition(response => {
-      const { latitude, longitude } = response.coords;
-      this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
-      this.setState({
-        position: {
-          latitude: parseFloat(latitude),
-          longitude: parseFloat(longitude)
-        }
-      });
-    });
-  }
-
-  getNearbyMarkets = async (latitude, longitude) => {
-    const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
-    const initial = await api.fetchParse(url);
-    this.props.markets(initial.results);
-  };
+  
 
   render() {
     return (
@@ -54,9 +36,5 @@ export class App extends Component {
 
 export const mapStateToProps = store => ({});
 
-export const mapDispatchToProps = dispatch => ({
-  markets: markets => {
-    dispatch(actions.populateMarkets(markets));
-  }
-});
+export const mapDispatchToProps = dispatch => ({});
 export default connect(mapStateToProps, mapDispatchToProps)(App);
