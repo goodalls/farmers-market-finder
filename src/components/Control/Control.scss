@@ -5,3 +5,27 @@
   grid-row: 2;
   height: 100vh;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid $primary;
+  color: $primary-orange;
+  font-size: 1.5em;
+  height: 50px;
+  margin: 20px 10px;
+  width: 50%;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

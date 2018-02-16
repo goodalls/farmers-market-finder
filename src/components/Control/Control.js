@@ -6,14 +6,14 @@ export class Control extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      zip: 0
+      zip: ''
     };
   }
 
-  handleChange(event) {
-    console.log(event.target.name);
-    console.log(event.target.value);
-    //setState
+  handleChange = (event) => {
+    const {value} = event.target;
+    
+    this.setState({zip: value});
   }
 
   handleSubmit(event) {
@@ -27,7 +27,7 @@ export class Control extends Component {
       <section className="control">
         {/* <NavLink to={'/sign-in'}>{Sign - In}</NavLink>
         <NavLink to={'/favorites'}>{Favorites}</NavLink> */}
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className="form">
           <label htmlFor="zip" />
           <input type="number" id="zip" maxLength="5" name="zip" value={this.state.zip} onChange={this.handleChange} />
           <input type="submit" />
