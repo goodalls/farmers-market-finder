@@ -37,10 +37,10 @@ export class Control extends Component {
         this.setState({
           position: {
             latitude: parseFloat(latitude),
-            longitude: parseFloat(longitude),
-            searchByZip: false,
-            searchByLocation: true
-          }
+            longitude: parseFloat(longitude)
+          },
+          searchByZip: false,
+          searchByLocation: true
         });
       });
     } catch (error) {
@@ -52,8 +52,8 @@ export class Control extends Component {
     try {
       const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
       const initial = await api.fetchParse(url);
-      this.props.markets(initial.results);
-      this.props.history.push('/market-list');
+      await this.props.markets(initial.results);
+      await this.props.history.push('/market-list');
     } catch (error) {
       this.setState({ error: [...this.state.error, { error }] });
     }

@@ -26,7 +26,7 @@ export class App extends Component {
         <div className="app">
           <Header />
           <Control />
-          <Route path="/" component={Why} />
+          <Route exact path="/" component={Why} />
           <Route path="/market-list" component={Container} />
         </div>
       </div>
