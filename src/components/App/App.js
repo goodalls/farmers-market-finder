@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import * as actions from '../../actions/actions';
+import Container from '../Container/Container';
 import * as api from '../../utilities/api';
+import { Route, withRouter } from 'react-router-dom';
 import Control from '../Control/Control';
-import { Route } from 'react-router-dom';
-import Header from '../Header/Header';
 import { connect } from 'react-redux';
+import Header from '../Header/Header';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
 import './App.css';
-import Container from '../Container/Container';
 
 export class App extends Component {
   constructor(props) {
@@ -37,4 +37,4 @@ export class App extends Component {
 export const mapStateToProps = store => ({});
 
 export const mapDispatchToProps = dispatch => ({});
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
