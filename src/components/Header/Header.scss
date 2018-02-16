@@ -1,0 +1,35 @@
+@import '../../styles/colors.scss';
+
+#header {
+  grid-column: 1/6;
+  grid-row: 1;
+  font-family: $font-stack;
+  font-weight: 800;
+  
+}
+
+#header h1 {
+  font-size: 3em;
+  color: black;
+  
+}
+
+#header span {
+  display: block;
+}
+
+.farmers {
+  color: $primary-orange;
+  margin-left: 2%; 
+}
+
+.market {
+  color: $primary-orange;
+  margin-left: 6%; 
+}
+ 
+.finder {
+  color: $primary-orange;
+  margin-left: 12%; 
+}
+

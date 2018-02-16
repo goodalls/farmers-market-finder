@@ -1,5 +1,5 @@
 import React from 'react';
-import './why.css';
+import './Why.css';
 
 const reasons = [
   'Farm fresh: Fruits and vegetables you find at the grocery store are often several days old before they even reach the produce aisle. Before produce hits supermarket shelves, it ships in refrigerated trucks, possibly from thousands of miles away. Farmer’s market produce, on the other hand, is nearly the antithesis of grocery store fruits and vegetables. In most cases, the owner of the stand picked it just that morning, so you know the food is as fresh as you can get it outside of growing it yourself.',
@@ -37,8 +37,9 @@ const reasons = [
 const random = Math.round(Math.random() * 14);
 const Why = () => {
   return (
-    <div>
-      {reasons[random]}
+    <div className='why'>
+    <h4>Why use a local Farmers Market?</h4>
+      <p>{reasons[random]}</p>
 
       <a href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html">
         Kimberly Snyder

@@ -1,52 +1,45 @@
-@import '../../styles/colors.scss';
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
 .control {
   grid-column: 1/6;
   grid-row: 2;
   height: 100vh;
-  text-align: center;
-}
+  text-align: center; }
 
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
 input {
   background-color: transparent;
   border-radius: 10px;
-  border: 2px solid $primary;
-  color: $primary-orange;
+  border: 2px solid #9C7B5C;
+  color: #d97426;
   font-size: 1.5em;
   height: 50px;
   margin: 20px 10px;
   width: 50%;
-  text-align: center;
-}
+  text-align: center; }
 
 input::placeholder {
-  color: $primary-orange;
-}
+  color: #d97426; }
 
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0;
-}
+  margin: 0; }
 
 .control h4 {
   font-size: 1.2em;
   font-weight: 700;
-  margin: 20px 10px;
-}
+  margin: 20px 10px; }
+
 button {
   background-color: transparent;
   border-radius: 10px;
-  border: 2px solid $primary;
-  color: $primary-orange;
+  border: 2px solid #9C7B5C;
+  color: #d97426;
   font-size: 1.5em;
   height: 100px;
   margin: 20px 10px;
-  width: 50%;
-}
+  width: 50%; }

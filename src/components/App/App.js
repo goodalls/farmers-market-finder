@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { NavLink, route } from 'react-router-dom';
 import * as actions from '../../actions/actions';
 import * as api from '../../utilities/api';
 import Control from '../Control/Control';
+import { Route } from 'react-router-dom';
+import Header from '../Header/Header';
 import { connect } from 'react-redux';
 import Why from '../WhyWrapper/Why';
 import '../../styles/colors.css';
@@ -17,14 +18,18 @@ export class App extends Component {
     };
   }
 
-  componentDidMount() {
-    this.initialFetch();
-  }
+  componentDidMount() {}
 
   async initialFetch() {
     await navigator.geolocation.getCurrentPosition(response => {
       const { latitude, longitude } = response.coords;
       this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
+      this.setState({
+        position: {
+          latitude: parseFloat(latitude),
+          longitude: parseFloat(longitude)
+        }
+      });
     });
   }
 
@@ -36,10 +41,12 @@ export class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Control />
-        <Route path='/' component={Why}/>
+      <div className="background-wrapper">
+        <div className="app">
+          <Header />
+          <Control />
+          <Route path="/" component={Why} />
+        </div>
       </div>
     );
   }
