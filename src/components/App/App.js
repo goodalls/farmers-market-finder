@@ -9,7 +9,6 @@ import Why from '../WhyWrapper/Why';
 import '../../styles/colors.css';
 import './App.css';
 
-
 export class App extends Component {
   constructor(props) {
     super(props);
@@ -19,15 +18,18 @@ export class App extends Component {
     };
   }
 
-  componentDidMount() {
-   
-  }
+  componentDidMount() {}
 
   async initialFetch() {
     await navigator.geolocation.getCurrentPosition(response => {
       const { latitude, longitude } = response.coords;
       this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
-      this.setState({position: {latitude: parseFloat(latitude), longitude: parseFloat(longitude)}});
+      this.setState({
+        position: {
+          latitude: parseFloat(latitude),
+          longitude: parseFloat(longitude)
+        }
+      });
     });
   }
 
@@ -39,10 +41,12 @@ export class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        <Header />
-        <Control />
-        <Route path='/' component={Why}/>
+      <div className="background-wrapper">
+        <div className="app">
+          <Header />
+          <Control />
+          <Route path="/" component={Why} />
+        </div>
       </div>
     );
   }

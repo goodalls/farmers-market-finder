@@ -54,7 +54,7 @@ export class Control extends Component {
             name="zip"
             value={this.state.zip}
             onChange={this.handleChange}
-            placeHolder="ZIP"
+            placeholder="ZIP"
           />
           <input type="submit" />
         </form>
