@@ -23,6 +23,7 @@ input {
   margin: 20px 10px;
   width: 50%;
   text-align: center;
+  outline:none;
 }
 
 input::placeholder {
@@ -40,6 +41,7 @@ input[type='number']::-webkit-outer-spin-button {
   font-weight: 700;
   margin: 20px 10px;
 }
+
 button {
   background-color: transparent;
   border-radius: 10px;
@@ -49,4 +51,9 @@ button {
   height: 100px;
   margin: 20px 10px;
   width: 50%;
+  outline:none;
+}
+
+.zip {
+  width: 30%;
 }

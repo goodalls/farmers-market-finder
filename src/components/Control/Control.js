@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import './Control.css';
-import * as api from '../../utilities/api';
 import * as cleaner from '../../utilities/cleaner';
 import * as actions from '../../actions/actions';
-import { connect } from 'react-redux';
+import * as api from '../../utilities/api';
 import { withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import './Control.css';
 
 export class Control extends Component {
   constructor(props) {
@@ -77,6 +77,7 @@ export class Control extends Component {
         <form onSubmit={this.handleSubmit} className="form">
           <label htmlFor="zip" />
           <input
+            className='zip'
             type="number"
             id="zip"
             maxLength="5"

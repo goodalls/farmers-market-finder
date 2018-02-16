@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import { withRouter, Link } from 'react-router-dom';
+import loading from './carrot-gif.gif';
 import { connect } from 'react-redux';
 import './Container.css';
-import { withRouter, NavLink, Link } from 'react-router-dom';
-import loading from './carrot-gif.gif';
 
 export class Container extends Component {
   markets = () => {
     return this.props.markets.map((market, index) => {
       return (
-        <li key={index} onClick={() => this.handleSingleMarket(market.id)}>
+        <li key={index} onClick={(event) => this.handleSingleMarket(event, market.id)}>
           <p>Distance: {market.distance}</p>
           <p>{market.marketname}</p>
         </li>
@@ -19,15 +19,15 @@ export class Container extends Component {
   componentDidMount() {
   }
 
-  handleSingleMarket = id => {
-    console.log('handleSingleMarket Clicked');
+  handleSingleMarket = (event, id) => {
+    
   };
 
   loadingRenderCheck = () => {
     if (!this.props.markets.length) {
       return (
         <div className="loading">
-          <img src={loading} alt="loading timer" height="200" width="200" />
+          
         </div>
       );
     } else {
