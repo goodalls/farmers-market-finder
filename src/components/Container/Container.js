@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Container.css';
 import { withRouter, NavLink, Link } from 'react-router-dom';
-import loading from './loading.gif';
+import loading from './carrot-gif.gif';
 
 export class Container extends Component {
   markets = () => {
