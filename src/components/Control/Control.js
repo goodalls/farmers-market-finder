@@ -30,7 +30,7 @@ export class Control extends Component {
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="zip" />
           <input type="number" id="zip" maxLength="5" name="zip" value={this.state.zip} onChange={this.handleChange} />
-          <imput type="submit" />
+          <input type="submit" />
         </form>
       </section>
     );
