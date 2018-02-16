@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Control.css';
 import * as api from '../../utilities/api';
 import * as actions from '../../actions/actions';
@@ -29,7 +29,7 @@ export class Control extends Component {
     this.setState({ searchByZip: true, searchByLocation: false });
   };
 
-  handleCurrentLocation = async() => {
+  handleCurrentLocation = async () => {
     try {
       await navigator.geolocation.getCurrentPosition(response => {
         const { latitude, longitude } = response.coords;
@@ -52,8 +52,7 @@ export class Control extends Component {
     try {
       const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
       const initial = await api.fetchParse(url);
-      await this.props.markets(initial.results);
-      await this.props.history.push('/market-list');
+      this.props.markets(initial.results);
     } catch (error) {
       this.setState({ error: [...this.state.error, { error }] });
     }
@@ -62,9 +61,11 @@ export class Control extends Component {
   render() {
     return (
       <section className="control">
-        <button onClick={this.handleCurrentLocation}>
-          Search by Current Location
-        </button>
+        <Link to="/market-list">
+          <button onClick={this.handleCurrentLocation}>
+            Search by Current Location
+          </button>
+        </Link>
         <h4>
           search for Farmers markets near you by entering your zip code below or
           choosing to find markets close to your current location
