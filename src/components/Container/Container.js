@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import loading from './carrot-gif.gif';
 import { connect } from 'react-redux';
+import * as api from '../../utilities/api';
 import './Container.css';
+import * as actions from '../../actions/actions';
 
 export class Container extends Component {
   markets = () => {
     return this.props.markets.map((market, index) => {
       return (
-        <li key={index} onClick={(event) => this.handleSingleMarket(event, market.id)}>
+        <li
+          key={index}
+          onClick={event => this.handleSingleMarket(event, market.id)}
+        >
           <p>Distance: {market.distance}</p>
           <p>{market.marketname}</p>
         </li>
@@ -16,20 +20,16 @@ export class Container extends Component {
     });
   };
 
-  componentDidMount() {
-  }
+  componentDidMount() {}
 
-  handleSingleMarket = (event, id) => {
-    
+  handleSingleMarket = async (event, id) => {
+    const fetch = await api.marketDetails(id);
+    this.props.marketDetails(id, fetch.marketdetails);
   };
 
   loadingRenderCheck = () => {
     if (!this.props.markets.length) {
-      return (
-        <div className="loading">
-          
-        </div>
-      );
+      return <div className="loading" />;
     } else {
       return (
         <div>
@@ -49,7 +49,9 @@ export const mapStateToProps = store => ({
   markets: store.markets
 });
 
-export const mapDispatchToProps = dispatch => ({});
+export const mapDispatchToProps = dispatch => ({
+  marketDetails:(id, detail) => dispatch(actions.addDetails(id, detail))
+});
 
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(Container)

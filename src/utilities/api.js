@@ -8,3 +8,12 @@ export const fetchParse = async url => {
     return 'fetchParse error';
   }
 };
+
+export const marketDetails = async id => {
+  try {
+    const initialFetch = await fetchParse(`https://search.ams.usda.gov/farmersmarkets/v1/data.svc/mktDetail?id=${id}`);
+    return initialFetch;
+  } catch (error) {
+    return 'marketDetails error';
+  }
+};
