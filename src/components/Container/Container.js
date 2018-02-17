@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as api from '../../utilities/api';
-import './Container.css';
 import * as actions from '../../actions/actions';
+import * as api from '../../utilities/api';
+import { connect } from 'react-redux';
+import './Container.css';
 
 export class Container extends Component {
   markets = () => {
