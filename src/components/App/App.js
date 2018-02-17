@@ -9,6 +9,7 @@ import { connect } from 'react-redux';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
 import './App.css';
+import TextCard from '../TextCard/TextCard';
 
 export class App extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ export class App extends Component {
           <Control />
           <Route exact path="/" component={Why} />
           <Route path="/market-list" component={Container} />
+          <Route path="/single-market" component={TextCard} />
         </div>
       </div>
     );
@@ -37,4 +39,5 @@ export class App extends Component {
 export const mapStateToProps = store => ({});
 
 export const mapDispatchToProps = dispatch => ({});
+
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

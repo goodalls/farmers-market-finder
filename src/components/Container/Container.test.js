@@ -1,7 +1,7 @@
-import Container fromm './Container';
+import Container from './Container';
 
 describe('CONTAINER', () => {
   it('should', () => {
   
   });
-})
+});

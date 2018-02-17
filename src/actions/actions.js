@@ -13,3 +13,8 @@ export const loginUser = (user) => ({
   type: 'LOG_IN',
   user
 });
+
+export const activeMarket = id => ({
+  type: 'ACTIVE_MARKET',
+  id
+});

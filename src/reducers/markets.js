@@ -1,3 +1,4 @@
+
 export const marketsReducer = (state = [], action) => {
   switch (action.type) {
     case 'POPULATE_MARKETS':
@@ -15,3 +16,5 @@ export const marketsReducer = (state = [], action) => {
       return state;
   }
 };
+
+
