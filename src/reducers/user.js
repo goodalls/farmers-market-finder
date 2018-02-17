@@ -1,0 +1,8 @@
+export const userReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'LOG_IN':
+      return [...state, ...action.markets];
+    default:
+      return state;
+  }
+};
