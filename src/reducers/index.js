@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import { marketsReducer } from './markets';
+import { userReducer } from './user';
 
 const rootReducer = combineReducers({
-  markets: marketsReducer
+  markets: marketsReducer,
+  user : userReducer
 });
 
 export default rootReducer;
