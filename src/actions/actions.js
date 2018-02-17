@@ -8,3 +8,8 @@ export const addDetails = (id, marketDetails) => ({
   id,
   marketDetails
 });
+
+export const loginUser = (user) => ({
+  type: 'LOG_IN',
+  user
+});
