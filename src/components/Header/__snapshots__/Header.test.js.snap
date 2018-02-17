@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HEADER should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <NavLink
+        activeClassName="active"
+        ariaCurrent="true"
+        to="/"
+>
+        <h1>
+                <span
+                        className="farmers"
+                >
+                        Farmers
+                </span>
+                <span
+                        className="market"
+                >
+                        Market
+                </span>
+                <span
+                        className="finder"
+                >
+                        Finder
+                </span>
+        </h1>
+</NavLink>,
+      "id": "header",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "activeClassName": "active",
+        "ariaCurrent": "true",
+        "children": <h1>
+          <span
+                    className="farmers"
+          >
+                    Farmers
+          </span>
+          <span
+                    className="market"
+          >
+                    Market
+          </span>
+          <span
+                    className="finder"
+          >
+                    Finder
+          </span>
+</h1>,
+        "to": "/",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="farmers"
+>
+              Farmers
+</span>,
+            <span
+              className="market"
+>
+              Market
+</span>,
+            <span
+              className="finder"
+>
+              Finder
+</span>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Farmers",
+              "className": "farmers",
+            },
+            "ref": null,
+            "rendered": "Farmers",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Market",
+              "className": "market",
+            },
+            "ref": null,
+            "rendered": "Market",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Finder",
+              "className": "finder",
+            },
+            "ref": null,
+            "rendered": "Finder",
+            "type": "span",
+          },
+        ],
+        "type": "h1",
+      },
+      "type": [Function],
+    },
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/"
+>
+          <h1>
+                    <span
+                              className="farmers"
+                    >
+                              Farmers
+                    </span>
+                    <span
+                              className="market"
+                    >
+                              Market
+                    </span>
+                    <span
+                              className="finder"
+                    >
+                              Finder
+                    </span>
+          </h1>
+</NavLink>,
+        "id": "header",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": <h1>
+            <span
+                        className="farmers"
+            >
+                        Farmers
+            </span>
+            <span
+                        className="market"
+            >
+                        Market
+            </span>
+            <span
+                        className="finder"
+            >
+                        Finder
+            </span>
+</h1>,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="farmers"
+>
+                Farmers
+</span>,
+              <span
+                className="market"
+>
+                Market
+</span>,
+              <span
+                className="finder"
+>
+                Finder
+</span>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Farmers",
+                "className": "farmers",
+              },
+              "ref": null,
+              "rendered": "Farmers",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Market",
+                "className": "market",
+              },
+              "ref": null,
+              "rendered": "Market",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Finder",
+                "className": "finder",
+              },
+              "ref": null,
+              "rendered": "Finder",
+              "type": "span",
+            },
+          ],
+          "type": "h1",
+        },
+        "type": [Function],
+      },
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

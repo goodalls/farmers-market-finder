@@ -25,6 +25,8 @@ export class Container extends Component {
   handleSingleMarket = async (event, id) => {
     const fetch = await api.marketDetails(id);
     this.props.marketDetails(id, fetch.marketdetails);
+    this.props.activeMarket(id)
+    this.props.history.push('/single-market');
   };
 
   loadingRenderCheck = () => {
@@ -50,7 +52,8 @@ export const mapStateToProps = store => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  marketDetails:(id, detail) => dispatch(actions.addDetails(id, detail))
+  marketDetails:(id, detail) => dispatch(actions.addDetails(id, detail)),
+  activeMarket:id => dispatch(actions.activeMarket(id))
 });
 
 export default withRouter(

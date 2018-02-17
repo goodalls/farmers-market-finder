@@ -22,7 +22,7 @@ export class TextCard extends Component {
 
 export const mapStateToProps = state => ({ markets: state.markets });
 
-export const mapDispatchToProps = dispatch ({
+export const mapDispatchToProps = dispatch => ({
   
 });
 
