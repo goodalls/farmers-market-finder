@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import loading from './carrot-gif.gif';
 import { connect } from 'react-redux';
+import * as api from '../../utilities/api';
 import './Container.css';
 
 export class Container extends Component {
@@ -16,19 +16,17 @@ export class Container extends Component {
     });
   };
 
-  componentDidMount() {
-  }
+  componentDidMount() { }
 
-  handleSingleMarket = (event, id) => {
-    
+  handleSingleMarket = async(event, id) => {
+    const fetch = await api.marketDetails(id);
+    //add to store array for details
   };
 
   loadingRenderCheck = () => {
     if (!this.props.markets.length) {
       return (
-        <div className="loading">
-          
-        </div>
+        <div className="loading"></div>
       );
     } else {
       return (

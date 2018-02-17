@@ -16,7 +16,7 @@
 input {
   background-color: transparent;
   border-radius: 10px;
-  border: 2px solid $primary;
+  border: 2px solid $primary-green;
   color: $primary-orange;
   font-size: 1.5em;
   height: 50px;
@@ -24,6 +24,14 @@ input {
   width: 50%;
   text-align: center;
   outline:none;
+}
+
+input:hover {
+  border: 2px solid $primary;
+}
+
+input:focus {
+  background-color: white;
 }
 
 input::placeholder {
@@ -40,18 +48,27 @@ input[type='number']::-webkit-outer-spin-button {
   font-size: 1.2em;
   font-weight: 700;
   margin: 20px 10px;
+  color: $white;
 }
 
 button {
   background-color: transparent;
   border-radius: 10px;
-  border: 2px solid $primary;
+  border: 2px solid $primary-green;
   color: $primary-orange;
   font-size: 1.5em;
   height: 100px;
   margin: 20px 10px;
   width: 50%;
   outline:none;
+}
+
+button:hover {
+  border: 2px solid $primary;
+}
+
+button:focus {
+  background-color: white;
 }
 
 .zip {

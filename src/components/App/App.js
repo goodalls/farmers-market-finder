@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import { Route, withRouter } from 'react-router-dom';
 import * as actions from '../../actions/actions';
 import Container from '../Container/Container';
 import * as api from '../../utilities/api';
-import { Route, withRouter } from 'react-router-dom';
 import Control from '../Control/Control';
-import { connect } from 'react-redux';
 import Header from '../Header/Header';
+import { connect } from 'react-redux';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
 import './App.css';
