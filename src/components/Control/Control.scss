@@ -3,7 +3,7 @@
 .control {
   grid-column: 1/6;
   grid-row: 2;
-  height: 100vh;
+  height: 80vh;
   text-align: center;
 }
 
@@ -48,7 +48,7 @@ input[type='number']::-webkit-outer-spin-button {
   font-size: 1.2em;
   font-weight: 700;
   margin: 20px 10px;
-  color: $white;
+  color: $font;
 }
 
 button {

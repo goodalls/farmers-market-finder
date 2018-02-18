@@ -3,7 +3,8 @@
   grid-column: 1/6;
   grid-row: 1;
   font-family: "Open Sans", sans-serif;
-  font-weight: 800; }
+  font-weight: 800;
+  height: 20vh; }
 
 #header h1 {
   font-size: 3em;
@@ -13,13 +14,13 @@
   display: block; }
 
 .farmers {
-  color: #d97426;
+  color: #D97426;
   margin-left: 5%; }
 
 .market {
-  color: #d97426;
+  color: #D97426;
   margin-left: 13%; }
 
 .finder {
-  color: #d97426;
+  color: #D97426;
   margin-left: 21%; }
