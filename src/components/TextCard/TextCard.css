@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+.text-card {
+  grid-column: 6/13;
+  grid-row: 1/3;
+  color: #B69C69;
+  text-align: center;
+  font-weight: 700; }

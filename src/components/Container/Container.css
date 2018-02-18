@@ -9,10 +9,12 @@
 
 .container li {
   margin: 10px;
-  border: 2px solid #9bc47e; }
+  border: 2px solid #9BC47e; }
 
 .container p {
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center;
+  color: #B69C69; }
 
 .loading {
   background-image: url("./carrot-gif.gif");
