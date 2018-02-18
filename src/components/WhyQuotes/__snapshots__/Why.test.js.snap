@@ -22,10 +22,10 @@ ShallowWrapper {
           Why use a local Farmers Market?
 </h4>,
         <h4>
-          Tastes better
+          Supports local family farms
 </h4>,
         <p>
-          Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.
+          There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.
 </p>,
         <a
           href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
@@ -53,10 +53,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Tastes better",
+          "children": "Supports local family farms",
         },
         "ref": null,
-        "rendered": "Tastes better",
+        "rendered": "Supports local family farms",
         "type": "h4",
       },
       Object {
@@ -64,10 +64,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
+          "children": "There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.",
         },
         "ref": null,
-        "rendered": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
+        "rendered": "There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.",
         "type": "p",
       },
       Object {
@@ -96,10 +96,10 @@ ShallowWrapper {
             Why use a local Farmers Market?
 </h4>,
           <h4>
-            Tastes better
+            Supports local family farms
 </h4>,
           <p>
-            Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.
+            There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.
 </p>,
           <a
             href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
@@ -127,10 +127,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Tastes better",
+            "children": "Supports local family farms",
           },
           "ref": null,
-          "rendered": "Tastes better",
+          "rendered": "Supports local family farms",
           "type": "h4",
         },
         Object {
@@ -138,10 +138,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
+            "children": "There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.",
           },
           "ref": null,
-          "rendered": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
+          "rendered": "There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.",
           "type": "p",
         },
         Object {
