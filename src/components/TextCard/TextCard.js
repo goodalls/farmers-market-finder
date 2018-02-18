@@ -7,20 +7,23 @@ import { withRouter } from 'react-router';
 
 export class TextCard extends Component {
 
-  renderCheck = () => {
-    // const id = this.props.history.id
-    // this.props.markets.find(market=> market.id === id)
-  }
   render() {
+    const active = this.props.activeMarket;
+    const marketInfo = this.props.markets.find(market=> market.id === active.id);
+    
     return (
       <div className='text-card'>
-        {this.renderCheck}
+        <p>schedule {marketInfo.Schedule}</p>
+        <p>Products {marketInfo.Products}</p>
+        <p>Address {marketInfo.Address}</p>
+        <p>GoogleLink {marketInfo.GoogleLink}</p>
+        <p>marketname {marketInfo.marketname}</p>
       </div>
     )
   }
 }
 
-export const mapStateToProps = state => ({ markets: state.markets });
+export const mapStateToProps = state => ({ markets: state.markets, activeMarket: state.activeMarket });
 
 export const mapDispatchToProps = dispatch => ({
   

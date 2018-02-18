@@ -26,7 +26,6 @@ export class Control extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log('handleSubmit');
     this.setState({ searchByZip: true, searchByLocation: false });
   };
 
