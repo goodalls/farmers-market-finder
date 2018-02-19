@@ -4,11 +4,13 @@ import * as actions from '../../actions/actions';
 import Container from '../Container/Container';
 import TextCard from '../TextCard/TextCard';
 import * as api from '../../utilities/api';
+import MapCard from '../MapCard/MapCard';
 import Control from '../Control/Control';
 import Header from '../Header/Header';
 import { connect } from 'react-redux';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
+import Map from '../Map/Map';
 import './App.css';
 
 export class App extends Component {
@@ -29,7 +31,9 @@ export class App extends Component {
           <Control />
           <Route exact path="/" component={Why} />
           <Route path="/market-list" component={Container} />
+          <Route path="/map-list" component={Map} />
           <Route path="/single-market" component={TextCard} />
+          <Route path="/single-market-map" component={MapCard} />
         </div>
       </div>
     );

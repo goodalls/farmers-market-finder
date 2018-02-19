@@ -33,7 +33,15 @@ ShallowWrapper {
         />
         <Route
                 component={[Function]}
+                path="/map-list"
+        />
+        <Route
+                component={[Function]}
                 path="/single-market"
+        />
+        <Route
+                component={[Function]}
+                path="/single-market-map"
         />
 </div>,
       "className": "background-wrapper",
@@ -58,7 +66,15 @@ ShallowWrapper {
 />,
           <Route
             component={[Function]}
+            path="/map-list"
+/>,
+          <Route
+            component={[Function]}
             path="/single-market"
+/>,
+          <Route
+            component={[Function]}
+            path="/single-market-map"
 />,
         ],
         "className": "app",
@@ -114,7 +130,31 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "component": [Function],
+            "path": "/map-list",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
             "path": "/single-market",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/single-market-map",
           },
           "ref": null,
           "rendered": null,
@@ -147,7 +187,15 @@ ShallowWrapper {
           />
           <Route
                     component={[Function]}
+                    path="/map-list"
+          />
+          <Route
+                    component={[Function]}
                     path="/single-market"
+          />
+          <Route
+                    component={[Function]}
+                    path="/single-market-map"
           />
 </div>,
         "className": "background-wrapper",
@@ -172,7 +220,15 @@ ShallowWrapper {
 />,
             <Route
               component={[Function]}
+              path="/map-list"
+/>,
+            <Route
+              component={[Function]}
               path="/single-market"
+/>,
+            <Route
+              component={[Function]}
+              path="/single-market-map"
 />,
           ],
           "className": "app",
@@ -228,7 +284,31 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "component": [Function],
+              "path": "/map-list",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
               "path": "/single-market",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/single-market-map",
             },
             "ref": null,
             "rendered": null,
