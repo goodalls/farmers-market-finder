@@ -32,6 +32,7 @@ export class Control extends Component {
 
   getNearbyMarketsZip = async (zip) => {
     try {
+      this.props.history.push('/market-list');
       const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${zip}`;
       const initial = await api.fetchParse(url);
       const clean = await cleaner.cleanMarkets(initial.results);
