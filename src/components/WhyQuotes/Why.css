@@ -10,11 +10,13 @@
 .why h4 {
   color: #D97426;
   font-size: 2em;
-  text-align: center; }
+  text-align: center;
+  margin-top: 20px; }
 
 .why p {
   font-size: 1.2em;
   font-weight: 700;
   text-align: center;
   margin: 20px 10px;
-  color: #B69C69; }
+  color: #B69C69;
+  line-height: 1.2em; }
