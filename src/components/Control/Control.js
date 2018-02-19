@@ -27,6 +27,19 @@ export class Control extends Component {
   handleSubmit = event => {
     event.preventDefault();
     this.setState({ searchByZip: true, searchByLocation: false });
+    this.getNearbyMarketsZip(this.state.zip);
+  };
+
+  getNearbyMarketsZip = async (zip) => {
+    try {
+      this.props.history.push('/market-list');
+      const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${zip}`;
+      const initial = await api.fetchParse(url);
+      const clean = await cleaner.cleanMarkets(initial.results);
+      this.props.markets(clean);
+    } catch (error) {
+      this.setState({ error: [...this.state.error, { error }] });
+    }
   };
 
   handleCurrentLocation = async () => {
@@ -68,7 +81,7 @@ export class Control extends Component {
           </button>
         </Link>
         <h4>
-          search for Farmers markets near you by entering your zip code below or
+          Search for Farmers Markets near you by entering your zip code below or
           choosing to find markets close to your current location
         </h4>
         {/* <NavLink to={'/sign-in'}>{Sign - In}</NavLink>
@@ -83,7 +96,7 @@ export class Control extends Component {
             name="zip"
             value={this.state.zip}
             onChange={this.handleChange}
-            placeholder="ZIP"
+            placeholder="Search by ZIP"
           />
           <input type="submit" />
         </form>

@@ -17,9 +17,6 @@ export class TextCard extends Component {
 
     return (
       <div className="text-card">
-        <Link to="/single-market-map" className="link">
-          Map View
-        </Link>
         <h2 className="name">{marketInfo.marketname}</h2>
         <div className="info">
           <p>Address: {marketInfo.Address}</p>
