@@ -5,6 +5,7 @@ import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
 import './Container.css';
 
+
 export class Container extends Component {
   markets = () => {
     return this.props.markets.map((market, index) => {
@@ -25,7 +26,7 @@ export class Container extends Component {
   handleSingleMarket = async (event, id) => {
     const fetch = await api.marketDetails(id);
     this.props.marketDetails(id, fetch.marketdetails);
-    this.props.activeMarket(id)
+    this.props.activeMarket(id);
     this.props.history.push('/single-market');
   };
 
