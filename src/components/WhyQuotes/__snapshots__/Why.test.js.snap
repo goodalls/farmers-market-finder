@@ -22,10 +22,10 @@ ShallowWrapper {
           Why use a local Farmers Market?
 </h4>,
         <h4>
-          Supports local family farms
+          Reason 7 "Non-industrial"
 </h4>,
         <p>
-          There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.
+          Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.
 </p>,
         <a
           href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
@@ -53,10 +53,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Supports local family farms",
+          "children": "Reason 7 \\"Non-industrial\\"",
         },
         "ref": null,
-        "rendered": "Supports local family farms",
+        "rendered": "Reason 7 \\"Non-industrial\\"",
         "type": "h4",
       },
       Object {
@@ -64,10 +64,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.",
+          "children": "Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.",
         },
         "ref": null,
-        "rendered": "There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.",
+        "rendered": "Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.",
         "type": "p",
       },
       Object {
@@ -96,10 +96,10 @@ ShallowWrapper {
             Why use a local Farmers Market?
 </h4>,
           <h4>
-            Supports local family farms
+            Reason 7 "Non-industrial"
 </h4>,
           <p>
-            There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.
+            Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.
 </p>,
           <a
             href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
@@ -127,10 +127,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Supports local family farms",
+            "children": "Reason 7 \\"Non-industrial\\"",
           },
           "ref": null,
-          "rendered": "Supports local family farms",
+          "rendered": "Reason 7 \\"Non-industrial\\"",
           "type": "h4",
         },
         Object {
@@ -138,10 +138,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.",
+            "children": "Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.",
           },
           "ref": null,
-          "rendered": "There’s no doubt local family farms have decreased in numbers over the years, succumbing to the high cost of running a farm and increasingly stiff competition from giant conglomerate-run farms that produce massive amounts of extremely cheap produce. Purchasing fruits and vegetables from farmer’s markets, however, supports local family farms, giving them the valuable capital they need to keep operating and providing consumers an alternative to mass-produced foods.",
+          "rendered": "Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.",
           "type": "p",
         },
         Object {

@@ -24,7 +24,7 @@ export const marketDetails = async id => {
 
 export const geoCoding = async address => {
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${key}`;
-  const fetch = await fetch(url);
-  const response = await fetch.json();
+  const fetching = await fetch(url);
+  const response = await fetching.json();
   return response;
 };
