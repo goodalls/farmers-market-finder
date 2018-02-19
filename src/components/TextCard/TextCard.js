@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './TextCard.css';
-import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import './TextCard.css';
 
 export class TextCard extends Component {
   render() {
@@ -11,22 +11,27 @@ export class TextCard extends Component {
       market => market.id === active.id
     );
 
-    const products = marketInfo.Products.split(';').map((product, index)=>{
+    const products = marketInfo.Products.split(';').map((product, index) => {
       return <li key={index}>{product}</li>;
     });
 
     return (
       <div className="text-card">
-        <Link to="/single-market-map" className='link'>Map View</Link>
-        <h2 className='name'>{marketInfo.marketname}</h2>
-        <div className='info'>
+        <Link to="/single-market-map" className="link">
+          Map View
+        </Link>
+        <h2 className="name">{marketInfo.marketname}</h2>
+        <div className="info">
           <p>Address: {marketInfo.Address}</p>
           <p>Schedule: {marketInfo.Schedule}</p>
-          <ol>Products:
-          {products}
+          <ol>
+            Products:
+            {products}
           </ol>
         </div>
-        <div id='map'>GoogleLink {marketInfo.GoogleLink}</div>
+        <div id="map">
+          GoogleLink <img src={marketInfo.GoogleLink} alt="google map" />
+        </div>
       </div>
     );
   }
