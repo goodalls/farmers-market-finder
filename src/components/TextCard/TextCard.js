@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { GoogleApiWrapper } from 'google-maps-react';
 import { withRouter } from 'react-router';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Map from '../Map/Map';
 import './TextCard.css';
 
 export class TextCard extends Component {
   render() {
-    const active = this.props.activeMarket;
+    const {id} = this.props;
     const marketInfo = this.props.markets.find(
-      market => market.id === active.id
+      market => market.id === id
     );
 
     const products = marketInfo.Products.split(';').map((product, index) => {
@@ -37,8 +36,7 @@ export class TextCard extends Component {
 }
 
 export const mapStateToProps = state => ({
-  markets: state.markets,
-  activeMarket: state.activeMarket
+  markets: state.markets
 });
 
 export const mapDispatchToProps = dispatch => ({});

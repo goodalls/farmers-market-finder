@@ -10,7 +10,6 @@ import '../../styles/colors.css';
 import Map from '../Map/Map';
 import './App.css';
 
-
 export class App extends Component {
   constructor(props) {
     super(props);
@@ -28,16 +27,32 @@ export class App extends Component {
           <Header />
           <Control />
           <Route exact path="/" component={Why} />
-          <Route path="/market-list" component={Container} />
-          <Route path="/map-list" component={Map} />
-          <Route path="/single-market" component={TextCard} />
+          <Route exact path="/market-list" component={Container} />
+          <Route exact path="/map-list" component={Map} />
+          <Route
+            path="/single-market/:id"
+            render={({ match }) => {
+              const { id } = match.params;
+              const singleMarket = this.props.markets.find(
+                market => market.id === id
+              );
+
+              if (singleMarket) {
+                return <TextCard {...singleMarket} />;
+              } else {
+                return null;
+              }
+            }}
+          />
         </div>
       </div>
     );
   }
 }
 
-export const mapStateToProps = store => ({});
+export const mapStateToProps = store => ({
+  markets: store.markets
+});
 
 export const mapDispatchToProps = dispatch => ({});
 

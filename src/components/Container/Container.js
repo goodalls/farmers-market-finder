@@ -27,7 +27,7 @@ export class Container extends Component {
     const fetch = await api.marketDetails(id);
     this.props.marketDetails(id, fetch.marketdetails);
     this.props.activeMarket(id);
-    this.props.history.push('/single-market');
+    this.props.history.push('/single-market/' + id);
   };
 
   loadingRenderCheck = () => {
