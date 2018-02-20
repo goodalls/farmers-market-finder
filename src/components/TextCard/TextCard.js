@@ -3,6 +3,8 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './TextCard.css';
+import { GoogleApiWrapper } from 'google-maps-react';
+import Map from '../Map/Map';
 
 export class TextCard extends Component {
   render() {
@@ -27,7 +29,7 @@ export class TextCard extends Component {
           </ol>
         </div>
         <div id="map">
-          GoogleLink <img src={marketInfo.GoogleLink} alt="google map" />
+          <Map google={this.props.google} />
         </div>
       </div>
     );
@@ -42,5 +44,5 @@ export const mapStateToProps = state => ({
 export const mapDispatchToProps = dispatch => ({});
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(TextCard)
+  connect(mapStateToProps, mapDispatchToProps)(GoogleApiWrapper({apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c'})(TextCard))
 );

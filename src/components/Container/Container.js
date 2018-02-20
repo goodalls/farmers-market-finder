@@ -5,6 +5,7 @@ import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
 import './Container.css';
 
+
 export class Container extends Component {
   markets = () => {
     return this.props.markets.map((market, index) => {

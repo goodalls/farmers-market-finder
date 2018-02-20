@@ -10,6 +10,7 @@ import '../../styles/colors.css';
 import Map from '../Map/Map';
 import './App.css';
 
+
 export class App extends Component {
   constructor(props) {
     super(props);
