@@ -3,9 +3,9 @@ import { GoogleApiWrapper } from 'google-maps-react';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 import Map from '../Map/Map';
-import './TextCard.css';
+import './Card.css';
 
-export class TextCard extends Component {
+export class Card extends Component {
   render() {
     const {id} = this.props;
     const marketInfo = this.props.markets.find(
@@ -42,5 +42,5 @@ export const mapStateToProps = state => ({
 export const mapDispatchToProps = dispatch => ({});
 
 export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(GoogleApiWrapper({apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c'})(TextCard))
+  connect(mapStateToProps, mapDispatchToProps)(GoogleApiWrapper({apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c'})(Card))
 );

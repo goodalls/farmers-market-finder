@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import Container from '../Container/Container';
-import TextCard from '../TextCard/TextCard';
+import Card from '../Card/Card';
 import Control from '../Control/Control';
 import Header from '../Header/Header';
 import { connect } from 'react-redux';
@@ -38,7 +38,7 @@ export class App extends Component {
               );
 
               if (singleMarket) {
-                return <TextCard {...singleMarket} />;
+                return <Card {...singleMarket} />;
               } else {
                 return null;
               }
