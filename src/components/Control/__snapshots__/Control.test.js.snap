@@ -29,7 +29,7 @@ ShallowWrapper {
           </button>
 </Link>,
         <h4>
-          search for Farmers markets near you by entering your zip code below or choosing to find markets close to your current location
+          Search for Farmers Markets near you by entering your zip code below or choosing to find markets close to your current location
 </h4>,
         <form
           className="form"
@@ -44,7 +44,7 @@ ShallowWrapper {
                     maxLength="5"
                     name="zip"
                     onChange={[Function]}
-                    placeholder="ZIP"
+                    placeholder="Search by ZIP"
                     type="number"
                     value=""
           />
@@ -90,10 +90,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "search for Farmers markets near you by entering your zip code below or choosing to find markets close to your current location",
+          "children": "Search for Farmers Markets near you by entering your zip code below or choosing to find markets close to your current location",
         },
         "ref": null,
-        "rendered": "search for Farmers markets near you by entering your zip code below or choosing to find markets close to your current location",
+        "rendered": "Search for Farmers Markets near you by entering your zip code below or choosing to find markets close to your current location",
         "type": "h4",
       },
       Object {
@@ -111,7 +111,7 @@ ShallowWrapper {
               maxLength="5"
               name="zip"
               onChange={[Function]}
-              placeholder="ZIP"
+              placeholder="Search by ZIP"
               type="number"
               value=""
 />,
@@ -145,7 +145,7 @@ ShallowWrapper {
               "maxLength": "5",
               "name": "zip",
               "onChange": [Function],
-              "placeholder": "ZIP",
+              "placeholder": "Search by ZIP",
               "type": "number",
               "value": "",
             },
@@ -188,7 +188,7 @@ ShallowWrapper {
             </button>
 </Link>,
           <h4>
-            search for Farmers markets near you by entering your zip code below or choosing to find markets close to your current location
+            Search for Farmers Markets near you by entering your zip code below or choosing to find markets close to your current location
 </h4>,
           <form
             className="form"
@@ -203,7 +203,7 @@ ShallowWrapper {
                         maxLength="5"
                         name="zip"
                         onChange={[Function]}
-                        placeholder="ZIP"
+                        placeholder="Search by ZIP"
                         type="number"
                         value=""
             />
@@ -249,10 +249,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "search for Farmers markets near you by entering your zip code below or choosing to find markets close to your current location",
+            "children": "Search for Farmers Markets near you by entering your zip code below or choosing to find markets close to your current location",
           },
           "ref": null,
-          "rendered": "search for Farmers markets near you by entering your zip code below or choosing to find markets close to your current location",
+          "rendered": "Search for Farmers Markets near you by entering your zip code below or choosing to find markets close to your current location",
           "type": "h4",
         },
         Object {
@@ -270,7 +270,7 @@ ShallowWrapper {
                 maxLength="5"
                 name="zip"
                 onChange={[Function]}
-                placeholder="ZIP"
+                placeholder="Search by ZIP"
                 type="number"
                 value=""
 />,
@@ -304,7 +304,7 @@ ShallowWrapper {
                 "maxLength": "5",
                 "name": "zip",
                 "onChange": [Function],
-                "placeholder": "ZIP",
+                "placeholder": "Search by ZIP",
                 "type": "number",
                 "value": "",
               },

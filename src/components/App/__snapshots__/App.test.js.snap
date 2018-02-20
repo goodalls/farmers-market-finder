@@ -39,10 +39,6 @@ ShallowWrapper {
                 component={[Function]}
                 path="/single-market"
         />
-        <Route
-                component={[Function]}
-                path="/single-market-map"
-        />
 </div>,
       "className": "background-wrapper",
     },
@@ -71,10 +67,6 @@ ShallowWrapper {
           <Route
             component={[Function]}
             path="/single-market"
-/>,
-          <Route
-            component={[Function]}
-            path="/single-market-map"
 />,
         ],
         "className": "app",
@@ -148,18 +140,6 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "path": "/single-market-map",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
       ],
       "type": "div",
     },
@@ -193,10 +173,6 @@ ShallowWrapper {
                     component={[Function]}
                     path="/single-market"
           />
-          <Route
-                    component={[Function]}
-                    path="/single-market-map"
-          />
 </div>,
         "className": "background-wrapper",
       },
@@ -225,10 +201,6 @@ ShallowWrapper {
             <Route
               component={[Function]}
               path="/single-market"
-/>,
-            <Route
-              component={[Function]}
-              path="/single-market-map"
 />,
           ],
           "className": "app",
@@ -297,18 +269,6 @@ ShallowWrapper {
             "props": Object {
               "component": [Function],
               "path": "/single-market",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "component": [Function],
-              "path": "/single-market-map",
             },
             "ref": null,
             "rendered": null,
