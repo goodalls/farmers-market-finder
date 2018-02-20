@@ -31,9 +31,11 @@ export class Container extends Component {
 
   loadingRenderCheck = () => {
     if (!this.props.markets.length) {
-      return <div className="loading">
-      <p>Loading...</p>
-      </div>;
+      return (
+        <div className="loading">
+          <p>Loading...</p>
+        </div>
+      );
     } else {
       return (
         <div>

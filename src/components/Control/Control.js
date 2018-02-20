@@ -96,9 +96,9 @@ export class Control extends Component {
             name="zip"
             value={this.state.zip}
             onChange={this.handleChange}
-            placeholder="Search by ZIP"
+            placeholder="ZIP"
           />
-          <input type="submit" />
+          <input type="submit" value='Search by ZIP' />
         </form>
       </section>
     );

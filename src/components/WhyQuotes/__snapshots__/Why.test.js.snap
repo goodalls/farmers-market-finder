@@ -22,10 +22,10 @@ ShallowWrapper {
           Why use a local Farmers Market?
 </h4>,
         <h4>
-          Reason 7 "Non-industrial"
+          Reason 6 "Tastes better"
 </h4>,
         <p>
-          Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.
+          Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.
 </p>,
         <a
           href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
@@ -53,10 +53,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Reason 7 \\"Non-industrial\\"",
+          "children": "Reason 6 \\"Tastes better\\"",
         },
         "ref": null,
-        "rendered": "Reason 7 \\"Non-industrial\\"",
+        "rendered": "Reason 6 \\"Tastes better\\"",
         "type": "h4",
       },
       Object {
@@ -64,10 +64,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.",
+          "children": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
         },
         "ref": null,
-        "rendered": "Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.",
+        "rendered": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
         "type": "p",
       },
       Object {
@@ -96,10 +96,10 @@ ShallowWrapper {
             Why use a local Farmers Market?
 </h4>,
           <h4>
-            Reason 7 "Non-industrial"
+            Reason 6 "Tastes better"
 </h4>,
           <p>
-            Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.
+            Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.
 </p>,
           <a
             href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
@@ -127,10 +127,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Reason 7 \\"Non-industrial\\"",
+            "children": "Reason 6 \\"Tastes better\\"",
           },
           "ref": null,
-          "rendered": "Reason 7 \\"Non-industrial\\"",
+          "rendered": "Reason 6 \\"Tastes better\\"",
           "type": "h4",
         },
         Object {
@@ -138,10 +138,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.",
+            "children": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
           },
           "ref": null,
-          "rendered": "Just like everything else in this country, industrialized farming has become the norm. These giant factory farms grow massive amounts of produce, shipping it all over the world. Giant corporations run industrial farms, driving local family farms out of business.For the sake of efficiency, industrial farming favors monocultures, where a single field only grows one type of fruits or vegetables. Monocultures sap the soil of essential nutrients, leaving it barren and unplantable. Likewise, they are more susceptible to disease and pests. In general, industrial farming (both conventional and organic) is hard on the land, depletes the soil of nutrients, uses industrial chemical fertilizers and/or pesticides, and utilizes environmentally unfriendly practices that are not sustainable over the long-term.",
+          "rendered": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
           "type": "p",
         },
         Object {

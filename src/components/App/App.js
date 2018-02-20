@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
-import * as actions from '../../actions/actions';
 import Container from '../Container/Container';
 import TextCard from '../TextCard/TextCard';
-import * as api from '../../utilities/api';
 import Control from '../Control/Control';
 import Header from '../Header/Header';
 import { connect } from 'react-redux';
