@@ -32,11 +32,15 @@ export class Container extends Component {
 
   loadingRenderCheck = () => {
     if (!this.props.markets.length) {
-      return <div className="loading" />;
+      return (
+        <div className="loading">
+          <p>Loading...</p>
+        </div>
+      );
     } else {
       return (
         <div>
-          <Link to={'/map'}>{'Map View'}</Link>
+          {/* <Link to={'/map'}>{'Map View'}</Link> */}
           <ol>{this.markets()}</ol>
         </div>
       );
@@ -53,8 +57,8 @@ export const mapStateToProps = store => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  marketDetails:(id, detail) => dispatch(actions.addDetails(id, detail)),
-  activeMarket:id => dispatch(actions.activeMarket(id))
+  marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail)),
+  activeMarket: id => dispatch(actions.activeMarket(id))
 });
 
 export default withRouter(

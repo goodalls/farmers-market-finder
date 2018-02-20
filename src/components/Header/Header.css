@@ -13,6 +13,9 @@
 #header span {
   display: block; }
 
+#header a {
+  text-decoration: none; }
+
 .farmers {
   color: #D97426;
   margin-left: 5%; }

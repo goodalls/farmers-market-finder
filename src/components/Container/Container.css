@@ -14,7 +14,9 @@
 .container p {
   font-weight: 700;
   text-align: center;
-  color: #B69C69; }
+  color: #B69C69;
+  line-height: 1.2em;
+  padding: 2.5px 0; }
 
 .loading {
   background-image: url("./carrot-gif.gif");
