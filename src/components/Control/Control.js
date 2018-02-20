@@ -19,6 +19,10 @@ export class Control extends Component {
     };
   }
 
+  componentDidMount() {
+    this.handleCurrentLocation();
+  }
+
   handleChange = event => {
     const { value } = event.target;
     this.setState({ zip: value });
@@ -28,10 +32,10 @@ export class Control extends Component {
     event.preventDefault();
     this.setState({ searchByZip: true, searchByLocation: false });
     this.getNearbyMarketsZip(this.state.zip);
-    this.setState({zip: ''});
+    this.setState({ zip: '' });
   };
 
-  getNearbyMarketsZip = async (zip) => {
+  getNearbyMarketsZip = async zip => {
     try {
       this.props.history.push('/market-list');
       const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${zip}`;
@@ -48,14 +52,6 @@ export class Control extends Component {
       await navigator.geolocation.getCurrentPosition(response => {
         const { latitude, longitude } = response.coords;
         this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
-        this.setState({
-          position: {
-            latitude: parseFloat(latitude),
-            longitude: parseFloat(longitude)
-          },
-          searchByZip: false,
-          searchByLocation: true
-        });
       });
     } catch (error) {
       this.setState({ error: [...this.state.error, { error }] });
@@ -67,17 +63,34 @@ export class Control extends Component {
       const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
       const initial = await api.fetchParse(url);
       const clean = await cleaner.cleanMarkets(initial.results);
-      this.props.markets(clean);
+      const updateDetails = await clean.map(async market => {
+        const updatedMarket = await this.updateMarketDetails(market.id);
+        return {...market, ...updatedMarket.marketdetails};
+      });
+      const promise = await Promise.all(updateDetails);
+      this.props.markets(promise);
     } catch (error) {
       this.setState({ error: [...this.state.error, { error }] });
     }
   };
 
+  updateMarketDetails = async (id) => {
+    const fetch = await api.marketDetails(id);
+    return fetch;
+  };
+
+  doStuff() {
+    this.setState({
+      searchByZip: false,
+      searchByLocation: true
+    });
+  }
+  
   render() {
     return (
       <section className="control">
         <Link to="/market-list">
-          <button onClick={this.handleCurrentLocation}>
+          <button onClick={this.doStuff}>
             Search by Current Location
           </button>
         </Link>
@@ -90,7 +103,7 @@ export class Control extends Component {
         <form onSubmit={this.handleSubmit} className="form">
           <label htmlFor="zip" />
           <input
-            className='zip'
+            className="zip"
             type="number"
             id="zip"
             maxLength="5"
@@ -99,7 +112,7 @@ export class Control extends Component {
             onChange={this.handleChange}
             placeholder="ZIP"
           />
-          <input type="submit" value='Search by ZIP' />
+          <input type="submit" value="Search by ZIP" />
         </form>
       </section>
     );
@@ -109,9 +122,8 @@ export class Control extends Component {
 export const mapStateToProps = store => ({});
 
 export const mapDispatchToProps = dispatch => ({
-  markets: markets => {
-    dispatch(actions.populateMarkets(markets));
-  }
+  markets: markets => dispatch(actions.populateMarkets(markets)),
+  marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail))
 });
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(Control)
