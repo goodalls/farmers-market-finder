@@ -28,6 +28,7 @@ export class Control extends Component {
     event.preventDefault();
     this.setState({ searchByZip: true, searchByLocation: false });
     this.getNearbyMarketsZip(this.state.zip);
+    this.setState({zip: ''});
   };
 
   getNearbyMarketsZip = async (zip) => {
