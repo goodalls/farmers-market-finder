@@ -17,10 +17,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Map",
+      "children": "loading map...",
+      "style": Object {
+        "height": "250px",
+        "width": "250px",
+      },
     },
-    "ref": null,
-    "rendered": "Map",
+    "ref": "map",
+    "rendered": "loading map...",
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -29,17 +33,21 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Map",
+        "children": "loading map...",
+        "style": Object {
+          "height": "250px",
+          "width": "250px",
+        },
       },
-      "ref": null,
-      "rendered": "Map",
+      "ref": "map",
+      "rendered": "loading map...",
       "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
+    "adapter": ReactFifteenAdapter {
       "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
       },
     },
   },

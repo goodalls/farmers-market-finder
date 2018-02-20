@@ -281,9 +281,9 @@ ShallowWrapper {
     },
   ],
   Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
+    "adapter": ReactFifteenAdapter {
       "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
       },
     },
   },

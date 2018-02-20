@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 export default class Map extends Component {
-  componentDidUpdate() {
+  componentDidMount() {
     this.loadMap(); // call loadMap function to load the google map
   }
 

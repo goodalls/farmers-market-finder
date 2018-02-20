@@ -4,7 +4,7 @@ exports[`TEXTCARD should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(Connect(TextCard)) />,
+  Symbol(enzyme.__unrendered__): <withRouter(Connect(Wrapper)) />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -37,9 +37,9 @@ ShallowWrapper {
     },
   ],
   Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
+    "adapter": ReactFifteenAdapter {
       "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
       },
     },
   },

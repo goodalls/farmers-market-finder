@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import { GoogleApiWrapper } from 'google-maps-react';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import './TextCard.css';
-import { GoogleApiWrapper } from 'google-maps-react';
 import Map from '../Map/Map';
+import './TextCard.css';
 
 export class TextCard extends Component {
   render() {
