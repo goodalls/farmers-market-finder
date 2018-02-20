@@ -44,12 +44,13 @@ ShallowWrapper {
                     maxLength="5"
                     name="zip"
                     onChange={[Function]}
-                    placeholder="Search by ZIP"
+                    placeholder="ZIP"
                     type="number"
                     value=""
           />
           <input
                     type="submit"
+                    value="Search by ZIP"
           />
 </form>,
       ],
@@ -111,12 +112,13 @@ ShallowWrapper {
               maxLength="5"
               name="zip"
               onChange={[Function]}
-              placeholder="Search by ZIP"
+              placeholder="ZIP"
               type="number"
               value=""
 />,
             <input
               type="submit"
+              value="Search by ZIP"
 />,
           ],
           "className": "form",
@@ -145,7 +147,7 @@ ShallowWrapper {
               "maxLength": "5",
               "name": "zip",
               "onChange": [Function],
-              "placeholder": "Search by ZIP",
+              "placeholder": "ZIP",
               "type": "number",
               "value": "",
             },
@@ -159,6 +161,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "type": "submit",
+              "value": "Search by ZIP",
             },
             "ref": null,
             "rendered": null,
@@ -203,12 +206,13 @@ ShallowWrapper {
                         maxLength="5"
                         name="zip"
                         onChange={[Function]}
-                        placeholder="Search by ZIP"
+                        placeholder="ZIP"
                         type="number"
                         value=""
             />
             <input
                         type="submit"
+                        value="Search by ZIP"
             />
 </form>,
         ],
@@ -270,12 +274,13 @@ ShallowWrapper {
                 maxLength="5"
                 name="zip"
                 onChange={[Function]}
-                placeholder="Search by ZIP"
+                placeholder="ZIP"
                 type="number"
                 value=""
 />,
               <input
                 type="submit"
+                value="Search by ZIP"
 />,
             ],
             "className": "form",
@@ -304,7 +309,7 @@ ShallowWrapper {
                 "maxLength": "5",
                 "name": "zip",
                 "onChange": [Function],
-                "placeholder": "Search by ZIP",
+                "placeholder": "ZIP",
                 "type": "number",
                 "value": "",
               },
@@ -318,6 +323,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "type": "submit",
+                "value": "Search by ZIP",
               },
               "ref": null,
               "rendered": null,

@@ -22,10 +22,10 @@ ShallowWrapper {
           Why use a local Farmers Market?
 </h4>,
         <h4>
-          Reason 9 "Variety"
+          Reason 6 "Tastes better"
 </h4>,
         <p>
-          The farmer’s market offers a dizzying array of fruits and vegetables. Industrial farms tend to grow only a few varieties of popular vegetables. Small local farms, on the other hand, tend to favor variety, offering fruits and vegetables you just won’t be able to find in the produce section of your local supermarket.
+          Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.
 </p>,
         <a
           href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
@@ -53,10 +53,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Reason 9 \\"Variety\\"",
+          "children": "Reason 6 \\"Tastes better\\"",
         },
         "ref": null,
-        "rendered": "Reason 9 \\"Variety\\"",
+        "rendered": "Reason 6 \\"Tastes better\\"",
         "type": "h4",
       },
       Object {
@@ -64,10 +64,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "The farmer’s market offers a dizzying array of fruits and vegetables. Industrial farms tend to grow only a few varieties of popular vegetables. Small local farms, on the other hand, tend to favor variety, offering fruits and vegetables you just won’t be able to find in the produce section of your local supermarket.",
+          "children": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
         },
         "ref": null,
-        "rendered": "The farmer’s market offers a dizzying array of fruits and vegetables. Industrial farms tend to grow only a few varieties of popular vegetables. Small local farms, on the other hand, tend to favor variety, offering fruits and vegetables you just won’t be able to find in the produce section of your local supermarket.",
+        "rendered": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
         "type": "p",
       },
       Object {
@@ -96,10 +96,10 @@ ShallowWrapper {
             Why use a local Farmers Market?
 </h4>,
           <h4>
-            Reason 9 "Variety"
+            Reason 6 "Tastes better"
 </h4>,
           <p>
-            The farmer’s market offers a dizzying array of fruits and vegetables. Industrial farms tend to grow only a few varieties of popular vegetables. Small local farms, on the other hand, tend to favor variety, offering fruits and vegetables you just won’t be able to find in the produce section of your local supermarket.
+            Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.
 </p>,
           <a
             href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
@@ -127,10 +127,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Reason 9 \\"Variety\\"",
+            "children": "Reason 6 \\"Tastes better\\"",
           },
           "ref": null,
-          "rendered": "Reason 9 \\"Variety\\"",
+          "rendered": "Reason 6 \\"Tastes better\\"",
           "type": "h4",
         },
         Object {
@@ -138,10 +138,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "The farmer’s market offers a dizzying array of fruits and vegetables. Industrial farms tend to grow only a few varieties of popular vegetables. Small local farms, on the other hand, tend to favor variety, offering fruits and vegetables you just won’t be able to find in the produce section of your local supermarket.",
+            "children": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
           },
           "ref": null,
-          "rendered": "The farmer’s market offers a dizzying array of fruits and vegetables. Industrial farms tend to grow only a few varieties of popular vegetables. Small local farms, on the other hand, tend to favor variety, offering fruits and vegetables you just won’t be able to find in the produce section of your local supermarket.",
+          "rendered": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
           "type": "p",
         },
         Object {
