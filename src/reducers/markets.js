@@ -1,8 +1,7 @@
-
 export const marketsReducer = (state = [], action) => {
   switch (action.type) {
     case 'POPULATE_MARKETS':
-      return [...state, ...action.markets];
+      return [...action.markets];
     case 'ADD_DETAILS':
       const details = state.map(market => {
         if (market.id === action.id) {
@@ -16,5 +15,3 @@ export const marketsReducer = (state = [], action) => {
       return state;
   }
 };
-
-
