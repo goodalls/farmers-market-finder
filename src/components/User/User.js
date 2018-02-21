@@ -19,7 +19,12 @@ export class User extends Component {
   }
 
   userUpdater() {
-    //check localstorage if user then set to store and state
+    if (localStorage.length) {
+      const get = localStorage.getItem('user');
+      const user = JSON.parse(get);
+      this.setState({...user, status:'LOGGED_IN'});
+
+    }
     //should be able to update localstorage when favotrites added via store(props did change)
     this.renderCheck(this.state);
   }
@@ -75,6 +80,7 @@ export class User extends Component {
     return 'logOutUser';
     // sets state and store to 'LOGGED_OUT'
     // should have an element of favorites clickable
+    //include a 'welcome back {user}' message
   }
 
   createUser() {
@@ -123,7 +129,7 @@ export class User extends Component {
     const stringify = JSON.stringify(this.state);
     localStorage.setItem('user', stringify);
     this.setState({ status: 'LOGGED_IN' });
-  }
+  };
 
   renderCheck = user => {
     switch (user.status) {
