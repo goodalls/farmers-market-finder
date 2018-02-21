@@ -12,9 +12,6 @@ export class Control extends Component {
     super(props);
     this.state = {
       zip: '',
-      searchByZip: false,
-      searchByLocation: false,
-      position: {},
       error: []
     };
   }
@@ -30,9 +27,9 @@ export class Control extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.setState({ searchByZip: true, searchByLocation: false });
     this.getNearbyMarketsZip(this.state.zip);
     this.setState({ zip: '' });
+    this.props.markets([]);
   };
 
   getNearbyMarketsZip = async zip => {
@@ -41,13 +38,21 @@ export class Control extends Component {
       const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${zip}`;
       const initial = await api.fetchParse(url);
       const clean = await cleaner.cleanMarkets(initial.results);
-      this.props.markets(clean);
+      const updateDetails = await clean.map(async market => {
+        const updatedMarket = await this.updateMarketDetails(market.id);
+        return { ...market, ...updatedMarket.marketdetails };
+      });
+      const promise = await Promise.all(updateDetails);
+      this.props.markets(promise);
     } catch (error) {
       this.setState({ error: [...this.state.error, { error }] });
     }
   };
 
   handleCurrentLocation = async () => {
+    if (this.props.marketsArray && this.state.zip !== '') {
+      this.props.markets([]);
+    }
     try {
       await navigator.geolocation.getCurrentPosition(response => {
         const { latitude, longitude } = response.coords;
@@ -65,7 +70,7 @@ export class Control extends Component {
       const clean = await cleaner.cleanMarkets(initial.results);
       const updateDetails = await clean.map(async market => {
         const updatedMarket = await this.updateMarketDetails(market.id);
-        return {...market, ...updatedMarket.marketdetails};
+        return { ...market, ...updatedMarket.marketdetails };
       });
       const promise = await Promise.all(updateDetails);
       this.props.markets(promise);
@@ -74,23 +79,16 @@ export class Control extends Component {
     }
   };
 
-  updateMarketDetails = async (id) => {
+  updateMarketDetails = async id => {
     const fetch = await api.marketDetails(id);
     return fetch;
   };
 
-  doStuff() {
-    this.setState({
-      searchByZip: false,
-      searchByLocation: true
-    });
-  }
-  
   render() {
     return (
       <section className="control">
         <Link to="/market-list">
-          <button onClick={this.doStuff}>
+          <button onClick={this.handleCurrentLocation}>
             Search by Current Location
           </button>
         </Link>
@@ -119,7 +117,9 @@ export class Control extends Component {
   }
 }
 
-export const mapStateToProps = store => ({});
+export const mapStateToProps = store => ({
+  marketsArray: store.markets
+});
 
 export const mapDispatchToProps = dispatch => ({
   markets: markets => dispatch(actions.populateMarkets(markets)),
