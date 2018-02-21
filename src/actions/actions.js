@@ -33,4 +33,9 @@ export const activeMarket = id => ({
   id
 });
 
+export const populateWhy = why => ({
+  type: 'POP_WHY',
+  why
+});
+
 
