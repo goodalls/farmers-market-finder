@@ -33,16 +33,12 @@ export class Card extends Component {
   }
 }
 
+const mapWrapper = GoogleApiWrapper({ apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c' });
+
 export const mapStateToProps = state => ({
   markets: state.markets
 });
 
 export const mapDispatchToProps = dispatch => ({});
 
-export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(
-    // GoogleApiWrapper({ apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c' })(
-      Card
-    // )
-  )
-);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Card));

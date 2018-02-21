@@ -5,6 +5,7 @@ import * as api from '../../utilities/api';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import User from '../User/User';
 import './Control.css';
 
 export class Control extends Component {
@@ -87,6 +88,7 @@ export class Control extends Component {
   render() {
     return (
       <section className="control">
+        <User />
         <Link to="/market-list">
           <button onClick={this.handleCurrentLocation}>
             Search by Current Location
@@ -96,8 +98,6 @@ export class Control extends Component {
           Search for Farmers Markets near you by entering your zip code below or
           choosing to find markets close to your current location
         </h4>
-        <NavLink to={'/sign-in'}>{Sign - In}</NavLink>
-        <NavLink to={'/favorites'}>{Favorites}</NavLink>
         <form onSubmit={this.handleSubmit} className="form">
           <label htmlFor="zip" />
           <input

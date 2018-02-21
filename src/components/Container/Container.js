@@ -40,7 +40,7 @@ export class Container extends Component {
     } else {
       return (
         <div className='container-check'>
-          {/* <Link to={'/map'}>{'Map View'}</Link> */}
+          <Link to={'/map'}>{'Map View'}</Link>
           <ol>{this.markets()}</ol>
         </div>
       );
