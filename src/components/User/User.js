@@ -21,6 +21,7 @@ export class User extends Component {
   userUpdater() {
     //check localstorage if user then set to store and state
     //should be able to update localstorage when favotrites added via store(props did change)
+    this.renderCheck(this.state);
   }
 
   addFavorites() {
@@ -28,47 +29,100 @@ export class User extends Component {
     // may not need to be in this section
   }
 
-  handleInputs = (event) => {
+  handleInputs = event => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
-  }
+  };
 
   loginUser() {
     return (
-      <form onSubmit={this.props.user}>
-        <label htmlFor='name'/>
-        <input id='name'name="name" type="text" placeholder='Name' onChange={this.handleInputs} value={this.state.name} />
-        <label htmlFor='password'/>
-        <input id='password'name="password" type="password" placeholder='Password'onChange={this.handleInputs} value={this.state.password} />
-        <label htmlFor='submit'/>
-        <input id='submit'type='submit' value='Submit' />
-        <label htmlFor='create-acct'/>
-        <input id='create-acct'type='submit' value='Create Account' onClick={this.createUser}/>
-      </form>
+      <div className="user">
+        <h4>Login</h4>
+        <form onSubmit={this.saveUser}>
+          <label htmlFor="name" />
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name"
+            onChange={this.handleInputs}
+            value={this.state.name}
+          />
+          <label htmlFor="password" />
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Password"
+            onChange={this.handleInputs}
+            value={this.state.password}
+          />
+          <label htmlFor="submit" />
+          <input id="submit" type="submit" value="Submit" />
+          <label htmlFor="create-acct" />
+          <input
+            id="create-acct"
+            type="submit"
+            value="Create Account"
+            onClick={this.createUser}
+          />
+        </form>
+      </div>
     );
-    //needs a create user button when clicked sets state to 'CREATE_USER'
-    //save to localstorage
   }
 
   logoutUser() {
+    return 'logOutUser';
     // sets state and store to 'LOGGED_OUT'
     // should have an element of favorites clickable
   }
 
   createUser() {
-    return (
-      <form onSubmit={this.props.user}>
-        <label htmlFor='name'/>
-        <input id='name'name="name" type="text" value={this.state.name} />
-        <label htmlFor='email'/>
-        <input id='email'name="email" type="text" value={this.state.email} />
-        <label htmlFor='password'/>
-        <input id='password'name="password" type="password" value={this.state.password} />
-        <label htmlFor='submit'/>
-        <input id='submit'type='submit' value='Submit' />
-      </form>
-    );
-    //save to LocalStorage
+    if (this.state.status !== 'CREATE_USER') {
+      this.setState({ status: 'CREATE_USER' });
+    } else {
+      return (
+        <div className="user">
+          <form onSubmit={this.saveUser}>
+            <label htmlFor="name" />
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Name"
+              onChange={this.handleInputs}
+              value={this.state.name}
+            />
+            <label htmlFor="email" />
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="Email"
+              onChange={this.handleInputs}
+              value={this.state.email}
+            />
+            <label htmlFor="password" />
+            <input
+              id="password"
+              name="password"
+              type="text"
+              placeholder="Password"
+              onChange={this.handleInputs}
+              value={this.state.password}
+            />
+            <label htmlFor="submit" />
+            <input id="submit" type="submit" value="Submit" />
+          </form>
+        </div>
+      );
+    }
+  }
+
+  saveUser = () => {
+    const stringify = JSON.stringify(this.state);
+    localStorage.setItem('user', stringify);
+    this.setState({ status: 'LOGGED_IN' });
   }
 
   renderCheck = user => {
