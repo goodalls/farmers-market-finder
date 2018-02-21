@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './User.css';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import * as actions from '../../actions/actions';
 
 export class User extends Component {
   constructor(props) {
@@ -22,11 +23,10 @@ export class User extends Component {
     if (localStorage.length) {
       const get = localStorage.getItem('user');
       const user = JSON.parse(get);
-      this.setState({...user, status:'LOGGED_IN'});
-
+      this.setState({ ...user, status: 'LOGGED_IN' });
+      this.props.loginUser({ ...user, status: 'LOGGED_IN' });
     }
     //should be able to update localstorage when favotrites added via store(props did change)
-    this.renderCheck(this.state);
   }
 
   addFavorites() {
@@ -77,10 +77,33 @@ export class User extends Component {
   }
 
   logoutUser() {
-    return 'logOutUser';
+    return (
+      <div className="user">
+        <h4>Welcome back {this.state.name}</h4>
+        <Link to='/favorites'>
+          <button className="favorites">favorites {this.state.favorites.length}</button>
+        </Link>
+        <button
+          onClick={() => {
+            localStorage.removeItem('user');
+            this.setState({
+              status: '',
+              name: '',
+              email: '',
+              password: '',
+              favorites: []
+            });
+            this.props.logOutUser();
+          }}
+        >
+          Log Out
+        </button>
+      </div>
+    );
     // sets state and store to 'LOGGED_OUT'
     // should have an element of favorites clickable
     //include a 'welcome back {user}' message
+    //remove from localStorage
   }
 
   createUser() {
@@ -129,6 +152,7 @@ export class User extends Component {
     const stringify = JSON.stringify(this.state);
     localStorage.setItem('user', stringify);
     this.setState({ status: 'LOGGED_IN' });
+    this.props.loginUser(this.state);
   };
 
   renderCheck = user => {
@@ -150,6 +174,9 @@ export class User extends Component {
 
 const mapStateToProps = state => ({});
 
-const mapDispatchToProps = dispatch => ({});
+const mapDispatchToProps = dispatch => ({
+  loginUser: user => dispatch(actions.loginUser(user)),
+  logOutUser: () => dispatch(actions.logOutUser())
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(User);

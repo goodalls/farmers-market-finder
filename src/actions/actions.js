@@ -14,7 +14,18 @@ export const loginUser = (user) => ({
   user
 });
 
+export const logOutUser = () => ({
+  type: 'LOG_OUT'
+});
+
+export const updateFavorites = (user) => ({
+  type: 'UPDATE_FAVORITES',
+  user
+});
+
 export const activeMarket = id => ({
   type: 'ACTIVE_MARKET',
   id
 });
+
+
