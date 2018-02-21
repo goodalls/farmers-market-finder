@@ -9,6 +9,7 @@ import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
 import Map from '../Map/Map';
 import './App.css';
+import Favorites from '../Favorites/Favorites';
 
 export class App extends Component {
   constructor(props) {
@@ -18,6 +19,8 @@ export class App extends Component {
     };
   }
 
+  favorite = () => {};
+
   render() {
     return (
       <div className="background-wrapper">
@@ -25,8 +28,17 @@ export class App extends Component {
           <Header />
           <Control />
           <Route exact path="/" component={Why} />
-          <Route exact path="/market-list" component={Container} />
+          <Route exact path="/market-list"
+            render={() => {
+              <Container fav={this.favorite} />;
+            }}
+          />
           <Route exact path="/map-list" component={Map} />
+          <Route exact path="/favorite"
+            render={() => {
+              <Favorites fav={this.favorite} />;
+            }}
+          />
           <Route
             path="/single-market/:id"
             render={({ match }) => {

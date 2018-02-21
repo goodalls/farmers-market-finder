@@ -18,6 +18,11 @@ export const logOutUser = () => ({
   type: 'LOG_OUT'
 });
 
+export const updateUser = user => ({
+  type: 'UPDATE_USER',
+  user
+});
+
 export const updateFavorites = (user) => ({
   type: 'UPDATE_FAVORITES',
   user

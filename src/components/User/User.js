@@ -100,15 +100,12 @@ export class User extends Component {
         </button>
       </div>
     );
-    // sets state and store to 'LOGGED_OUT'
-    // should have an element of favorites clickable
-    //include a 'welcome back {user}' message
-    //remove from localStorage
   }
 
   createUser() {
     if (this.state.status !== 'CREATE_USER') {
       this.setState({ status: 'CREATE_USER' });
+      this.props.updateUser({ status: 'CREATE_USER' });
     } else {
       return (
         <div className="user">
@@ -176,7 +173,8 @@ const mapStateToProps = state => ({});
 
 const mapDispatchToProps = dispatch => ({
   loginUser: user => dispatch(actions.loginUser(user)),
-  logOutUser: () => dispatch(actions.logOutUser())
+  logOutUser: () => dispatch(actions.logOutUser()),
+  updateUser: user => dispatch(actions.updateUser(user))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(User);
