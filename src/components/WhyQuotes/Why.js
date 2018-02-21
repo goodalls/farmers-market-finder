@@ -68,7 +68,7 @@ export class Why extends Component {
         <p>{this.props.why[title[random]]}</p>
 
         <a href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html">
-          Kimberly Snyder
+          <h4>Kimberly Snyder</h4>
         </a>
       </div>
     );
