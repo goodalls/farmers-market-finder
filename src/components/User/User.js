@@ -20,7 +20,7 @@ export class User extends Component {
   }
 
   userUpdater() {
-    if (localStorage.length) {
+    if (localStorage.user) {
       const get = localStorage.getItem('user');
       const user = JSON.parse(get);
       this.setState({ ...user, status: 'LOGGED_IN' });
@@ -165,7 +165,7 @@ export class User extends Component {
     }
   };
   render() {
-    return <div className="user">{this.renderCheck(this.state)}</div>;
+    return <div>{this.renderCheck(this.state)}</div>;
   }
 }
 
