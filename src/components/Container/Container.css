@@ -9,7 +9,8 @@
 
 .container li {
   margin: 10px;
-  border: 2px solid #9BC47e; }
+  border: 2px solid #9BC47e;
+  border-radius: 10px; }
 
 .container p {
   font-weight: 700;

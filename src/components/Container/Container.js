@@ -5,17 +5,16 @@ import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
 import './Container.css';
 
-
 export class Container extends Component {
   markets = () => {
     return this.props.markets.map((market, index) => {
       return (
-        <li
-          key={index}
-          onClick={event => this.handleSingleMarket(event, market.id)}
-        >
-          <p>Distance: {market.distance}</p>
-          <p>{market.marketname}</p>
+        <li key={index}>
+          <span onClick={this.props.fav}>&#9829;</span>
+          <div onClick={event => this.handleSingleMarket(event, market.id)}>
+            <p>Distance: {market.distance}</p>
+            <p>{market.marketname}</p>
+          </div>
         </li>
       );
     });
@@ -39,7 +38,7 @@ export class Container extends Component {
       );
     } else {
       return (
-        <div className='container-check'>
+        <div className="container-check">
           <Link to={'/map'}>{'Map View'}</Link>
           <ol>{this.markets()}</ol>
         </div>

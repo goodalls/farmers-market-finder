@@ -7,7 +7,7 @@ export class Favorites extends Component {
     this.props.user.map((fav, index) => {
       return (
         <article key={fav.id + index}>
-          <button onClick={fav}>Favorite</button>
+          <span onClick={this.props.fav}>&#9829;</span>
         </article>
       );
     });
