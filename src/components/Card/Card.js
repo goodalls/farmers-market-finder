@@ -16,6 +16,7 @@ export class Card extends Component {
 
     return (
       <div className="text-card">
+        <span onClick={this.props.fav}>&#9829;</span>
         <h2 className="name">{marketInfo.marketname}</h2>
         <div className="info">
           <p>Address: {marketInfo.Address}</p>
@@ -33,7 +34,9 @@ export class Card extends Component {
   }
 }
 
-const mapWrapper = GoogleApiWrapper({ apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c' });
+const mapWrapper = GoogleApiWrapper({
+  apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c'
+});
 
 export const mapStateToProps = state => ({
   markets: state.markets

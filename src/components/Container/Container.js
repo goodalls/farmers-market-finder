@@ -7,7 +7,6 @@ import './Container.css';
 
 export class Container extends Component {
   markets = () => {
-    console.log(this.props);
     return this.props.markets.map((market, index) => {
       return (
         <li key={index}>
