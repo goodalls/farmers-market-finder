@@ -23,26 +23,19 @@ describe('CONTROL', () => {
 
   describe('handleSubmit', () => {
     it('should set state call preventDefault', () => {
-      const wrapper = shallow(<Control />);
+      const wrapper = shallow(<Control markets={jest.fn()}/>);
       const mockEvent = { target: { value: 80021 }, preventDefault: jest.fn() };
       wrapper.instance().handleSubmit(mockEvent);
       expect(mockEvent.preventDefault).toHaveBeenCalled();
     });
 
-    it('should set state searchByZip = true', () => {
-      const wrapper = shallow(<Control />);
+    it('should set state Zip = ""', () => {
+      const wrapper = shallow(<Control markets={jest.fn()}/>);
       const mockEvent = { target: { value: 80021 }, preventDefault: jest.fn() };
-      const expected = true;
+      const expected = '';
+      wrapper.setState({zip: 80021});
       wrapper.instance().handleSubmit(mockEvent);
-      expect(wrapper.state('searchByZip')).toEqual(expected);
-    });
-
-    it('should set state searchByLocation = false', () => {
-      const wrapper = shallow(<Control />);
-      const mockEvent = { target: { value: 80021 }, preventDefault: jest.fn() };
-      const expected = false;
-      wrapper.instance().handleSubmit(mockEvent);
-      expect(wrapper.state('searchByLocation')).toEqual(expected);
+      expect(wrapper.state('zip')).toEqual(expected);
     });
   });
 
