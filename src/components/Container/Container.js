@@ -10,7 +10,7 @@ export class Container extends Component {
     return this.props.markets.map((market, index) => {
       return (
         <li key={index}>
-          <span onClick={this.props.fav}>&#9829;</span>
+          <span onClick={(event) => this.props.fav(event, market.id)}>&#9829;</span>
           <div onClick={event => this.handleSingleMarket(event, market.id)}>
             <p>Distance: {market.distance}</p>
             <p>{market.marketname}</p>

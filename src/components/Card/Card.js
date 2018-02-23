@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import { MapContainer } from '../MapContainer/MapContainer';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
-import { MapContainer } from '../MapContainer/MapContainer';
 import './Card.css';
 
 export class Card extends Component {
@@ -14,8 +14,8 @@ export class Card extends Component {
     });
 
     return (
-      <div className="text-card">
-        <span onClick={fav}>&#9829;</span>
+      <div className="text-card" >
+        <span onClick={(event) => fav(event, marketInfo.id)}>&#9829;</span>
         <h2 className="name">{marketInfo.marketname}</h2>
         <div className="info">
           <p>Address: {marketInfo.Address}</p>

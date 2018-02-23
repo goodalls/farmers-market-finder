@@ -19,8 +19,8 @@ export class App extends Component {
     };
   }
 
-  favorite = () => {
-    console.log('favorite clicked');
+  favorite = (event, id) => {
+    console.log(id);
   };
 
   render() {
