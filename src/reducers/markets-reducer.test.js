@@ -1,4 +1,4 @@
-import { marketsReducer } from './markets';
+import { marketsReducer } from './markets-reducer';
 import * as actions from '../actions/actions';
 
 describe('MARKETS_REDUCER', () => {
