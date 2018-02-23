@@ -59,9 +59,7 @@ ShallowWrapper {
         <div
           id="map"
 >
-          <Map
-                    google={undefined}
-          />
+          <MapContainer />
 </div>,
       ],
       "className": "text-card",
@@ -222,9 +220,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Map
-            google={undefined}
-/>,
+          "children": <MapContainer />,
           "id": "map",
         },
         "ref": null,
@@ -232,9 +228,7 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {
-            "google": undefined,
-          },
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -284,9 +278,7 @@ ShallowWrapper {
           <div
             id="map"
 >
-            <Map
-                        google={undefined}
-            />
+            <MapContainer />
 </div>,
         ],
         "className": "text-card",
@@ -447,9 +439,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Map
-              google={undefined}
-/>,
+            "children": <MapContainer />,
             "id": "map",
           },
           "ref": null,
@@ -457,9 +447,7 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "class",
-            "props": Object {
-              "google": undefined,
-            },
+            "props": Object {},
             "ref": null,
             "rendered": null,
             "type": [Function],

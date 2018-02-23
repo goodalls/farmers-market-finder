@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import { GoogleApiWrapper } from 'google-maps-react';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
-import Map from '../Map/Map';
+import { MapContainer } from '../MapContainer/MapContainer';
 import './Card.css';
 
 export class Card extends Component {
@@ -27,16 +26,13 @@ export class Card extends Component {
           </ol>
         </div>
         <div id="map">
-          <Map google={google} />
+          <MapContainer />
         </div>
       </div>
     );
   }
 }
 
-// const mapWrapper = GoogleApiWrapper({
-//   apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c'
-// });
 
 export const mapStateToProps = state => ({
   markets: state.markets
