@@ -1,4 +1,4 @@
-import {userReducer} from './user';
+import {userReducer} from './user-reducer';
 import * as actions from '../actions/actions';
 
 describe('USER', () => {

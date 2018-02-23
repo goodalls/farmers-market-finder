@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import { marketsReducer } from './markets';
-import { userReducer } from './user';
-import { activeMarketReducer } from './activeMarket';
-import {whyReducer} from './why';
+import { marketsReducer } from './markets-reducer';
+import { userReducer } from './user-reducer';
+import { activeMarketReducer } from './activeMarket-reducer';
+import {whyReducer} from './why-reducer';
 
 const rootReducer = combineReducers({
   markets: marketsReducer,

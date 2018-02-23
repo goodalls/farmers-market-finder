@@ -22,3 +22,6 @@
 
 #submit {
   align-self: flex-start; }
+
+button.user {
+  font-size: 1em; }
