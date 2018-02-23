@@ -6,7 +6,7 @@ import './MapContainer.css';
 export class MapContainer extends Component {
   render() {
     return (
-      <div>
+      <div className=''>
         <Map google={this.props.google} />
       </div>
     )

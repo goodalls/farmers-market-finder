@@ -8,7 +8,7 @@ export class Card extends Component {
   render() {
     const { id, markets, fav, google } = this.props;
     const marketInfo = markets.find(market => market.id === id);
-
+    const schedule = marketInfo.Schedule.slice(0, -16);
     const products = marketInfo.Products.split(';').map((product, index) => {
       return <li key={index}>{product}</li>;
     });
@@ -19,7 +19,7 @@ export class Card extends Component {
         <h2 className="name">{marketInfo.marketname}</h2>
         <div className="info">
           <p>Address: {marketInfo.Address}</p>
-          <p>Schedule: {marketInfo.Schedule}</p>
+          <p>Schedule: {schedule}</p>
           <ol>
             Products:
             {products}
@@ -32,7 +32,6 @@ export class Card extends Component {
     );
   }
 }
-
 
 export const mapStateToProps = state => ({
   markets: state.markets
