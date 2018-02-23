@@ -1,10 +1,25 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Card from './Card';
+import {Card, mapStateToProps, mapDispatchToProps} from './Card';
 
 describe('CARD', () => {
+  let wrapper;
+  beforeEach( ()=>{
+    wrapper = shallow(<Card markets={[{Products: 'hello; big; string'}]} />);
+  });
+  
   it('should match the snapshot', () => {
-    const wrapper = shallow(<Card/>);
     expect(wrapper).toMatchSnapshot();
   });
+  
+
+  describe('MSTP and MDTP', () => {
+    it('should map props from store', () => {
+      const mockStore = {markets: [{}, {}]};
+      const mapped = mapStateToProps(mockStore);
+      const expected = [{}, {}];
+      expect(mapped.markets).toEqual(expected);
+    });
+  });
+  
 });

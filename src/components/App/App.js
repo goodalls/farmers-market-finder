@@ -30,13 +30,17 @@ export class App extends Component {
           <Header />
           <Control />
           <Route exact path="/" component={Why} />
-          <Route exact path="/market-list"
+          <Route
+            exact
+            path="/market-list"
             render={() => {
               return <Container fav={this.favorite} />;
             }}
           />
           <Route exact path="/map-list" component={Map} />
-          <Route exact path="/favorite"
+          <Route
+            exact
+            path="/favorite"
             render={() => {
               return <Favorites fav={this.favorite} />;
             }}
@@ -50,7 +54,7 @@ export class App extends Component {
               );
 
               if (singleMarket) {
-                return <Card {...singleMarket} fav={this.favorite}/>;
+                return <Card {...singleMarket} fav={this.favorite} />;
               } else {
                 return null;
               }
