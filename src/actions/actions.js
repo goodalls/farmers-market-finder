@@ -23,9 +23,9 @@ export const updateUser = user => ({
   user
 });
 
-export const updateFavorites = user => ({
+export const updateFavorites = market => ({
   type: 'UPDATE_FAVORITES',
-  user
+  market
 });
 
 export const activeMarket = id => ({

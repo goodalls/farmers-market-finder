@@ -21,9 +21,13 @@ export class App extends Component {
     };
   }
 
-  favorite = (event, id) => {
-    console.log(id);
-    
+  favorite = (event, market) => {
+    console.log(market);
+    market.favorite = true;
+    this.props.updateFavorites(market);
+
+    //favorite set to true
+    //send to store and add to localstorage
   };
 
   render() {
@@ -70,7 +74,8 @@ export class App extends Component {
 }
 
 App.propTypes = {
-  markets: PropTypes.array
+  markets: PropTypes.array,
+  updateFavorites: PropTypes.func
 };
 
 export const mapStateToProps = store => ({
