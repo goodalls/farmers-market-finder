@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Favorites.css';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 export class Favorites extends Component {
   favCards = () => {
@@ -16,6 +17,11 @@ export class Favorites extends Component {
     return <div className="favorite">{this.favCards}</div>;
   }
 }
+
+Favorites.propTypes = {
+  user: PropTypes.object,
+  fav: PropTypes.func
+};
 
 const mapStateToProps = state => ({
   user: state.user.favorites

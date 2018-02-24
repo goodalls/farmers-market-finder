@@ -10,6 +10,7 @@ import '../../styles/colors.css';
 import Map from '../Map/Map';
 import './App.css';
 import Favorites from '../Favorites/Favorites';
+import PropTypes from 'prop-types';
 
 export class App extends Component {
   constructor(props) {
@@ -65,6 +66,10 @@ export class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  markets: PropTypes.array
+};
 
 export const mapStateToProps = store => ({
   markets: store.markets

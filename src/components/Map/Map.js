@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 export default class Map extends Component {
   componentDidMount() {
@@ -43,6 +44,10 @@ export default class Map extends Component {
     );
   }
 }
+
+Map.propTypes = {
+  google: PropTypes.object
+};
 
 // import React, { Component } from 'react';
 
