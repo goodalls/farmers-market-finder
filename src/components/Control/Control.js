@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import User from '../User/User';
 import './Control.css';
+import PropTypes from 'prop-types';
 
 export class Control extends Component {
   constructor(props) {
@@ -116,6 +117,12 @@ export class Control extends Component {
     );
   }
 }
+
+Control.propTypes = {
+  markets: PropTypes.array,
+  marketsArray: PropTypes.array,
+  history: PropTypes.object
+};
 
 export const mapStateToProps = store => ({
   marketsArray: store.markets

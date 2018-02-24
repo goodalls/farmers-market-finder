@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './Why.css';
-import { connect } from 'react-redux';
 import * as actions from '../../actions/actions';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import './Why.css';
 
 export class Why extends Component {
   componentDidMount() {
@@ -74,6 +75,11 @@ export class Why extends Component {
     );
   }
 }
+
+Why.propTypes = {
+  why: PropTypes.bool,
+  populateWhyObject: PropTypes.func
+};
 
 const mapStateToProps = state => ({
   why: state.why

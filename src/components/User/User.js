@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './User.css';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import * as actions from '../../actions/actions';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import './User.css';
 
 export class User extends Component {
   constructor(props) {
@@ -80,8 +81,10 @@ export class User extends Component {
     return (
       <div className="user">
         <h4>Welcome back {this.state.name}</h4>
-        <Link to='/favorites'>
-          <button className="favorites">favorites {this.state.favorites.length}</button>
+        <Link to="/favorites">
+          <button className="favorites">
+            favorites {this.state.favorites.length}
+          </button>
         </Link>
         <button
           onClick={() => {
@@ -176,5 +179,11 @@ const mapDispatchToProps = dispatch => ({
   logOutUser: () => dispatch(actions.logOutUser()),
   updateUser: user => dispatch(actions.updateUser(user))
 });
+
+User.propTypes = {
+  loginUser: PropTypes.func,
+  logOutUser: PropTypes.func,
+  updateUser: PropTypes.func
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(User);

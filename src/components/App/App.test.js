@@ -1,6 +1,6 @@
 import React from 'react';
-import {App, mapStateToProps, mapDispatchToProps} from './App';
-import {shallow} from 'enzyme';
+import { App, mapStateToProps } from './App';
+import { shallow } from 'enzyme';
 
 describe('APP', () => {
   it('should match the snapshot', () => {
@@ -9,20 +9,20 @@ describe('APP', () => {
   });
 
   it('should start having a default state error array', () => {
-    const wrapper = shallow(<App/>);
+    const wrapper = shallow(<App />);
     expect(wrapper.state('error')).toEqual([]);
   });
 
-  describe('MSTP and MDTP', () => {
+  it('should have favorite', () => {
+    // need to make test
+  });
 
+  describe('MSTP and MDTP', () => {
     it('should map props from store', () => {
-      const mockStore = {markets: [{}, {}]};
+      const mockStore = { markets: [{}, {}] };
       const mapped = mapStateToProps(mockStore);
       const expected = [{}, {}];
       expect(mapped.markets).toEqual(expected);
     });
   });
-
-  
 });
-

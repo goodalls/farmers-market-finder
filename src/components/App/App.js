@@ -10,6 +10,7 @@ import '../../styles/colors.css';
 import Map from '../Map/Map';
 import './App.css';
 import Favorites from '../Favorites/Favorites';
+import PropTypes from 'prop-types';
 
 export class App extends Component {
   constructor(props) {
@@ -19,8 +20,8 @@ export class App extends Component {
     };
   }
 
-  favorite = () => {
-    console.log('favorite clicked');
+  favorite = (event, id) => {
+    console.log(id);
   };
 
   render() {
@@ -30,13 +31,17 @@ export class App extends Component {
           <Header />
           <Control />
           <Route exact path="/" component={Why} />
-          <Route exact path="/market-list"
+          <Route
+            exact
+            path="/market-list"
             render={() => {
               return <Container fav={this.favorite} />;
             }}
           />
           <Route exact path="/map-list" component={Map} />
-          <Route exact path="/favorite"
+          <Route
+            exact
+            path="/favorite"
             render={() => {
               return <Favorites fav={this.favorite} />;
             }}
@@ -50,7 +55,7 @@ export class App extends Component {
               );
 
               if (singleMarket) {
-                return <Card {...singleMarket} fav={this.favorite}/>;
+                return <Card {...singleMarket} fav={this.favorite} />;
               } else {
                 return null;
               }
@@ -61,6 +66,10 @@ export class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  markets: PropTypes.array
+};
 
 export const mapStateToProps = store => ({
   markets: store.markets

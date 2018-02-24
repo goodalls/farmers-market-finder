@@ -4,13 +4,16 @@ import * as actions from '../../actions/actions';
 import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
 import './Container.css';
+import PropTypes from 'prop-types';
 
 export class Container extends Component {
   markets = () => {
     return this.props.markets.map((market, index) => {
       return (
         <li key={index}>
-          <span onClick={this.props.fav}>&#9829;</span>
+          <span onClick={event => this.props.fav(event, market.id)}>
+            &#9829;
+          </span>
           <div onClick={event => this.handleSingleMarket(event, market.id)}>
             <p>Distance: {market.distance}</p>
             <p>{market.marketname}</p>
@@ -50,6 +53,13 @@ export class Container extends Component {
     return <div className="container">{this.loadingRenderCheck()}</div>;
   };
 }
+Container.propTypes = {
+  markets: PropTypes.array,
+  fav: PropTypes.func,
+  marketDetails: PropTypes.string,
+  activeMarket: PropTypes.string,
+  history: PropTypes.string
+};
 
 export const mapStateToProps = store => ({
   markets: store.markets
