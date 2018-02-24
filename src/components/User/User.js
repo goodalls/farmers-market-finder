@@ -26,11 +26,7 @@ export class User extends Component {
       const user = JSON.parse(get);
       this.setState({ ...user, status: 'LOGGED_IN' });
       this.props.loginUser({ ...user, status: 'LOGGED_IN' });
-    } else {
-      localStorage.setItem(JSON.stringify(this.props.user));
-      this.setState(this.props.user);
-      //get user from store and update state and localstorage
-    }
+    } 
   }
 
   handleInputs = event => {

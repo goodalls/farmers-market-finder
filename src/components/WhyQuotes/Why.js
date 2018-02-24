@@ -77,7 +77,7 @@ export class Why extends Component {
 }
 
 Why.propTypes = {
-  why: PropTypes.bool,
+  why: PropTypes.object,
   populateWhyObject: PropTypes.func
 };
 
