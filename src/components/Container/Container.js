@@ -3,15 +3,15 @@ import { withRouter, Link } from 'react-router-dom';
 import * as actions from '../../actions/actions';
 import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
-import './Container.css';
 import PropTypes from 'prop-types';
+import './Container.css';
 
 export class Container extends Component {
   markets = () => {
     return this.props.markets.map((market, index) => {
       return (
         <li key={index}>
-          <span onClick={event => this.props.fav(event, market.id)}>
+          <span onClick={event => this.props.fav(event, market)}>
             &#9829;
           </span>
           <div onClick={event => this.handleSingleMarket(event, market.id)}>
@@ -56,9 +56,9 @@ export class Container extends Component {
 Container.propTypes = {
   markets: PropTypes.array,
   fav: PropTypes.func,
-  marketDetails: PropTypes.string,
-  activeMarket: PropTypes.string,
-  history: PropTypes.string
+  marketDetails: PropTypes.func,
+  activeMarket: PropTypes.func,
+  history: PropTypes.object
 };
 
 export const mapStateToProps = store => ({

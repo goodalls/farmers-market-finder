@@ -23,7 +23,7 @@ export const updateUser = user => ({
   user
 });
 
-export const updateFavorites = (user) => ({
+export const updateFavorites = user => ({
   type: 'UPDATE_FAVORITES',
   user
 });
@@ -37,5 +37,7 @@ export const populateWhy = why => ({
   type: 'POP_WHY',
   why
 });
+
+
 
 
