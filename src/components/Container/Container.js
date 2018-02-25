@@ -10,10 +10,9 @@ export class Container extends Component {
   markets = () => {
     
     return this.props.markets.map((market, index) => {
-      const isFavorite = this.props.user.every(userFav => market.id === userFav.id);
       return (
         <li key={index}>
-          <span className={isFavorite? 'favorite active': 'favorite'} onClick={event => this.props.fav(event, market)}>
+          <span className={market.favorite? 'favorite active': 'favorite'} onClick={event => this.props.fav(event, market)}>
             &#9829;
           </span>
           <div onClick={event => this.handleSingleMarket(event, market.id)}>

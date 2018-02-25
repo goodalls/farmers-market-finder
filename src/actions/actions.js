@@ -28,6 +28,11 @@ export const updateFavorites = market => ({
   market
 });
 
+export const removeFavorite = market => ({
+  type: 'REMOVE_FAVORITE',
+  market
+});
+
 export const activeMarket = id => ({
   type: 'ACTIVE_MARKET',
   id

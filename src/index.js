@@ -14,9 +14,9 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-store.subscribe(()=>{
-  Container.favUpdater({user: store.getState().user});
-});
+// store.subscribe(()=>{
+//   Container.favUpdater({user: store.getState().user});
+// });
 
 const router = (
   <BrowserRouter>

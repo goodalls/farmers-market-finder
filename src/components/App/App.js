@@ -22,9 +22,14 @@ export class App extends Component {
   }
 
   favorite = (event, market) => {
-    console.log(market);
-    market.favorite = true;
-    this.props.updateFavorites(market);
+    //needs to check for dups
+    if (market.favorite === false) {
+      market.favorite = true;
+      this.props.updateFavorites(market);
+    } else {
+      market.favorite = false;
+      this.props.removeFavorite(market);
+    }
   };
 
   render() {
@@ -72,7 +77,8 @@ export class App extends Component {
 
 App.propTypes = {
   markets: PropTypes.array,
-  updateFavorites: PropTypes.func
+  updateFavorites: PropTypes.func,
+  removeFavorite: PropTypes.func
 };
 
 export const mapStateToProps = store => ({
@@ -80,7 +86,8 @@ export const mapStateToProps = store => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  updateFavorites: (favorite) => dispatch(actions.updateFavorites(favorite))
+  updateFavorites: (favorite) => dispatch(actions.updateFavorites(favorite)),
+  removeFavorite: (favorite) => dispatch(actions.removeFavorite(favorite))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
