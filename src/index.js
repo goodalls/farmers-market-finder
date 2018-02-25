@@ -15,7 +15,7 @@ const store = createStore(
 );
 
 // store.subscribe(()=>{
-//   Container.favUpdater({user: store.getState().user});
+//   Container({user: store.getState().user});
 // });
 
 const router = (

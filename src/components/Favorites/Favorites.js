@@ -29,7 +29,7 @@ export class Favorites extends Component {
   };
 
   render() {
-    return <div className="favorite">{this.favCards()}</div>;
+    return <div className="favorite-component">{this.favCards()}</div>;
   }
 }
 

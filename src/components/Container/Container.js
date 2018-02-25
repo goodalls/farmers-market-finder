@@ -7,6 +7,15 @@ import PropTypes from 'prop-types';
 import './Container.css';
 
 export class Container extends Component {
+
+  // shouldComponentUpdate(nextprops) {
+  //   if (this.props.user !== nextprops.user) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
+
   markets = () => {
     
     return this.props.markets.map((market, index) => {
@@ -69,7 +78,6 @@ export const mapStateToProps = store => ({
 
 export const mapDispatchToProps = dispatch => ({
   marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail)),
-  activeMarket: id => dispatch(actions.activeMarket(id))
 });
 
 export default withRouter(
