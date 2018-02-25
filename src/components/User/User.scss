@@ -8,16 +8,8 @@
 }
 
 .user input {
-  // background-color: transparent;
-  // border-radius: 10px;
-  // border: 2px solid #9BC47e;
-  // color: #D97426;
   font-size: 1em;
   height: 25px;
-  // margin: 20px 10px;
-  // width: 50%;
-  // text-align: center;
-  // outline: none;
   margin: 5px;
 }
 
@@ -26,21 +18,8 @@
   margin: 0px;
 }
 
-#name {
-  align-self: flex-start;
-}
-
-#password {
-  align-self: flex-start;
-}
-
-#submit {
-  align-self: flex-start;
-}
-
-.user input {
-}
-
-button.user {
+.user button {
   font-size: 1em;
+  height: 25px;
+  margin: 10px 0;
 }

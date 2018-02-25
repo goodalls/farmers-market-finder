@@ -26,7 +26,7 @@ export class User extends Component {
       const user = JSON.parse(get);
       this.setState({ ...user, status: 'LOGGED_IN' });
       this.props.loginUser({ ...user, status: 'LOGGED_IN' });
-    } 
+    }
   }
 
   handleInputs = event => {
@@ -80,26 +80,28 @@ export class User extends Component {
             favorites {this.props.user.favorites.length}
           </button>
         </Link>
-        <button
-          onClick={() => {
-            localStorage.removeItem('user');
-            this.setState({
-              status: '',
-              name: '',
-              email: '',
-              password: '',
-              favorites: []
-            });
-            this.props.logOutUser();
-          }}
-        >
-          Log Out
-        </button>
+        <div>
+          <button
+            onClick={() => {
+              localStorage.removeItem('user');
+              this.setState({
+                status: '',
+                name: '',
+                email: '',
+                password: '',
+                favorites: []
+              });
+              this.props.logOutUser();
+            }}
+          >
+            Log Out
+          </button>
+        </div>
       </div>
     );
   }
 
-  createUser() {
+  createUser = () => {
     if (this.state.status !== 'CREATE_USER') {
       this.setState({ status: 'CREATE_USER' });
       this.props.updateUser({ status: 'CREATE_USER' });
@@ -182,7 +184,5 @@ const mapDispatchToProps = dispatch => ({
   logOutUser: () => dispatch(actions.logOutUser()),
   updateUser: user => dispatch(actions.updateUser(user))
 });
-
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(User);

@@ -1,7 +1,7 @@
-export const userReducer = (state = {}, action) => {
+export const userReducer = (state = { favorites: [] }, action) => {
   switch (action.type) {
     case 'LOG_IN':
-      return action.user;
+      return { ...state, ...action.user };
     case 'LOG_OUT':
       return {};
     case 'UPDATE_USER':
