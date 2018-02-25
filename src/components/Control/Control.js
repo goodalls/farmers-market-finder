@@ -119,7 +119,7 @@ export class Control extends Component {
 }
 
 Control.propTypes = {
-  markets: PropTypes.array,
+  markets: PropTypes.func,
   marketsArray: PropTypes.array,
   history: PropTypes.object
 };

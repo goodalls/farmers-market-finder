@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
+import * as actions from '../../actions/actions';
 import Container from '../Container/Container';
-import Card from '../Card/Card';
+import Favorites from '../Favorites/Favorites';
 import Control from '../Control/Control';
 import Header from '../Header/Header';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
+import Card from '../Card/Card';
 import Map from '../Map/Map';
 import './App.css';
-import Favorites from '../Favorites/Favorites';
-import PropTypes from 'prop-types';
 
 export class App extends Component {
   constructor(props) {
@@ -20,8 +21,13 @@ export class App extends Component {
     };
   }
 
-  favorite = (event, id) => {
-    console.log(id);
+  favorite = (event, market) => {
+    console.log(market);
+    market.favorite = true;
+    this.props.updateFavorites(market);
+
+    //favorite set to true
+    //send to store and add to localstorage
   };
 
   render() {
@@ -68,13 +74,16 @@ export class App extends Component {
 }
 
 App.propTypes = {
-  markets: PropTypes.array
+  markets: PropTypes.array,
+  updateFavorites: PropTypes.func
 };
 
 export const mapStateToProps = store => ({
   markets: store.markets
 });
 
-export const mapDispatchToProps = dispatch => ({});
+export const mapDispatchToProps = dispatch => ({
+  updateFavorites: (favorite) => dispatch(actions.updateFavorites(favorite))
+});
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

@@ -26,13 +26,7 @@ export class User extends Component {
       const user = JSON.parse(get);
       this.setState({ ...user, status: 'LOGGED_IN' });
       this.props.loginUser({ ...user, status: 'LOGGED_IN' });
-    }
-    //should be able to update localstorage when favotrites added via store(props did change)
-  }
-
-  addFavorites() {
-    // add favorites to the array should match the localstorage and store
-    // may not need to be in this section
+    } 
   }
 
   handleInputs = event => {
@@ -172,7 +166,16 @@ export class User extends Component {
   }
 }
 
-const mapStateToProps = state => ({});
+User.propTypes = {
+  loginUser: PropTypes.func,
+  logOutUser: PropTypes.func,
+  updateUser: PropTypes.func,
+  user: PropTypes.object
+};
+
+const mapStateToProps = state => ({
+  user: state.user
+});
 
 const mapDispatchToProps = dispatch => ({
   loginUser: user => dispatch(actions.loginUser(user)),
@@ -180,10 +183,6 @@ const mapDispatchToProps = dispatch => ({
   updateUser: user => dispatch(actions.updateUser(user))
 });
 
-User.propTypes = {
-  loginUser: PropTypes.func,
-  logOutUser: PropTypes.func,
-  updateUser: PropTypes.func
-};
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(User);

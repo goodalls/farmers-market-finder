@@ -7,7 +7,9 @@ export const userReducer = (state = {}, action) => {
     case 'UPDATE_USER':
       return { ...state, ...action.user };
     case 'UPDATE_FAVORITES':
-      return (state.favorites = [...state.favorites, ...action.user.favorites]);
+      const update = (state.favorites = [...state.favorites, action.market]);
+      localStorage.setItem('user', JSON.stringify(state));
+      return state;
     default:
       return state;
   }

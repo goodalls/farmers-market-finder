@@ -16,7 +16,7 @@ export class Card extends Component {
 
     return (
       <div className="text-card">
-        <span onClick={event => fav(event, marketInfo.id)}>&#9829;</span>
+        <span onClick={event => fav(event, marketInfo)}>&#9829;</span>
         <h2 className="name">{marketInfo.marketname}</h2>
         <div className="info">
           <p>Address: {marketInfo.Address}</p>
