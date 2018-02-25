@@ -7,21 +7,24 @@ import PropTypes from 'prop-types';
 import './Container.css';
 
 export class Container extends Component {
-
-  // shouldComponentUpdate(nextprops) {
-  //   if (this.props.user !== nextprops.user) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: []
+    };
+  }
 
   markets = () => {
-    
     return this.props.markets.map((market, index) => {
+      const isFavorite = this.props.user.some(
+        userFav => userFav.id === market.id
+      );
       return (
         <li key={index}>
-          <span className={market.favorite? 'favorite active': 'favorite'} onClick={event => this.props.fav(event, market)}>
+          <span
+            className={isFavorite ? 'favorite active' : 'favorite'}
+            onClick={event => this.props.fav(event, market)}
+          >
             &#9829;
           </span>
           <div onClick={event => this.handleSingleMarket(event, market.id)}>
@@ -33,12 +36,9 @@ export class Container extends Component {
     });
   };
 
-  componentDidMount() {}
-
   handleSingleMarket = async (event, id) => {
     const fetch = await api.marketDetails(id);
     this.props.marketDetails(id, fetch.marketdetails);
-    this.props.activeMarket(id);
     this.props.history.push('/single-market/' + id);
   };
 
@@ -50,11 +50,7 @@ export class Container extends Component {
         </div>
       );
     } else {
-      return (
-        <div className="container-check">
-          <ol>{this.markets()}</ol>
-        </div>
-      );
+      return <ol>{this.markets()}</ol>;
     }
   };
 
@@ -63,11 +59,10 @@ export class Container extends Component {
   };
 }
 Container.propTypes = {
-  markets: PropTypes.array,
   fav: PropTypes.func,
-  marketDetails: PropTypes.func,
-  activeMarket: PropTypes.func,
   history: PropTypes.object,
+  marketDetails: PropTypes.func,
+  markets: PropTypes.array,
   user: PropTypes.array
 };
 
@@ -77,7 +72,7 @@ export const mapStateToProps = store => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail)),
+  marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail))
 });
 
 export default withRouter(

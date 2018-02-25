@@ -1,15 +1,15 @@
-export const populateMarkets = markets => ({ 
-  type: 'POPULATE_MARKETS', 
-  markets 
+export const populateMarkets = markets => ({
+  type: 'POPULATE_MARKETS',
+  markets
 });
 
-export const addDetails = (id, marketDetails) => ({ 
+export const addDetails = (id, marketDetails) => ({
   type: 'ADD_DETAILS',
   id,
   marketDetails
 });
 
-export const loginUser = (user) => ({
+export const loginUser = user => ({
   type: 'LOG_IN',
   user
 });
@@ -33,16 +33,7 @@ export const removeFavorite = market => ({
   market
 });
 
-export const activeMarket = id => ({
-  type: 'ACTIVE_MARKET',
-  id
-});
-
 export const populateWhy = why => ({
   type: 'POP_WHY',
   why
 });
-
-
-
-
