@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
 .favorite {
   font-size: 1.5em;
   color: #fff; }
@@ -19,12 +18,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
-.favorite-component li {
+.favorite-component article {
   margin: 10px;
   border: 2px solid #9BC47e;
-  border-radius: 10px; }
+  border-radius: 10px;
+  width: 90%; }
 
 .favorite-component p {
   font-weight: 700;
@@ -32,3 +33,6 @@
   color: #B69C69;
   line-height: 1.2em;
   padding: 2.5px 0; }
+
+.favorite-component a {
+  text-decoration: none; }
