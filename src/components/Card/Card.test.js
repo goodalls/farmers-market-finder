@@ -19,5 +19,12 @@ describe('CARD', () => {
       const expected = [{}, {}];
       expect(mapped.markets).toEqual(expected);
     });
+
+    it('should map props from store', () => {
+      const mockStore = { markets: [{}, {}], user: {favorites: []} };
+      const mapped = mapStateToProps(mockStore);
+      const expected = [];
+      expect(mapped.user).toEqual(expected);
+    });
   });
 });
