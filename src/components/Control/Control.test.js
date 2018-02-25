@@ -1,9 +1,8 @@
 import React from 'react';
-import { Control, mapDispatchToProps } from './Control';
-import { shallow } from 'enzyme';
-import * as api from '../../utilities/api';
-
+import { Control, mapDispatchToProps, mapStateToProps } from './Control';
 import * as cleaner from '../../utilities/cleaner';
+import * as api from '../../utilities/api';
+import { shallow } from 'enzyme';
 
 describe('CONTROL', () => {
   it('should match the snapshot', () => {
@@ -39,6 +38,13 @@ describe('CONTROL', () => {
     });
   });
 
+  describe('getNearbyMarketsZip', () => {
+    it('should', () => {
+    
+    });
+  })
+  
+
   describe('handleCurrentLocation', () => {
     // it('should set state searchByZip = false', () => {
     //   const wrapper = shallow(<Control />);
@@ -71,13 +77,38 @@ describe('CONTROL', () => {
     });
   });
 
-  describe('MSTP and MDTP', () => {
-    it('should define props', () => {});
+  describe('updateMarketDetails', () => {
+    it('should call api.marketDetails', () => {
+      const wrapper = shallow(<Control />);
+      const mockID = 25;
+      api.marketDetails = jest.fn();
+      wrapper.instance().updateMarketDetails(mockID);
+      expect(api.marketDetails).toHaveBeenCalledWith(mockID);
+    });
+  });
+  
 
-    it('should call the dispatch function on MDTP', () => {
+  describe('MSTP and MDTP', () => {
+    it('should define props', () => {
+      const mockStore = {
+        markets: []
+      };
+      const expected = [];
+      const mapped = mapStateToProps(mockStore);
+      expect(mapped.marketsArray).toEqual(expected);
+    });
+
+    it('should call the dispatch function on MARKETS', () => {
       const mockDispatch = jest.fn();
       const mapped = mapDispatchToProps(mockDispatch);
       mapped.markets();
+      expect(mockDispatch).toHaveBeenCalled();
+    });
+
+    it('should call the dispatch function on MARKET_DETAILS', () => {
+      const mockDispatch = jest.fn();
+      const mapped = mapDispatchToProps(mockDispatch);
+      mapped.marketDetails();
       expect(mockDispatch).toHaveBeenCalled();
     });
   });

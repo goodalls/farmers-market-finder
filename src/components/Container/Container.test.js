@@ -1,12 +1,33 @@
 import React from 'react';
 import { Container, mapStateToProps, mapDispatchToProps } from './Container';
 import { shallow } from 'enzyme';
+import * as api from '../../utilities/api';
 
 describe('CONTAINER', () => {
   it('should match the snapshot', () => {
     const wrapper = shallow(<Container markets={[]} user={[]} />);
     expect(wrapper).toMatchSnapshot();
   });
+
+  describe('markets', () => {
+    it('should match snapshot with different markets array', () => {
+    
+    });
+    
+  });
+  
+  describe('handleSingleMarket', () => {
+    //most happy test! :)
+    it('should call api.MarketDetails', () => {
+      const wrapper = shallow(<Container markets={[]} user={[]} marketDetails={jest.fn()} history={({push: jest.fn()})} />);
+      const mockEvent = {preventDefault: jest.fn()};
+      const mockID = 32;
+      api.marketDetails = jest.fn().mockReturnValue({marketdetails: ''});
+      wrapper.instance().handleSingleMarket(mockEvent, mockID);
+      expect(api.marketDetails).toHaveBeenCalledWith(mockID);
+    });
+  });
+  
 
   describe('MSTP and MDTP', () => {
     it('should define props MARKETS', () => {
