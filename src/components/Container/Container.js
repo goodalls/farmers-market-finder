@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import * as actions from '../../actions/actions';
 import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
@@ -8,10 +8,12 @@ import './Container.css';
 
 export class Container extends Component {
   markets = () => {
+    
     return this.props.markets.map((market, index) => {
+      const isFavorite = this.props.user.every(userFav => market.id === userFav.id);
       return (
         <li key={index}>
-          <span onClick={event => this.props.fav(event, market)}>
+          <span className={isFavorite? 'favorite active': 'favorite'} onClick={event => this.props.fav(event, market)}>
             &#9829;
           </span>
           <div onClick={event => this.handleSingleMarket(event, market.id)}>
@@ -42,7 +44,6 @@ export class Container extends Component {
     } else {
       return (
         <div className="container-check">
-          <Link to={'/map'}>{'Map View'}</Link>
           <ol>{this.markets()}</ol>
         </div>
       );
@@ -58,11 +59,13 @@ Container.propTypes = {
   fav: PropTypes.func,
   marketDetails: PropTypes.func,
   activeMarket: PropTypes.func,
-  history: PropTypes.object
+  history: PropTypes.object,
+  user: PropTypes.array
 };
 
 export const mapStateToProps = store => ({
-  markets: store.markets
+  markets: store.markets,
+  user: store.user.favorites
 });
 
 export const mapDispatchToProps = dispatch => ({

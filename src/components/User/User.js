@@ -75,9 +75,9 @@ export class User extends Component {
     return (
       <div className="user">
         <h4>Welcome back {this.state.name}</h4>
-        <Link to="/favorites">
+        <Link to="/favorite">
           <button className="favorites">
-            favorites {this.state.favorites.length}
+            favorites {this.props.user.favorites.length}
           </button>
         </Link>
         <button

@@ -25,9 +25,6 @@ export class App extends Component {
     console.log(market);
     market.favorite = true;
     this.props.updateFavorites(market);
-
-    //favorite set to true
-    //send to store and add to localstorage
   };
 
   render() {
