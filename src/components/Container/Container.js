@@ -7,13 +7,21 @@ import PropTypes from 'prop-types';
 import './Container.css';
 
 export class Container extends Component {
+
+  // shouldComponentUpdate(nextprops) {
+  //   if (this.props.user !== nextprops.user) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
+
   markets = () => {
     
     return this.props.markets.map((market, index) => {
-      const isFavorite = this.props.user.every(userFav => market.id === userFav.id);
       return (
         <li key={index}>
-          <span className={isFavorite? 'favorite active': 'favorite'} onClick={event => this.props.fav(event, market)}>
+          <span className={market.favorite? 'favorite active': 'favorite'} onClick={event => this.props.fav(event, market)}>
             &#9829;
           </span>
           <div onClick={event => this.handleSingleMarket(event, market.id)}>
@@ -70,7 +78,6 @@ export const mapStateToProps = store => ({
 
 export const mapDispatchToProps = dispatch => ({
   marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail)),
-  activeMarket: id => dispatch(actions.activeMarket(id))
 });
 
 export default withRouter(
