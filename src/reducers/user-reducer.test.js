@@ -3,7 +3,7 @@ import * as actions from '../actions/actions';
 
 describe('USER', () => {
   it('should return the current state by default', () => {
-    const expected = {};
+    const expected = {"favorites": []};
     expect(userReducer(undefined, {})).toEqual(expected);
   });
 

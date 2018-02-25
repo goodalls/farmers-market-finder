@@ -1,3 +1,479 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CARD should match the snapshot 1`] = `undefined`;
+exports[`CARD should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    markets={
+        Array [
+            Object {
+              "Products": "hello; big; string",
+              "Schedule": "another large string",
+            },
+          ]
+    }
+    user={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="favorite"
+          onClick={[Function]}
+>
+          ♥
+</span>,
+        <h2
+          className="name"
+/>,
+        <div
+          className="info"
+>
+          <p>
+                    Address: 
+          </p>
+          <p>
+                    Schedule: 
+                    anot
+          </p>
+          <ol>
+                    Products:
+                    <li>
+                              hello
+                    </li>
+                    <li>
+                               big
+                    </li>
+                    <li>
+                               string
+                    </li>
+          </ol>
+</div>,
+        <div
+          id="map"
+>
+          <MapContainer />
+</div>,
+      ],
+      "className": "text-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "♥",
+          "className": "favorite",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "♥",
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "name",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              Address: 
+</p>,
+            <p>
+              Schedule: 
+              anot
+</p>,
+            <ol>
+              Products:
+              <li>
+                            hello
+              </li>
+              <li>
+                             big
+              </li>
+              <li>
+                             string
+              </li>
+</ol>,
+          ],
+          "className": "info",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Address: ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Address: ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Schedule: ",
+                "anot",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Schedule: ",
+              "anot",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Products:",
+                Array [
+                  <li>
+                    hello
+</li>,
+                  <li>
+                     big
+</li>,
+                  <li>
+                     string
+</li>,
+                ],
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Products:",
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "hello",
+                },
+                "ref": null,
+                "rendered": "hello",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": " big",
+                },
+                "ref": null,
+                "rendered": " big",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": " string",
+                },
+                "ref": null,
+                "rendered": " string",
+                "type": "li",
+              },
+            ],
+            "type": "ol",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <MapContainer />,
+          "id": "map",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="favorite"
+            onClick={[Function]}
+>
+            ♥
+</span>,
+          <h2
+            className="name"
+/>,
+          <div
+            className="info"
+>
+            <p>
+                        Address: 
+            </p>
+            <p>
+                        Schedule: 
+                        anot
+            </p>
+            <ol>
+                        Products:
+                        <li>
+                                    hello
+                        </li>
+                        <li>
+                                     big
+                        </li>
+                        <li>
+                                     string
+                        </li>
+            </ol>
+</div>,
+          <div
+            id="map"
+>
+            <MapContainer />
+</div>,
+        ],
+        "className": "text-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "♥",
+            "className": "favorite",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "♥",
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "name",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                Address: 
+</p>,
+              <p>
+                Schedule: 
+                anot
+</p>,
+              <ol>
+                Products:
+                <li>
+                                hello
+                </li>
+                <li>
+                                 big
+                </li>
+                <li>
+                                 string
+                </li>
+</ol>,
+            ],
+            "className": "info",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Address: ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Address: ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Schedule: ",
+                  "anot",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Schedule: ",
+                "anot",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Products:",
+                  Array [
+                    <li>
+                      hello
+</li>,
+                    <li>
+                       big
+</li>,
+                    <li>
+                       string
+</li>,
+                  ],
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Products:",
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "hello",
+                  },
+                  "ref": null,
+                  "rendered": "hello",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " big",
+                  },
+                  "ref": null,
+                  "rendered": " big",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " string",
+                  },
+                  "ref": null,
+                  "rendered": " string",
+                  "type": "li",
+                },
+              ],
+              "type": "ol",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <MapContainer />,
+            "id": "map",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;
