@@ -92,6 +92,7 @@ export class User extends Component {
                 favorites: []
               });
               this.props.logOutUser();
+              this.props.history.push('/');
             }}
           >
             Log Out
@@ -142,7 +143,7 @@ export class User extends Component {
         </div>
       );
     }
-  }
+  };
 
   saveUser = () => {
     const stringify = JSON.stringify(this.state);
@@ -153,14 +154,14 @@ export class User extends Component {
 
   renderCheck = user => {
     switch (user.status) {
-      case 'LOGGED_IN':
-        return this.logoutUser();
-      case 'LOGGED_OUT':
-        return this.loginUser();
-      case 'CREATE_USER':
-        return this.createUser();
-      default:
-        return this.loginUser();
+    case 'LOGGED_IN':
+      return this.logoutUser();
+    case 'LOGGED_OUT':
+      return this.loginUser();
+    case 'CREATE_USER':
+      return this.createUser();
+    default:
+      return this.loginUser();
     }
   };
   render() {
@@ -169,8 +170,9 @@ export class User extends Component {
 }
 
 User.propTypes = {
-  loginUser: PropTypes.func,
+  history: PropTypes.object,
   logOutUser: PropTypes.func,
+  loginUser: PropTypes.func,
   updateUser: PropTypes.func,
   user: PropTypes.object
 };

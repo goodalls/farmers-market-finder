@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { MapContainer } from '../MapContainer/MapContainer';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
-import './Card.css';
 import PropTypes from 'prop-types';
+import './Card.css';
 
 export class Card extends Component {
   render() {
@@ -13,10 +13,16 @@ export class Card extends Component {
     const products = marketInfo.Products.split(';').map((product, index) => {
       return <li key={index}>{product}</li>;
     });
+    const isFavorite = this.props.user.some(userFav => userFav.id === id);
 
     return (
       <div className="text-card">
-        <span className='active favorite' onClick={event => fav(event, marketInfo)}>&#9829;</span>
+        <span
+          className={isFavorite ? 'favorite active' : 'favorite'}
+          onClick={event => fav(event, marketInfo)}
+        >
+          &#9829;
+        </span>
         <h2 className="name">{marketInfo.marketname}</h2>
         <div className="info">
           <p>Address: {marketInfo.Address}</p>
@@ -36,13 +42,13 @@ export class Card extends Component {
 Card.propTypes = {
   id: PropTypes.string,
   markets: PropTypes.array,
-  fav: PropTypes.func
+  fav: PropTypes.func,
+  user: PropTypes.array
 };
 
 export const mapStateToProps = state => ({
-  markets: state.markets
+  markets: state.markets,
+  user: state.user.favorites
 });
 
-export const mapDispatchToProps = dispatch => ({});
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Card));
+export default withRouter(connect(mapStateToProps)(Card));

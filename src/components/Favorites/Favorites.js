@@ -5,13 +5,17 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 export class Favorites extends Component {
-
   favCards = () => {
     if (this.props.user) {
       return this.props.user.map((fav, index) => {
         return (
           <article key={fav.id + index}>
-            <span className='favorite active' onClick={event => this.props.fav(event, fav)}>&#9829;</span>
+            <span
+              className="favorite active"
+              onClick={event => this.props.fav(event, fav)}
+            >
+              &#9829;
+            </span>
             <Link to={`/single-market/${fav.id}`}>
               <p>Distance: {fav.distance}</p>
               <p>{fav.marketname}</p>
@@ -34,14 +38,12 @@ export class Favorites extends Component {
 }
 
 Favorites.propTypes = {
-  user: PropTypes.array,
-  fav: PropTypes.func
+  fav: PropTypes.func,
+  user: PropTypes.array
 };
 
 const mapStateToProps = state => ({
   user: state.user.favorites
 });
 
-const mapDispatchToProps = dispatch => ({});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Favorites);
+export default connect(mapStateToProps)(Favorites);
