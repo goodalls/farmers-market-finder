@@ -2,21 +2,34 @@ import React, { Component } from 'react';
 import './Favorites.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export class Favorites extends Component {
+
+
+  handleSingleMarket = async (event, id) => {
+    this.props.history.push('/single-market/' + id);
+  };
+
   favCards = () => {
     if (this.props.user) {
       return this.props.user.map((fav, index) => {
         return (
           <article key={fav.id + index}>
-            <span onClick={event => this.props.fav(event, fav)}>&#9829;</span>
-            <div onClick={event => this.handleSingleMarket(event, fav.id)}>
+            <span className='favorite' onClick={event => this.props.fav(event, fav)}>&#9829;</span>
+            <Link to={`/single-market/${fav.id}`}>
               <p>Distance: {fav.distance}</p>
               <p>{fav.marketname}</p>
-            </div>
+            </Link>
           </article>
         );
       });
+    } else {
+      return (
+        <div className="loading">
+          <p>Loading...</p>
+        </div>
+      );
     }
   };
 

@@ -1,1 +1,17 @@
-//Favorites
+@import '../../styles/colors.scss';
+
+.favorite {
+  font-size: 1.5em;
+  color: $white;
+}
+
+.favorite:hover {
+  transform: scale(1.2);
+}
+
+.favorite:active {
+  color: red;
+}
+.favorite.active {
+  color: red;
+}

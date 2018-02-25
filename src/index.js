@@ -7,11 +7,17 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/App/App';
 import './reset.css';
+import { Container } from './components/Container/Container';
 
 const store = createStore(
   rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
+
+store.subscribe(()=>{
+  Container.favUpdater({user: store.getState().user});
+});
+
 const router = (
   <BrowserRouter>
     <App />

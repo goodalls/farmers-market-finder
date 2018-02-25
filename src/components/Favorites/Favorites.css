@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+.favorite {
+  font-size: 1.5em;
+  color: #fff; }
+
+.favorite:hover {
+  transform: scale(1.2); }
+
+.favorite:active {
+  color: red; }
+
+.favorite.active {
+  color: red; }
