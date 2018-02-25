@@ -12,7 +12,7 @@ describe('CARD', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  describe('MSTP and MDTP', () => {
+  describe('MSTP', () => {
     it('should map props from store', () => {
       const mockStore = { markets: [{}, {}], user: {favorites: []} };
       const mapped = mapStateToProps(mockStore);
