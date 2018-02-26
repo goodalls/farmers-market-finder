@@ -10,7 +10,6 @@ import PropTypes from 'prop-types';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
 import Card from '../Card/Card';
-import Map from '../Map/Map';
 import './App.css';
 
 export class App extends Component {
