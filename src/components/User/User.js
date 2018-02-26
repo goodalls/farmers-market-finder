@@ -177,11 +177,11 @@ User.propTypes = {
   user: PropTypes.object
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   user: state.user
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   loginUser: user => dispatch(actions.loginUser(user)),
   logOutUser: () => dispatch(actions.logOutUser()),
   updateUser: user => dispatch(actions.updateUser(user))
