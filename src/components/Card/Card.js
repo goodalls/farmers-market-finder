@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MapContainer } from '../MapContainer/MapContainer';
+import MapContainer from '../MapContainer/MapContainer';
 import * as actions from '../../actions/actions';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';

@@ -21,11 +21,14 @@ class Map extends Component {
       const getMapCoords = await geoCoding(this.props.address);
       this.setState({ coords: getMapCoords.results[0].geometry.location });
     } catch (err) {
+      console.log(err);
       // throw new Error('getCoords error', err);
     }
   };
 
   loadMap = () => {
+    console.log(this.props);
+    
     if (this.props.google) {
       const { google } = this.props;
       const maps = google.maps;
@@ -35,7 +38,7 @@ class Map extends Component {
       const mapConfig = Object.assign(
         {},
         {
-          center: { coords },
+          center: {lat: 40.7485722, lng: -74.0068633},
           zoom: 11,
           mapTypeId: 'roadmap'
         }

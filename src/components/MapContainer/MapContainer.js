@@ -5,7 +5,7 @@ import './MapContainer.css';
 import PropTypes from 'prop-types';
 import { key } from '../../key';
 
-export class MapContainer extends Component {
+class MapContainer extends Component {
   render() {
     const { google, address } = this.props;
     return (
