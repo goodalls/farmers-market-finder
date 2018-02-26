@@ -6,7 +6,6 @@ export const fetchParse = async url => {
     const response = await initialFetch.json();
     return response;
   } catch (error) {
-    // throw new error('fetchParse error');
     return 'fetchParse error';
   }
 };
