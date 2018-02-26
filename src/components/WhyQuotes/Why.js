@@ -10,6 +10,7 @@ export class Why extends Component {
   }
   populateWhy() {
     const reasons = {
+      /* eslint-disable */
       'Reason 1 "Farm fresh"':
         'Fruits and vegetables you find at the grocery store are often several days old before they even reach the produce aisle. Before produce hits supermarket shelves, it ships in refrigerated trucks, possibly from thousands of miles away. Farmer’s market produce, on the other hand, is nearly the antithesis of grocery store fruits and vegetables. In most cases, the owner of the stand picked it just that morning, so you know the food is as fresh as you can get it outside of growing it yourself.',
 
@@ -56,6 +57,7 @@ export class Why extends Component {
       'Reason 15 "Social"':
         'The farmer’s market is a great place to gather. Visiting is a fun family activity, and you can meet members of your community. Some farmer’s markets even offer entertainment and classes, making it a terrific way to while away a fall afternoon.'
     };
+    /* eslint-enable */
     this.props.populateWhyObject(reasons);
   }
 
@@ -67,7 +69,7 @@ export class Why extends Component {
         <h4>Why use a local Farmers Market?</h4>
         <h4>{title[random]}</h4>
         <p>{this.props.why[title[random]]}</p>
-
+        {/* // eslint-disable-next-line */}
         <a href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html">
           <h4>Kimberly Snyder</h4>
         </a>
@@ -77,15 +79,15 @@ export class Why extends Component {
 }
 
 Why.propTypes = {
-  why: PropTypes.object,
-  populateWhyObject: PropTypes.func
+  populateWhyObject: PropTypes.func,
+  why: PropTypes.object
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   why: state.why
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   populateWhyObject: why => dispatch(actions.populateWhy(why))
 });
 

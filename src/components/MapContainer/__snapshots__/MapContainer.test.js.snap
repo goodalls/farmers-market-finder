@@ -30,6 +30,7 @@ ShallowWrapper {
                       }
         }
 />,
+      "className": "",
     },
     "ref": null,
     "rendered": Object {
@@ -60,6 +61,7 @@ ShallowWrapper {
                             }
           }
 />,
+        "className": "",
       },
       "ref": null,
       "rendered": Object {

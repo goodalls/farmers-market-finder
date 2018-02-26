@@ -7,13 +7,13 @@ export const userReducer = (state = { favorites: [] }, action) => {
     case 'UPDATE_USER':
       return { ...state, ...action.user };
     case 'UPDATE_FAVORITES':
-      const update = (state.favorites = [...state.favorites, action.market]);
+      state.favorites = [...state.favorites, action.market];
       localStorage.setItem('user', JSON.stringify(state));
       return state;
     case 'REMOVE_FAVORITE':
-      const remove = (state.favorites = state.favorites.filter(
+      state.favorites = state.favorites.filter(
         favorite => favorite.id !== action.market.id
-      ));
+      );
       localStorage.setItem('user', JSON.stringify(state));
       return state;
     default:

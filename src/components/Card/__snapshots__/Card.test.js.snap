@@ -9,9 +9,11 @@ ShallowWrapper {
         Array [
             Object {
               "Products": "hello; big; string",
+              "Schedule": "another large string",
             },
           ]
     }
+    user={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -27,7 +29,8 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <span
-          onClick={undefined}
+          className="favorite"
+          onClick={[Function]}
 >
           ♥
 </span>,
@@ -42,6 +45,7 @@ ShallowWrapper {
           </p>
           <p>
                     Schedule: 
+                    anot
           </p>
           <ol>
                     Products:
@@ -72,7 +76,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "♥",
-          "onClick": undefined,
+          "className": "favorite",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "♥",
@@ -101,6 +106,7 @@ ShallowWrapper {
 </p>,
             <p>
               Schedule: 
+              anot
 </p>,
             <ol>
               Products:
@@ -143,13 +149,13 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 "Schedule: ",
-                undefined,
+                "anot",
               ],
             },
             "ref": null,
             "rendered": Array [
               "Schedule: ",
-              undefined,
+              "anot",
             ],
             "type": "p",
           },
@@ -246,7 +252,8 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <span
-            onClick={undefined}
+            className="favorite"
+            onClick={[Function]}
 >
             ♥
 </span>,
@@ -261,6 +268,7 @@ ShallowWrapper {
             </p>
             <p>
                         Schedule: 
+                        anot
             </p>
             <ol>
                         Products:
@@ -291,7 +299,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "♥",
-            "onClick": undefined,
+            "className": "favorite",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "♥",
@@ -320,6 +329,7 @@ ShallowWrapper {
 </p>,
               <p>
                 Schedule: 
+                anot
 </p>,
               <ol>
                 Products:
@@ -362,13 +372,13 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   "Schedule: ",
-                  undefined,
+                  "anot",
                 ],
               },
               "ref": null,
               "rendered": Array [
                 "Schedule: ",
-                undefined,
+                "anot",
               ],
               "type": "p",
             },

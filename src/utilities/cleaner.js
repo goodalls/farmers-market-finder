@@ -5,5 +5,6 @@ export const cleanMarkets = array => {
       const marketname = market.marketname.substr(4);
 
       return { distance, marketname, id: market.id, favorite: false };
-    }).slice(0, 10);
+    })
+    .slice(0, 10);
 };

@@ -42,7 +42,7 @@ Favorites.propTypes = {
   user: PropTypes.array
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   user: state.user.favorites
 });
 

@@ -7,13 +7,6 @@ import PropTypes from 'prop-types';
 import './Container.css';
 
 export class Container extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: []
-    };
-  }
-
   markets = () => {
     return this.props.markets.map((market, index) => {
       const isFavorite = this.props.user.some(

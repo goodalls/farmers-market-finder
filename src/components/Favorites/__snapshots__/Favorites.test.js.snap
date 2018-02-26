@@ -1,0 +1,4352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FAVORITES should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Favorites
+    user={
+        Array [
+            Object {
+              "id": "1005409",
+              "marketname": "4.1 Rancho Santa Margarita Farmers Market",
+            },
+            Object {
+              "id": "1005601",
+              "marketname": "6.5 Laguna Hills Certified Farmers' Market",
+            },
+            Object {
+              "id": "1003392",
+              "marketname": "6.8 The Farmers Market at the Great Park",
+            },
+            Object {
+              "id": "1003419",
+              "marketname": "9.0 laguna niguel CFM",
+            },
+            Object {
+              "id": "1008090",
+              "marketname": "10.9 Irvine Regional Park Certified Farmers' Market",
+            },
+            Object {
+              "id": "1008091",
+              "marketname": "11.8 Tustin Certified Farmers' Market",
+            },
+            Object {
+              "id": "1011795",
+              "marketname": "11.9 Irvine Certified Farmers' Market",
+            },
+            Object {
+              "id": "1011533",
+              "marketname": "12.6 Old Capistrano Certified Farmers Market",
+            },
+            Object {
+              "id": "1009633",
+              "marketname": "12.8 Laguna Beach Certified Farmers Market",
+            },
+            Object {
+              "id": "1018245",
+              "marketname": "14.3 Downtown Santa Ana Certified Farmers' Market",
+            },
+            Object {
+              "id": "1001318",
+              "marketname": "14.6 CoronaCFM",
+            },
+            Object {
+              "id": "1007244",
+              "marketname": "14.7 Corona Del Mar Farmers Market",
+            },
+            Object {
+              "id": "1001712",
+              "marketname": "15.0 Old Towne Orange Farmers & Artisans Market",
+            },
+            Object {
+              "id": "1005410",
+              "marketname": "15.3 The New Dana Point CFM",
+            },
+            Object {
+              "id": "1005600",
+              "marketname": "15.8 Costa Mesa Certified Farmers' Market",
+            },
+            Object {
+              "id": "1009005",
+              "marketname": "17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center",
+            },
+            Object {
+              "id": "1005408",
+              "marketname": "18.3 Coto De Caza Farmers Market",
+            },
+            Object {
+              "id": "1011814",
+              "marketname": "18.7 Galleria @ Tyler Riverside Farmers Market",
+            },
+            Object {
+              "id": "1007331",
+              "marketname": "18.9 Garden Grove CFM",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1005409"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              4.1 Rancho Santa Margarita Farmers Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1005601"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              6.5 Laguna Hills Certified Farmers' Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1003392"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              6.8 The Farmers Market at the Great Park
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1003419"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              9.0 laguna niguel CFM
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1008090"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              10.9 Irvine Regional Park Certified Farmers' Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1008091"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              11.8 Tustin Certified Farmers' Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1011795"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              11.9 Irvine Certified Farmers' Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1011533"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              12.6 Old Capistrano Certified Farmers Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1009633"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              12.8 Laguna Beach Certified Farmers Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1018245"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              14.3 Downtown Santa Ana Certified Farmers' Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1001318"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              14.6 CoronaCFM
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1007244"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              14.7 Corona Del Mar Farmers Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1001712"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              15.0 Old Towne Orange Farmers & Artisans Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1005410"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              15.3 The New Dana Point CFM
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1005600"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              15.8 Costa Mesa Certified Farmers' Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1009005"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1005408"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              18.3 Coto De Caza Farmers Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1011814"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              18.7 Galleria @ Tyler Riverside Farmers Market
+                    </p>
+          </Link>
+</article>,
+        <article>
+          <span
+                    className="favorite active"
+                    onClick={[Function]}
+          >
+                    ♥
+          </span>
+          <Link
+                    replace={false}
+                    to="/single-market/1007331"
+          >
+                    <p>
+                              Distance: 
+                    </p>
+                    <p>
+                              18.9 Garden Grove CFM
+                    </p>
+          </Link>
+</article>,
+      ],
+      "className": "favorite-component",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "10054090",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1005409"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            4.1 Rancho Santa Margarita Farmers Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  4.1 Rancho Santa Margarita Farmers Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1005409",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "4.1 Rancho Santa Margarita Farmers Market",
+                },
+                "ref": null,
+                "rendered": "4.1 Rancho Santa Margarita Farmers Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10056011",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1005601"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            6.5 Laguna Hills Certified Farmers' Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  6.5 Laguna Hills Certified Farmers' Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1005601",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "6.5 Laguna Hills Certified Farmers' Market",
+                },
+                "ref": null,
+                "rendered": "6.5 Laguna Hills Certified Farmers' Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10033922",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1003392"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            6.8 The Farmers Market at the Great Park
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  6.8 The Farmers Market at the Great Park
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1003392",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "6.8 The Farmers Market at the Great Park",
+                },
+                "ref": null,
+                "rendered": "6.8 The Farmers Market at the Great Park",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10034193",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1003419"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            9.0 laguna niguel CFM
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  9.0 laguna niguel CFM
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1003419",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "9.0 laguna niguel CFM",
+                },
+                "ref": null,
+                "rendered": "9.0 laguna niguel CFM",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10080904",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1008090"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            10.9 Irvine Regional Park Certified Farmers' Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  10.9 Irvine Regional Park Certified Farmers' Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1008090",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "10.9 Irvine Regional Park Certified Farmers' Market",
+                },
+                "ref": null,
+                "rendered": "10.9 Irvine Regional Park Certified Farmers' Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10080915",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1008091"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            11.8 Tustin Certified Farmers' Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  11.8 Tustin Certified Farmers' Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1008091",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "11.8 Tustin Certified Farmers' Market",
+                },
+                "ref": null,
+                "rendered": "11.8 Tustin Certified Farmers' Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10117956",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1011795"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            11.9 Irvine Certified Farmers' Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  11.9 Irvine Certified Farmers' Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1011795",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "11.9 Irvine Certified Farmers' Market",
+                },
+                "ref": null,
+                "rendered": "11.9 Irvine Certified Farmers' Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10115337",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1011533"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            12.6 Old Capistrano Certified Farmers Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  12.6 Old Capistrano Certified Farmers Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1011533",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "12.6 Old Capistrano Certified Farmers Market",
+                },
+                "ref": null,
+                "rendered": "12.6 Old Capistrano Certified Farmers Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10096338",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1009633"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            12.8 Laguna Beach Certified Farmers Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  12.8 Laguna Beach Certified Farmers Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1009633",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "12.8 Laguna Beach Certified Farmers Market",
+                },
+                "ref": null,
+                "rendered": "12.8 Laguna Beach Certified Farmers Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "10182459",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1018245"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            14.3 Downtown Santa Ana Certified Farmers' Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  14.3 Downtown Santa Ana Certified Farmers' Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1018245",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "14.3 Downtown Santa Ana Certified Farmers' Market",
+                },
+                "ref": null,
+                "rendered": "14.3 Downtown Santa Ana Certified Farmers' Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "100131810",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1001318"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            14.6 CoronaCFM
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  14.6 CoronaCFM
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1001318",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "14.6 CoronaCFM",
+                },
+                "ref": null,
+                "rendered": "14.6 CoronaCFM",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "100724411",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1007244"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            14.7 Corona Del Mar Farmers Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  14.7 Corona Del Mar Farmers Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1007244",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "14.7 Corona Del Mar Farmers Market",
+                },
+                "ref": null,
+                "rendered": "14.7 Corona Del Mar Farmers Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "100171212",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1001712"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            15.0 Old Towne Orange Farmers & Artisans Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  15.0 Old Towne Orange Farmers & Artisans Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1001712",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "15.0 Old Towne Orange Farmers & Artisans Market",
+                },
+                "ref": null,
+                "rendered": "15.0 Old Towne Orange Farmers & Artisans Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "100541013",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1005410"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            15.3 The New Dana Point CFM
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  15.3 The New Dana Point CFM
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1005410",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "15.3 The New Dana Point CFM",
+                },
+                "ref": null,
+                "rendered": "15.3 The New Dana Point CFM",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "100560014",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1005600"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            15.8 Costa Mesa Certified Farmers' Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  15.8 Costa Mesa Certified Farmers' Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1005600",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "15.8 Costa Mesa Certified Farmers' Market",
+                },
+                "ref": null,
+                "rendered": "15.8 Costa Mesa Certified Farmers' Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "100900515",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1009005"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1009005",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center",
+                },
+                "ref": null,
+                "rendered": "17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "100540816",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1005408"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            18.3 Coto De Caza Farmers Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  18.3 Coto De Caza Farmers Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1005408",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "18.3 Coto De Caza Farmers Market",
+                },
+                "ref": null,
+                "rendered": "18.3 Coto De Caza Farmers Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "101181417",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1011814"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            18.7 Galleria @ Tyler Riverside Farmers Market
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  18.7 Galleria @ Tyler Riverside Farmers Market
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1011814",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "18.7 Galleria @ Tyler Riverside Farmers Market",
+                },
+                "ref": null,
+                "rendered": "18.7 Galleria @ Tyler Riverside Farmers Market",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": "100733118",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="favorite active"
+              onClick={[Function]}
+>
+              ♥
+</span>,
+            <Link
+              replace={false}
+              to="/single-market/1007331"
+>
+              <p>
+                            Distance: 
+              </p>
+              <p>
+                            18.9 Garden Grove CFM
+              </p>
+</Link>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "♥",
+              "className": "favorite active",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "♥",
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <p>
+                  Distance: 
+</p>,
+                <p>
+                  18.9 Garden Grove CFM
+</p>,
+              ],
+              "replace": false,
+              "to": "/single-market/1007331",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "18.9 Garden Grove CFM",
+                },
+                "ref": null,
+                "rendered": "18.9 Garden Grove CFM",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "article",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1005409"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    4.1 Rancho Santa Margarita Farmers Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1005601"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    6.5 Laguna Hills Certified Farmers' Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1003392"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    6.8 The Farmers Market at the Great Park
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1003419"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    9.0 laguna niguel CFM
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1008090"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    10.9 Irvine Regional Park Certified Farmers' Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1008091"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    11.8 Tustin Certified Farmers' Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1011795"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    11.9 Irvine Certified Farmers' Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1011533"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    12.6 Old Capistrano Certified Farmers Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1009633"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    12.8 Laguna Beach Certified Farmers Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1018245"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    14.3 Downtown Santa Ana Certified Farmers' Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1001318"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    14.6 CoronaCFM
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1007244"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    14.7 Corona Del Mar Farmers Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1001712"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    15.0 Old Towne Orange Farmers & Artisans Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1005410"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    15.3 The New Dana Point CFM
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1005600"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    15.8 Costa Mesa Certified Farmers' Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1009005"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1005408"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    18.3 Coto De Caza Farmers Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1011814"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    18.7 Galleria @ Tyler Riverside Farmers Market
+                        </p>
+            </Link>
+</article>,
+          <article>
+            <span
+                        className="favorite active"
+                        onClick={[Function]}
+            >
+                        ♥
+            </span>
+            <Link
+                        replace={false}
+                        to="/single-market/1007331"
+            >
+                        <p>
+                                    Distance: 
+                        </p>
+                        <p>
+                                    18.9 Garden Grove CFM
+                        </p>
+            </Link>
+</article>,
+        ],
+        "className": "favorite-component",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "10054090",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1005409"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                4.1 Rancho Santa Margarita Farmers Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    4.1 Rancho Santa Margarita Farmers Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1005409",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "4.1 Rancho Santa Margarita Farmers Market",
+                  },
+                  "ref": null,
+                  "rendered": "4.1 Rancho Santa Margarita Farmers Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10056011",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1005601"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                6.5 Laguna Hills Certified Farmers' Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    6.5 Laguna Hills Certified Farmers' Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1005601",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "6.5 Laguna Hills Certified Farmers' Market",
+                  },
+                  "ref": null,
+                  "rendered": "6.5 Laguna Hills Certified Farmers' Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10033922",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1003392"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                6.8 The Farmers Market at the Great Park
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    6.8 The Farmers Market at the Great Park
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1003392",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "6.8 The Farmers Market at the Great Park",
+                  },
+                  "ref": null,
+                  "rendered": "6.8 The Farmers Market at the Great Park",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10034193",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1003419"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                9.0 laguna niguel CFM
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    9.0 laguna niguel CFM
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1003419",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "9.0 laguna niguel CFM",
+                  },
+                  "ref": null,
+                  "rendered": "9.0 laguna niguel CFM",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10080904",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1008090"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                10.9 Irvine Regional Park Certified Farmers' Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    10.9 Irvine Regional Park Certified Farmers' Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1008090",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "10.9 Irvine Regional Park Certified Farmers' Market",
+                  },
+                  "ref": null,
+                  "rendered": "10.9 Irvine Regional Park Certified Farmers' Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10080915",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1008091"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                11.8 Tustin Certified Farmers' Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    11.8 Tustin Certified Farmers' Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1008091",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11.8 Tustin Certified Farmers' Market",
+                  },
+                  "ref": null,
+                  "rendered": "11.8 Tustin Certified Farmers' Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10117956",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1011795"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                11.9 Irvine Certified Farmers' Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    11.9 Irvine Certified Farmers' Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1011795",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "11.9 Irvine Certified Farmers' Market",
+                  },
+                  "ref": null,
+                  "rendered": "11.9 Irvine Certified Farmers' Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10115337",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1011533"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                12.6 Old Capistrano Certified Farmers Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    12.6 Old Capistrano Certified Farmers Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1011533",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "12.6 Old Capistrano Certified Farmers Market",
+                  },
+                  "ref": null,
+                  "rendered": "12.6 Old Capistrano Certified Farmers Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10096338",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1009633"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                12.8 Laguna Beach Certified Farmers Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    12.8 Laguna Beach Certified Farmers Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1009633",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "12.8 Laguna Beach Certified Farmers Market",
+                  },
+                  "ref": null,
+                  "rendered": "12.8 Laguna Beach Certified Farmers Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "10182459",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1018245"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                14.3 Downtown Santa Ana Certified Farmers' Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    14.3 Downtown Santa Ana Certified Farmers' Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1018245",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "14.3 Downtown Santa Ana Certified Farmers' Market",
+                  },
+                  "ref": null,
+                  "rendered": "14.3 Downtown Santa Ana Certified Farmers' Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "100131810",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1001318"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                14.6 CoronaCFM
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    14.6 CoronaCFM
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1001318",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "14.6 CoronaCFM",
+                  },
+                  "ref": null,
+                  "rendered": "14.6 CoronaCFM",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "100724411",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1007244"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                14.7 Corona Del Mar Farmers Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    14.7 Corona Del Mar Farmers Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1007244",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "14.7 Corona Del Mar Farmers Market",
+                  },
+                  "ref": null,
+                  "rendered": "14.7 Corona Del Mar Farmers Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "100171212",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1001712"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                15.0 Old Towne Orange Farmers & Artisans Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    15.0 Old Towne Orange Farmers & Artisans Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1001712",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "15.0 Old Towne Orange Farmers & Artisans Market",
+                  },
+                  "ref": null,
+                  "rendered": "15.0 Old Towne Orange Farmers & Artisans Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "100541013",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1005410"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                15.3 The New Dana Point CFM
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    15.3 The New Dana Point CFM
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1005410",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "15.3 The New Dana Point CFM",
+                  },
+                  "ref": null,
+                  "rendered": "15.3 The New Dana Point CFM",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "100560014",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1005600"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                15.8 Costa Mesa Certified Farmers' Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    15.8 Costa Mesa Certified Farmers' Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1005600",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "15.8 Costa Mesa Certified Farmers' Market",
+                  },
+                  "ref": null,
+                  "rendered": "15.8 Costa Mesa Certified Farmers' Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "100900515",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1009005"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1009005",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center",
+                  },
+                  "ref": null,
+                  "rendered": "17.0 Kaiser Permanente Farmers Market - Anaheim Medical Center",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "100540816",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1005408"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                18.3 Coto De Caza Farmers Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    18.3 Coto De Caza Farmers Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1005408",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "18.3 Coto De Caza Farmers Market",
+                  },
+                  "ref": null,
+                  "rendered": "18.3 Coto De Caza Farmers Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "101181417",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1011814"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                18.7 Galleria @ Tyler Riverside Farmers Market
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    18.7 Galleria @ Tyler Riverside Farmers Market
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1011814",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "18.7 Galleria @ Tyler Riverside Farmers Market",
+                  },
+                  "ref": null,
+                  "rendered": "18.7 Galleria @ Tyler Riverside Farmers Market",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": "100733118",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="favorite active"
+                onClick={[Function]}
+>
+                ♥
+</span>,
+              <Link
+                replace={false}
+                to="/single-market/1007331"
+>
+                <p>
+                                Distance: 
+                </p>
+                <p>
+                                18.9 Garden Grove CFM
+                </p>
+</Link>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "♥",
+                "className": "favorite active",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "♥",
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <p>
+                    Distance: 
+</p>,
+                  <p>
+                    18.9 Garden Grove CFM
+</p>,
+                ],
+                "replace": false,
+                "to": "/single-market/1007331",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Distance: ",
+                      undefined,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Distance: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "18.9 Garden Grove CFM",
+                  },
+                  "ref": null,
+                  "rendered": "18.9 Garden Grove CFM",
+                  "type": "p",
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "article",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+  },
+}
+`;
