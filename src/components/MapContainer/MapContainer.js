@@ -5,16 +5,11 @@ import './MapContainer.css';
 import PropTypes from 'prop-types';
 
 export class MapContainer extends Component {
-  constructor(props) {
-    super(props);
-    
-  }
-  
   render() {
-    const {google, address} = this.props;
+    const { google, address } = this.props;
     return (
-      <div className="map" id='map'>
-        <Map google={google} address={address}/>
+      <div className="map" id="map">
+        <Map google={google} address={address} />
       </div>
     );
   }
