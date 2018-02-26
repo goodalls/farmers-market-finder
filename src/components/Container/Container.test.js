@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, mapStateToProps, mapDispatchToProps } from './Container';
-import { shallow } from 'enzyme';
+import {mockMarkets} from '../../__mocks__/mockData';
 import * as api from '../../utilities/api';
+import { shallow } from 'enzyme';
 
 describe('CONTAINER', () => {
   it('should match the snapshot', () => {
@@ -10,10 +11,10 @@ describe('CONTAINER', () => {
   });
 
   describe('markets', () => {
-    it('should match snapshot with different markets array', () => {
-    
+    it('should match snapshot with different market arrays', () => {
+      const wrapper = shallow(<Container markets={mockMarkets} user={[]} marketDetails={jest.fn()} history={({push: jest.fn()})} />);
+      expect(wrapper).toMatchSnapshot();
     });
-    
   });
   
   describe('handleSingleMarket', () => {
