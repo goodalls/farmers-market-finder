@@ -24,7 +24,8 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "./node_modules/eslint/bin/eslint.js ./src/*.js"
   },
   "devDependencies": {
     "enzyme": "^3.3.0",

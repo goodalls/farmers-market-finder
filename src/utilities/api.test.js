@@ -40,7 +40,7 @@ describe('fetchParse', () => {
   describe('marketDetails', () => {
     it.skip('should call fetchparse with expected params', () => {
       const mockID = 31;
-      const fetchParse = jest.fn();
+      api.fetchParse = jest.fn();
       api.marketDetails(mockID);
       expect(api.fetchParse).toHaveBeenCalledWith(mockID);
     });

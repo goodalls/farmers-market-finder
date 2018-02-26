@@ -22,32 +22,30 @@ describe('CONTROL', () => {
 
   describe('handleSubmit', () => {
     it('should set state call preventDefault', () => {
-      const wrapper = shallow(<Control markets={jest.fn()}/>);
+      const wrapper = shallow(<Control markets={jest.fn()} />);
       const mockEvent = { target: { value: 80021 }, preventDefault: jest.fn() };
       wrapper.instance().handleSubmit(mockEvent);
       expect(mockEvent.preventDefault).toHaveBeenCalled();
     });
 
     it('should set state Zip = ""', () => {
-      const wrapper = shallow(<Control markets={jest.fn()}/>);
+      const wrapper = shallow(<Control markets={jest.fn()} />);
       const mockEvent = { target: { value: 80021 }, preventDefault: jest.fn() };
       const expected = '';
-      wrapper.setState({zip: 80021});
+      wrapper.setState({ zip: 80021 });
       wrapper.instance().handleSubmit(mockEvent);
       expect(wrapper.state('zip')).toEqual(expected);
     });
   });
 
   describe('getNearbyMarketsZip', () => {
-    it.skip('should call history.push', async() => {
-      const wrapper = shallow(<Control history={({push: jest.fn()})}/>);
-      const zip = 92610;
+    it.skip('should call history.push', async () => {
+      const wrapper = shallow(<Control history={{ push: jest.fn() }} />);
       history.push = jest.fn();
       await wrapper.instance().getNearbyMarketsZip();
-      expect(history.push).toHaveBeenCalled()
+      expect(history.push).toHaveBeenCalled();
     });
   });
-  
 
   describe('handleCurrentLocation', () => {
     it.skip('should set state searchByZip = false', () => {
@@ -67,17 +65,18 @@ describe('CONTROL', () => {
   });
 
   describe('getNearbyMarkets', () => {
-    it('should call api.fetchParse and cleaner.cleanMarkets', async() => {
+    it('should call api.fetchParse and cleaner.cleanMarkets', async () => {
       const wrapper = shallow(<Control />);
       const mockLat = 103.5;
       const mockLong = 1024;
-      const expected = 'http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=103.5&lng=1024';
+      const expected =
+      // eslint-disable-next-line
+        'http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=103.5&lng=1024';
       api.fetchParse = jest.fn().mockReturnValue({});
       cleaner.cleanMarkets = jest.fn();
       await wrapper.instance().getNearbyMarkets(mockLat, mockLong);
       expect(api.fetchParse).toHaveBeenCalledWith(expected);
       expect(cleaner.cleanMarkets).toHaveBeenCalled();
-   
     });
   });
 
@@ -90,7 +89,6 @@ describe('CONTROL', () => {
       expect(api.marketDetails).toHaveBeenCalledWith(mockID);
     });
   });
-  
 
   describe('MSTP and MDTP', () => {
     it('should define props', () => {

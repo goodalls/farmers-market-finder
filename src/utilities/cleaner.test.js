@@ -1,5 +1,5 @@
-import {cleanMarkets} from './cleaner';
-import {mockMarkets} from '../__mocks__/mockData';
+import { cleanMarkets } from './cleaner';
+import { mockMarkets } from '../__mocks__/mockData';
 
 describe('CLEANER', () => {
   it('should return array length 10', () => {
@@ -9,9 +9,9 @@ describe('CLEANER', () => {
 
   it('should return an array of objects', () => {
     const mockObject = {
-      "distance": "4.1 ", 
-      "id": "1005409", 
-      "marketname": "Rancho Santa Margarita Farmers Market"
+      distance: '4.1 ',
+      id: '1005409',
+      marketname: 'Rancho Santa Margarita Farmers Market'
     };
     expect(cleanMarkets(mockMarkets)[0]).toMatchObject(mockObject);
   });

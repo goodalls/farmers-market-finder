@@ -48,4 +48,3 @@ export default class Map extends Component {
 Map.propTypes = {
   google: PropTypes.object
 };
-
