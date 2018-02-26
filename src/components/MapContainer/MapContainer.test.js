@@ -1,10 +1,10 @@
 import React from 'react';
+import { MapContainer } from './MapContainer';
 import { shallow } from 'enzyme';
-import Map from './Map';
 
-describe('MAP', () => {
+describe('MAP_CONTAINER', () => {
   it('should match the snapshot', () => {
-    const wrapper = shallow(<Map />);
+    const wrapper = shallow(<MapContainer google={{maps: {}}} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

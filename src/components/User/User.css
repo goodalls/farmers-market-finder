@@ -14,11 +14,7 @@
   padding: 0px;
   margin: 0px; }
 
-#name {
-  align-self: flex-start; }
-
-#password {
-  align-self: flex-start; }
-
-#submit {
-  align-self: flex-start; }
+.user button {
+  font-size: 1em;
+  height: 25px;
+  margin: 10px 0; }

@@ -36,4 +36,14 @@ describe('fetchParse', () => {
     const error = await api.fetchParse(mockUrl);
     expect(error).toEqual('fetchParse error');
   });
+
+  describe('marketDetails', () => {
+    it.skip('should call fetchparse with expected params', () => {
+      const mockID = 31;
+      api.fetchParse = jest.fn();
+      api.marketDetails(mockID);
+      expect(api.fetchParse).toHaveBeenCalledWith(mockID);
+    });
+  });
+  
 });

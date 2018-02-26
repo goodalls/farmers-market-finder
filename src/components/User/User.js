@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './User.css';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 import * as actions from '../../actions/actions';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import './User.css';
 
 export class User extends Component {
   constructor(props) {
@@ -26,12 +27,6 @@ export class User extends Component {
       this.setState({ ...user, status: 'LOGGED_IN' });
       this.props.loginUser({ ...user, status: 'LOGGED_IN' });
     }
-    //should be able to update localstorage when favotrites added via store(props did change)
-  }
-
-  addFavorites() {
-    // add favorites to the array should match the localstorage and store
-    // may not need to be in this section
   }
 
   handleInputs = event => {
@@ -80,29 +75,34 @@ export class User extends Component {
     return (
       <div className="user">
         <h4>Welcome back {this.state.name}</h4>
-        <Link to='/favorites'>
-          <button className="favorites">favorites {this.state.favorites.length}</button>
+        <Link to="/favorite">
+          <button className="favorites">
+            favorites {this.props.user.favorites.length}
+          </button>
         </Link>
-        <button
-          onClick={() => {
-            localStorage.removeItem('user');
-            this.setState({
-              status: '',
-              name: '',
-              email: '',
-              password: '',
-              favorites: []
-            });
-            this.props.logOutUser();
-          }}
-        >
-          Log Out
-        </button>
+        <div>
+          <button
+            onClick={() => {
+              localStorage.removeItem('user');
+              this.setState({
+                status: '',
+                name: '',
+                email: '',
+                password: '',
+                favorites: []
+              });
+              this.props.logOutUser();
+              // this.props.history.push('/');
+            }}
+          >
+            Log Out
+          </button>
+        </div>
       </div>
     );
   }
 
-  createUser() {
+  createUser = () => {
     if (this.state.status !== 'CREATE_USER') {
       this.setState({ status: 'CREATE_USER' });
       this.props.updateUser({ status: 'CREATE_USER' });
@@ -143,7 +143,7 @@ export class User extends Component {
         </div>
       );
     }
-  }
+  };
 
   saveUser = () => {
     const stringify = JSON.stringify(this.state);
@@ -154,14 +154,14 @@ export class User extends Component {
 
   renderCheck = user => {
     switch (user.status) {
-      case 'LOGGED_IN':
-        return this.logoutUser();
-      case 'LOGGED_OUT':
-        return this.loginUser();
-      case 'CREATE_USER':
-        return this.createUser();
-      default:
-        return this.loginUser();
+    case 'LOGGED_IN':
+      return this.logoutUser();
+    case 'LOGGED_OUT':
+      return this.loginUser();
+    case 'CREATE_USER':
+      return this.createUser();
+    default:
+      return this.loginUser();
     }
   };
   render() {
@@ -169,9 +169,19 @@ export class User extends Component {
   }
 }
 
-const mapStateToProps = state => ({});
+User.propTypes = {
+  history: PropTypes.object,
+  logOutUser: PropTypes.func,
+  loginUser: PropTypes.func,
+  updateUser: PropTypes.func,
+  user: PropTypes.object
+};
 
-const mapDispatchToProps = dispatch => ({
+export const mapStateToProps = state => ({
+  user: state.user
+});
+
+export const mapDispatchToProps = dispatch => ({
   loginUser: user => dispatch(actions.loginUser(user)),
   logOutUser: () => dispatch(actions.logOutUser()),
   updateUser: user => dispatch(actions.updateUser(user))

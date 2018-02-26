@@ -1,47 +1,82 @@
 import React, { Component } from 'react';
-import { GoogleApiWrapper } from 'google-maps-react';
+import { MapContainer } from '../MapContainer/MapContainer';
+import * as actions from '../../actions/actions';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
-import Map from '../Map/Map';
+import PropTypes from 'prop-types';
 import './Card.css';
 
 export class Card extends Component {
-  render() {
-    const { id } = this.props;
-    const marketInfo = this.props.markets.find(market => market.id === id);
+  constructor(props) {
+    super(props);
+    this.state = {
+      market: {},
+      favorites: []
+    };
+  }
+  componentDidMount() {
+    this.setState({favorites: this.props.user});
+  }
 
+  favorite = (event, market) => {
+    if (market.favorite === false) {
+      market.favorite = true;
+      this.props.updateFavorites(market);
+      this.setState({market});
+    } else {
+      market.favorite = false;
+      this.props.removeFavorite(market);
+      this.setState({market: {}});
+    }
+  };
+
+  render() {
+    const { id, markets } = this.props;
+    const marketInfo = markets.find(market => market.id === id);
+    const schedule = marketInfo.Schedule.slice(0, -16);
     const products = marketInfo.Products.split(';').map((product, index) => {
       return <li key={index}>{product}</li>;
     });
 
     return (
       <div className="text-card">
-        <span onClick={this.props.fav}>&#9829;</span>
+        <span
+          className={marketInfo.favorite ? 'favorite active' : 'favorite'}
+          onClick={event => this.favorite(event, marketInfo)}
+        >
+          &#9829;
+        </span>
         <h2 className="name">{marketInfo.marketname}</h2>
         <div className="info">
           <p>Address: {marketInfo.Address}</p>
-          <p>Schedule: {marketInfo.Schedule}</p>
+          <p>Schedule: {schedule}</p>
           <ol>
             Products:
             {products}
           </ol>
         </div>
-        <div id="map">
-          <Map google={this.props.google} />
-        </div>
+        <MapContainer address={marketInfo.Address} />
       </div>
     );
   }
 }
-
-const mapWrapper = GoogleApiWrapper({
-  apiKey: 'AIzaSyBvfTcCOD9GiniyDDDmI4TuLefT_WTN15c'
-});
+Card.propTypes = {
+  id: PropTypes.string,
+  markets: PropTypes.array,
+  fav: PropTypes.func,
+  user: PropTypes.array,
+  updateFavorites: PropTypes.func,
+  removeFavorite: PropTypes.func
+};
 
 export const mapStateToProps = state => ({
-  markets: state.markets
+  markets: state.markets,
+  user: state.user.favorites
 });
 
-export const mapDispatchToProps = dispatch => ({});
+export const mapDispatchToProps = dispatch => ({
+  updateFavorites: favorite => dispatch(actions.updateFavorites(favorite)),
+  removeFavorite: favorite => dispatch(actions.removeFavorite(favorite))
+});
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Card));

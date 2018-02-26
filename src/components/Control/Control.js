@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import User from '../User/User';
 import './Control.css';
+import PropTypes from 'prop-types';
 
 export class Control extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ export class Control extends Component {
   getNearbyMarketsZip = async zip => {
     try {
       this.props.history.push('/market-list');
+      // eslint-disable-next-line
       const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${zip}`;
       const initial = await api.fetchParse(url);
       const clean = await cleaner.cleanMarkets(initial.results);
@@ -66,6 +68,7 @@ export class Control extends Component {
 
   getNearbyMarkets = async (latitude, longitude) => {
     try {
+      // eslint-disable-next-line
       const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=${latitude}&lng=${longitude}`;
       const initial = await api.fetchParse(url);
       const clean = await cleaner.cleanMarkets(initial.results);
@@ -116,6 +119,12 @@ export class Control extends Component {
     );
   }
 }
+
+Control.propTypes = {
+  markets: PropTypes.func,
+  marketsArray: PropTypes.array,
+  history: PropTypes.object
+};
 
 export const mapStateToProps = store => ({
   marketsArray: store.markets

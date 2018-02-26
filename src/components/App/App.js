@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
+import * as actions from '../../actions/actions';
 import Container from '../Container/Container';
-import Card from '../Card/Card';
+import Favorites from '../Favorites/Favorites';
 import Control from '../Control/Control';
 import Header from '../Header/Header';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
+import Card from '../Card/Card';
 import Map from '../Map/Map';
 import './App.css';
-import Favorites from '../Favorites/Favorites';
 
 export class App extends Component {
   constructor(props) {
@@ -19,8 +21,14 @@ export class App extends Component {
     };
   }
 
-  favorite = () => {
-    console.log('favorite clicked');
+  favorite = (event, market) => {
+    if (market.favorite === false) {
+      market.favorite = true;
+      this.props.updateFavorites(market);
+    } else {
+      market.favorite = false;
+      this.props.removeFavorite(market);
+    }
   };
 
   render() {
@@ -30,13 +38,17 @@ export class App extends Component {
           <Header />
           <Control />
           <Route exact path="/" component={Why} />
-          <Route exact path="/market-list"
+          <Route
+            exact
+            path="/market-list"
             render={() => {
               return <Container fav={this.favorite} />;
             }}
           />
           <Route exact path="/map-list" component={Map} />
-          <Route exact path="/favorite"
+          <Route
+            exact
+            path="/favorite"
             render={() => {
               return <Favorites fav={this.favorite} />;
             }}
@@ -50,7 +62,7 @@ export class App extends Component {
               );
 
               if (singleMarket) {
-                return <Card {...singleMarket} fav={this.favorite}/>;
+                return <Card {...singleMarket} fav={this.favorite} />;
               } else {
                 return null;
               }
@@ -62,10 +74,19 @@ export class App extends Component {
   }
 }
 
+App.propTypes = {
+  markets: PropTypes.array,
+  removeFavorite: PropTypes.func,
+  updateFavorites: PropTypes.func
+};
+
 export const mapStateToProps = store => ({
   markets: store.markets
 });
 
-export const mapDispatchToProps = dispatch => ({});
+export const mapDispatchToProps = dispatch => ({
+  updateFavorites: favorite => dispatch(actions.updateFavorites(favorite)),
+  removeFavorite: favorite => dispatch(actions.removeFavorite(favorite))
+});
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
