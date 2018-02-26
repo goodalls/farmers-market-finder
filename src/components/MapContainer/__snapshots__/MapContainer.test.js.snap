@@ -24,13 +24,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Map
+        address={undefined}
         google={
                 Object {
                         "maps": Object {},
                       }
         }
 />,
-      "className": "",
+      "className": "map",
+      "id": "map",
     },
     "ref": null,
     "rendered": Object {
@@ -38,6 +40,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "address": undefined,
         "google": Object {
           "maps": Object {},
         },
@@ -55,13 +58,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Map
+          address={undefined}
           google={
                     Object {
                               "maps": Object {},
                             }
           }
 />,
-        "className": "",
+        "className": "map",
+        "id": "map",
       },
       "ref": null,
       "rendered": Object {
@@ -69,6 +74,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "address": undefined,
           "google": Object {
             "maps": Object {},
           },
