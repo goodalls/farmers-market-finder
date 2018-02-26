@@ -77,8 +77,8 @@ export class Why extends Component {
 }
 
 Why.propTypes = {
-  why: PropTypes.object,
-  populateWhyObject: PropTypes.func
+  populateWhyObject: PropTypes.func,
+  why: PropTypes.object
 };
 
 export const mapStateToProps = state => ({

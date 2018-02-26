@@ -1,10 +1,10 @@
 import React from 'react';
-import {Why, mapStateToProps, mapDispatchToProps} from './Why';
+import { Why, mapStateToProps, mapDispatchToProps } from './Why';
 import { shallow } from 'enzyme';
 
 describe('WHY', () => {
   it('should match the snapshot', () => {
-    const wrapper = shallow(<Why why={({})} populateWhyObject={jest.fn()} />);
+    const wrapper = shallow(<Why why={{}} populateWhyObject={jest.fn()} />);
     expect(wrapper).toMatchSnapshot();
   });
 
@@ -23,7 +23,5 @@ describe('WHY', () => {
       mapped.populateWhyObject();
       expect(mockDispatch).toHaveBeenCalled();
     });
-
-  })
-  
+  });
 });
