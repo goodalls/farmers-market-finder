@@ -81,11 +81,11 @@ Why.propTypes = {
   populateWhyObject: PropTypes.func
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   why: state.why
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   populateWhyObject: why => dispatch(actions.populateWhy(why))
 });
 

@@ -4,7 +4,10 @@ exports[`WHY should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Why />,
+  Symbol(enzyme.__unrendered__): <Why
+    populateWhyObject={[Function]}
+    why={Object {}}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -21,16 +24,14 @@ ShallowWrapper {
         <h4>
           Why use a local Farmers Market?
 </h4>,
-        <h4>
-          Reason 6 "Tastes better"
-</h4>,
-        <p>
-          Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.
-</p>,
+        <h4 />,
+        <p />,
         <a
           href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
 >
-          Kimberly Snyder
+          <h4>
+                    Kimberly Snyder
+          </h4>
 </a>,
       ],
       "className": "why",
@@ -53,10 +54,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Reason 6 \\"Tastes better\\"",
+          "children": undefined,
         },
         "ref": null,
-        "rendered": "Reason 6 \\"Tastes better\\"",
+        "rendered": null,
         "type": "h4",
       },
       Object {
@@ -64,10 +65,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
+          "children": undefined,
         },
         "ref": null,
-        "rendered": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
+        "rendered": null,
         "type": "p",
       },
       Object {
@@ -75,11 +76,23 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Kimberly Snyder",
+          "children": <h4>
+            Kimberly Snyder
+</h4>,
           "href": "https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html",
         },
         "ref": null,
-        "rendered": "Kimberly Snyder",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Kimberly Snyder",
+          },
+          "ref": null,
+          "rendered": "Kimberly Snyder",
+          "type": "h4",
+        },
         "type": "a",
       },
     ],
@@ -95,16 +108,14 @@ ShallowWrapper {
           <h4>
             Why use a local Farmers Market?
 </h4>,
-          <h4>
-            Reason 6 "Tastes better"
-</h4>,
-          <p>
-            Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.
-</p>,
+          <h4 />,
+          <p />,
           <a
             href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"
 >
-            Kimberly Snyder
+            <h4>
+                        Kimberly Snyder
+            </h4>
 </a>,
         ],
         "className": "why",
@@ -127,10 +138,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Reason 6 \\"Tastes better\\"",
+            "children": undefined,
           },
           "ref": null,
-          "rendered": "Reason 6 \\"Tastes better\\"",
+          "rendered": null,
           "type": "h4",
         },
         Object {
@@ -138,10 +149,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
+            "children": undefined,
           },
           "ref": null,
-          "rendered": "Try this. Buy a tomato from the supermarket and a gorgeous heirloom tomato from the farmer’s market. Now taste them side-by-side and see what you think. Produce from the farmer’s market almost always tastes better. This is because it is picked at the peak of ripeness and is incredibly fresh when it gets to you. If you start adding farmer’s market produce to your cooking, you’ll be amazed at the difference in flavor and texture.",
+          "rendered": null,
           "type": "p",
         },
         Object {
@@ -149,11 +160,23 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Kimberly Snyder",
+            "children": <h4>
+              Kimberly Snyder
+</h4>,
             "href": "https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html",
           },
           "ref": null,
-          "rendered": "Kimberly Snyder",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Kimberly Snyder",
+            },
+            "ref": null,
+            "rendered": "Kimberly Snyder",
+            "type": "h4",
+          },
           "type": "a",
         },
       ],
@@ -161,9 +184,9 @@ ShallowWrapper {
     },
   ],
   Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
+    "adapter": ReactFifteenAdapter {
       "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
       },
     },
   },
