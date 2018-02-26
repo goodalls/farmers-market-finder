@@ -101,7 +101,7 @@ ShallowWrapper {
       "children": Array [
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -120,7 +120,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -139,7 +139,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -158,7 +158,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -177,7 +177,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -196,7 +196,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -215,7 +215,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -234,7 +234,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -253,7 +253,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -272,7 +272,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -291,7 +291,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -310,7 +310,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -329,7 +329,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -348,7 +348,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -367,7 +367,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -386,7 +386,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -405,7 +405,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -424,7 +424,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -443,7 +443,7 @@ ShallowWrapper {
 </article>,
         <article>
           <span
-                    className="favorite active"
+                    className="favorite"
                     onClick={[Function]}
           >
                     ♥
@@ -472,7 +472,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -498,7 +498,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -564,7 +564,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -590,7 +590,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -656,7 +656,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -682,7 +682,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -748,7 +748,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -774,7 +774,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -840,7 +840,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -866,7 +866,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -932,7 +932,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -958,7 +958,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1024,7 +1024,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1050,7 +1050,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1116,7 +1116,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1142,7 +1142,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1208,7 +1208,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1234,7 +1234,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1300,7 +1300,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1326,7 +1326,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1392,7 +1392,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1418,7 +1418,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1484,7 +1484,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1510,7 +1510,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1576,7 +1576,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1602,7 +1602,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1668,7 +1668,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1694,7 +1694,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1760,7 +1760,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1786,7 +1786,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1852,7 +1852,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1878,7 +1878,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -1944,7 +1944,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -1970,7 +1970,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -2036,7 +2036,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -2062,7 +2062,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -2128,7 +2128,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <span
-              className="favorite active"
+              className="favorite"
               onClick={[Function]}
 >
               ♥
@@ -2154,7 +2154,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "♥",
-              "className": "favorite active",
+              "className": "favorite",
               "onClick": [Function],
             },
             "ref": null,
@@ -2225,7 +2225,7 @@ ShallowWrapper {
         "children": Array [
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2244,7 +2244,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2263,7 +2263,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2282,7 +2282,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2301,7 +2301,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2320,7 +2320,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2339,7 +2339,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2358,7 +2358,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2377,7 +2377,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2396,7 +2396,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2415,7 +2415,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2434,7 +2434,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2453,7 +2453,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2472,7 +2472,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2491,7 +2491,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2510,7 +2510,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2529,7 +2529,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2548,7 +2548,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2567,7 +2567,7 @@ ShallowWrapper {
 </article>,
           <article>
             <span
-                        className="favorite active"
+                        className="favorite"
                         onClick={[Function]}
             >
                         ♥
@@ -2596,7 +2596,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -2622,7 +2622,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -2688,7 +2688,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -2714,7 +2714,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -2780,7 +2780,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -2806,7 +2806,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -2872,7 +2872,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -2898,7 +2898,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -2964,7 +2964,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -2990,7 +2990,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3056,7 +3056,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3082,7 +3082,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3148,7 +3148,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3174,7 +3174,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3240,7 +3240,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3266,7 +3266,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3332,7 +3332,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3358,7 +3358,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3424,7 +3424,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3450,7 +3450,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3516,7 +3516,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3542,7 +3542,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3608,7 +3608,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3634,7 +3634,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3700,7 +3700,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3726,7 +3726,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3792,7 +3792,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3818,7 +3818,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3884,7 +3884,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -3910,7 +3910,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -3976,7 +3976,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -4002,7 +4002,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -4068,7 +4068,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -4094,7 +4094,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -4160,7 +4160,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -4186,7 +4186,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,
@@ -4252,7 +4252,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <span
-                className="favorite active"
+                className="favorite"
                 onClick={[Function]}
 >
                 ♥
@@ -4278,7 +4278,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "♥",
-                "className": "favorite active",
+                "className": "favorite",
                 "onClick": [Function],
               },
               "ref": null,

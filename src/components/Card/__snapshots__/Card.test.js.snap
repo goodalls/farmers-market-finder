@@ -60,9 +60,6 @@ ShallowWrapper {
                     </li>
           </ol>
 </div>,
-        <MapContainer
-          address={undefined}
-/>,
       ],
       "className": "text-card",
     },
@@ -219,17 +216,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "address": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
     ],
     "type": "div",
   },
@@ -272,9 +258,6 @@ ShallowWrapper {
                         </li>
             </ol>
 </div>,
-          <MapContainer
-            address={undefined}
-/>,
         ],
         "className": "text-card",
       },
@@ -430,17 +413,6 @@ ShallowWrapper {
             },
           ],
           "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "address": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
         },
       ],
       "type": "div",

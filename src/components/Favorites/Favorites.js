@@ -3,15 +3,29 @@ import './Favorites.css';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import * as actions from '../../actions/actions';
 
 export class Favorites extends Component {
+
+  favorite = (event, market) => {
+    if (market.favorite === false) {
+      market.favorite = true;
+      this.props.updateFavorites(market);
+      this.setState({market});
+    } else {
+      market.favorite = false;
+      this.props.removeFavorite(market);
+      this.setState({market: {}});
+    }
+  };
+
   favCards = () => {
     if (this.props.user) {
       return this.props.user.map((fav, index) => {
         return (
           <article key={fav.id + index}>
             <span
-              className="favorite active"
+              className={fav.favorite? 'active favorite' : 'favorite'}
               onClick={event => this.props.fav(event, fav)}
             >
               &#9829;
@@ -46,4 +60,9 @@ export const mapStateToProps = state => ({
   user: state.user.favorites
 });
 
-export default connect(mapStateToProps)(Favorites);
+export const mapDispatchToProps = dispatch => ({
+  updateFavorites: favorite => dispatch(actions.updateFavorites(favorite)),
+  removeFavorite: favorite => dispatch(actions.removeFavorite(favorite))
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Favorites);

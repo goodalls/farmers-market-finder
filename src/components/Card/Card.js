@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MapContainer from '../MapContainer/MapContainer';
 import * as actions from '../../actions/actions';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
@@ -55,7 +54,6 @@ export class Card extends Component {
             {products}
           </ol>
         </div>
-        <MapContainer address={marketInfo.Address} />
       </div>
     );
   }
