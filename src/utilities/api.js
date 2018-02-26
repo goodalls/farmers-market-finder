@@ -23,9 +23,13 @@ export const marketDetails = async id => {
 };
 
 export const geoCoding = async address => {
-  // eslint-disable-next-line
-  const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${key}`;
-  const fetching = await fetch(url);
-  const response = await fetching.json();
-  return response;
+  try {
+    // eslint-disable-next-line
+    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${key}`;
+    const fetching = await fetch(url);
+    const response = await fetching.json();
+    return response;
+  } catch (err) {
+    throw new Error(err);
+  }
 };

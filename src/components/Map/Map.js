@@ -3,55 +3,51 @@ import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import { geoCoding } from '../../utilities/api';
 
-export default class Map extends Component {
+class Map extends Component {
   constructor(props) {
     super(props);
     this.state = {
       coords: {}
     };
   }
-  
+
   componentDidMount() {
-    this.loadMap(); 
+    this.loadMap();
     this.getCoords();
   }
 
-  getCoords = async() => {
+  getCoords = async () => {
     try {
       const getMapCoords = await geoCoding(this.props.address);
-      this.setState({ coords: getMapCoords.results[0].geometry.location }) ;
+      this.setState({ coords: getMapCoords.results[0].geometry.location });
     } catch (err) {
-      console.log('getCoords error', err);
+      // throw new Error('getCoords error', err);
     }
   };
 
   loadMap = () => {
-    console.log(this.props);
-    // console.log(this.state)
     if (this.props.google) {
-      console.log('loadmap');
-      console.log(this.props.google);
-      const { google } = this.props; 
-      const maps = google.maps; 
-      const mapRef = this.refs.map; 
+      const { google } = this.props;
+      const maps = google.maps;
+      const mapRef = this.refs.map;
       const node = ReactDOM.findDOMNode(mapRef);
       const coords = this.state.coords;
       const mapConfig = Object.assign(
         {},
         {
-          center: { coords }, 
-          zoom: 11, 
-          mapTypeId: 'roadmap' 
+          center: { coords },
+          zoom: 11,
+          mapTypeId: 'roadmap'
         }
       );
 
-      this.map = new maps.Map(node, mapConfig); 
+      this.map = new maps.Map(node, mapConfig);
     }
-  }
+  };
 
   render() {
     const style = {
-      width: '250px', 
+      width: '250px',
       height: '250px'
     };
 
@@ -67,3 +63,5 @@ Map.propTypes = {
   google: PropTypes.object,
   address: PropTypes.string
 };
+
+export default Map;
