@@ -32,9 +32,7 @@ export class Card extends Component {
             {products}
           </ol>
         </div>
-        <div id="map">
-          <MapContainer />
-        </div>
+        <MapContainer address={marketInfo.Address} />
       </div>
     );
   }
