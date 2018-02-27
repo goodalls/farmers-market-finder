@@ -92,7 +92,7 @@ export class User extends Component {
                 favorites: []
               });
               this.props.logOutUser();
-              this.props.history.push('/');
+              // this.props.history.push('/');
             }}
           >
             Log Out
@@ -132,7 +132,7 @@ export class User extends Component {
             <input
               id="password"
               name="password"
-              type="text"
+              type="password"
               placeholder="Password"
               onChange={this.handleInputs}
               value={this.state.password}

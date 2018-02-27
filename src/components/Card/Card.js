@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { MapContainer } from '../MapContainer/MapContainer';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -31,9 +30,6 @@ export class Card extends Component {
             Products:
             {products}
           </ol>
-        </div>
-        <div id="map">
-          <MapContainer />
         </div>
       </div>
     );
