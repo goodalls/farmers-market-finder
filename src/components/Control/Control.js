@@ -19,7 +19,7 @@ export class Control extends Component {
   }
 
   componentDidMount() {
-    this.handleCurrentLocation();
+    // this.handleCurrentLocation();
   }
 
   handleChange = event => {
@@ -31,7 +31,6 @@ export class Control extends Component {
     event.preventDefault();
     this.getNearbyMarketsZip(this.state.zip);
     this.setState({ zip: '' });
-    this.props.markets([]);
   };
 
   getNearbyMarketsZip = async zip => {
@@ -46,17 +45,15 @@ export class Control extends Component {
         return { ...market, ...updatedMarket.marketdetails };
       });
       const promise = await Promise.all(updateDetails);
-      this.props.markets(promise);
+      this.props.zipMarkets(promise);
     } catch (error) {
       this.setState({ error: [...this.state.error, { error }] });
     }
   };
 
   handleCurrentLocation = async () => {
-    if (this.props.marketsArray && this.state.zip !== '') {
-      this.props.markets([]);
-    }
     try {
+      this.props.history.push('/market-list');
       await navigator.geolocation.getCurrentPosition(response => {
         const { latitude, longitude } = response.coords;
         this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
@@ -123,7 +120,8 @@ export class Control extends Component {
 Control.propTypes = {
   markets: PropTypes.func,
   marketsArray: PropTypes.array,
-  history: PropTypes.object
+  history: PropTypes.object,
+  zipMarkets: PropTypes.func
 };
 
 export const mapStateToProps = store => ({
@@ -132,7 +130,7 @@ export const mapStateToProps = store => ({
 
 export const mapDispatchToProps = dispatch => ({
   markets: markets => dispatch(actions.populateMarkets(markets)),
-  marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail))
+  zipMarkets: markets => dispatch(actions.populateZipMarkets(markets))
 });
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(Control)
