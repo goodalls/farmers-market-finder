@@ -1,36 +1,16 @@
 import React, { Component } from 'react';
+import * as actions from '../../actions/actions';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Card.css';
-import * as actions from '../../actions/actions';
 
 export class Card extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      market: {},
-      favorites: []
-    };
-  }
   componentDidMount() {
     this.setState({favorites: this.props.user});
   }
 
-  favorite = (event, market) => {
-    if (market.favorite === false) {
-      market.favorite = true;
-      this.props.updateFavorites(market);
-      this.setState({market});
-    } else {
-      market.favorite = false;
-      this.props.removeFavorite(market);
-      this.setState({market: {}});
-    }
-  };
-
   render() {
-    console.log(this.props); //need to check what is being passed because of router in app
     const { id, markets, fav } = this.props;
     const marketInfo = markets.find(market => market.id === id);
     const schedule = marketInfo.Schedule.slice(0, -16);
