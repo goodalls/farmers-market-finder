@@ -24,16 +24,6 @@ describe('ACTIONS', () => {
     expect(actions.populateMarkets(mockMarkets)).toEqual(expected);
   });
 
-  it('should ADD_DETAILS to markets array objects', () => {
-    const mockID = 1;
-    const expected = {
-      type: 'ADD_DETAILS',
-      marketDetails: mockMarket,
-      id: mockID
-    };
-    expect(actions.addDetails(mockID, mockMarket)).toEqual(expected);
-  });
-
   it('should LOG_IN a user', () => {
     const expected = {
       type: 'LOG_IN',

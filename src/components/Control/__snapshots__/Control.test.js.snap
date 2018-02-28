@@ -4,7 +4,15 @@ exports[`CONTROL should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Control />,
+  Symbol(enzyme.__unrendered__): <Control
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
+    markets={[Function]}
+    zipMarketsArray={Array []}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],

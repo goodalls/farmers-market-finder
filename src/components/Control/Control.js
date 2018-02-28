@@ -50,13 +50,12 @@ export class Control extends Component {
         this.setState({ error: [...this.state.error, { error }] });
       }
     }
-    // this.props.history.push('/market-list/zip');
+    this.props.history.push('/market-list/zip');
   };
 
   handleCurrentLocation = async () => {
     if (!this.props.marketsArray.length) {
       try {
-        // this.props.history.push('/market-list/current');
         await navigator.geolocation.getCurrentPosition(response => {
           const { latitude, longitude } = response.coords;
           this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
@@ -114,9 +113,7 @@ export class Control extends Component {
             onChange={this.handleChange}
             placeholder="ZIP"
           />
-          {/* <Link to="/market-list/zip"> */}
             <input type="submit" id='submit' value="Search by ZIP" />
-          {/* </Link> */}
         </form>
       </section>
     );
