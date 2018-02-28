@@ -78,11 +78,11 @@ describe('CONTROL', () => {
   });
 
   describe('updateMarketDetails', () => {
-    it('should call api.marketDetails', () => {
+    it('should call api.additionalFetch', () => {
       const mockID = 25;
-      api.marketDetails = jest.fn();
+      api.additionalFetch = jest.fn();
       wrapper.instance().updateMarketDetails(mockID);
-      expect(api.marketDetails).toHaveBeenCalledWith(mockID);
+      expect(api.additionalFetch).toHaveBeenCalledWith(mockID);
     });
   });
 
