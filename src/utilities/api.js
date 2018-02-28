@@ -5,8 +5,8 @@ export const fetchParse = async url => {
     const initialFetch = await fetch(url);
     const response = await initialFetch.json();
     return response;
-  } catch (error) {
-    return 'fetchParse error';
+  } catch (err) {
+    throw new Error(err);
   }
 };
 
@@ -17,8 +17,8 @@ export const marketDetails = async id => {
       `https://search.ams.usda.gov/farmersmarkets/v1/data.svc/mktDetail?id=${id}`
     );
     return initialFetch;
-  } catch (error) {
-    return 'marketDetails error';
+  } catch (err) {
+    throw new Error(err);
   }
 };
 
@@ -29,6 +29,18 @@ export const geoCoding = async address => {
     const fetching = await fetch(url);
     const response = await fetching.json();
     return response;
+  } catch (err) {
+    throw new Error(err);
+  }
+};
+
+export const additionalFetch = async details => {
+  const marketURL = `https://search.ams.usda.gov/farmersmarkets/v1/data.svc/mktDetail?id=${details}`;
+  const geocodeURL = `https://maps.googleapis.com/maps/api/geocode/json?address=${details}&key=${key}`;
+  const url = details.length > 7 ? marketURL : geocodeURL;
+  try {
+    const initialFetch = await fetchParse(url);
+    return initialFetch;
   } catch (err) {
     throw new Error(err);
   }
