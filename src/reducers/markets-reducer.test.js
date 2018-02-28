@@ -15,20 +15,4 @@ describe('MARKETS_REDUCER', () => {
       expected
     );
   });
-
-  it('should add market details to store via ADD_DETAILS', () => {
-    const mockState = [{ id: 1, market: 'purple people eaters' }];
-    const mockID = 1;
-    const mockMarketDetails = { id: 1, marketDetails: 'minnesota vikings' };
-    const expected = [
-      {
-        id: 1,
-        market: 'purple people eaters',
-        marketDetails: 'minnesota vikings'
-      }
-    ];
-    expect(
-      marketsReducer(mockState, actions.addDetails(mockID, mockMarketDetails))
-    ).toEqual(expected);
-  });
 });

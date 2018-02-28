@@ -93,8 +93,4 @@ export const mapStateToProps = store => ({
   zipMarkets: store.zipMarkets
 });
 
-export const mapDispatchToProps = dispatch => ({});
-
-export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(Container)
-);
+export default withRouter(connect(mapStateToProps)(Container));
