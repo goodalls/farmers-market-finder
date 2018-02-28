@@ -5,9 +5,9 @@ import * as api from '../../utilities/api';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import User from '../User/User';
 import './Control.css';
-import PropTypes from 'prop-types';
 
 export class Control extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ export class Control extends Component {
   }
 
   componentDidMount() {
-    // this.handleCurrentLocation();
+    this.handleCurrentLocation();
   }
 
   handleChange = event => {
@@ -137,6 +137,7 @@ export const mapDispatchToProps = dispatch => ({
   markets: markets => dispatch(actions.populateMarkets(markets)),
   zipMarkets: markets => dispatch(actions.populateZipMarkets(markets))
 });
+
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(Control)
 );

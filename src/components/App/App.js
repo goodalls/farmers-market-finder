@@ -13,13 +13,6 @@ import Card from '../Card/Card';
 import './App.css';
 
 export class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: []
-    };
-  }
-
   favorite = (event, market) => {
     const newMarket = market;
     newMarket.favorite = !newMarket.favorite;

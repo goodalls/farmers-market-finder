@@ -154,14 +154,14 @@ export class User extends Component {
 
   renderCheck = user => {
     switch (user.status) {
-    case 'LOGGED_IN':
-      return this.logoutUser();
-    case 'LOGGED_OUT':
-      return this.loginUser();
-    case 'CREATE_USER':
-      return this.createUser();
-    default:
-      return this.loginUser();
+      case 'LOGGED_IN':
+        return this.logoutUser();
+      case 'LOGGED_OUT':
+        return this.loginUser();
+      case 'CREATE_USER':
+        return this.createUser();
+      default:
+        return this.loginUser();
     }
   };
   render() {

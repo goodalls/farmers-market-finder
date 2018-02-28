@@ -8,10 +8,10 @@ import './Card.css';
 export class Card extends Component {
   render() {
     const { id, markets, fav, zipMarkets } = this.props;
-    const marketList = (zipMarkets.find(market => id === market.id))
+    const marketList = zipMarkets.find(market => id === market.id)
       ? zipMarkets
       : markets;
-    const marketInfo = marketList.find(market => id === market.id); 
+    const marketInfo = marketList.find(market => id === market.id);
     const schedule = marketInfo.Schedule.slice(0, -16);
     const products = marketInfo.Products.split(';').map((product, index) => {
       return <li key={index}>{product}</li>;
@@ -38,13 +38,14 @@ export class Card extends Component {
     );
   }
 }
+
 Card.propTypes = {
+  fav: PropTypes.func,
   id: PropTypes.string,
   markets: PropTypes.array,
-  fav: PropTypes.func,
-  user: PropTypes.array,
-  updateFavorites: PropTypes.func,
   removeFavorite: PropTypes.func,
+  updateFavorites: PropTypes.func,
+  user: PropTypes.array,
   zipMarkets: PropTypes.array
 };
 
