@@ -61,7 +61,7 @@ export class Container extends Component {
         <li key={index}>
           <span
             className={market.favorite ? 'favorite active' : 'favorite'}
-            onClick={event => this.favorite(event, market)}
+            onClick={event => this.props.fav(event, market)}
           >
             &#9829;
           </span>

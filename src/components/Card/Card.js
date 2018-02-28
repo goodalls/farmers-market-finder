@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Card.css';
+import * as actions from '../../actions/actions';
 
 export class Card extends Component {
   constructor(props) {
