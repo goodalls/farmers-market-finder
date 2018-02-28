@@ -11,9 +11,9 @@
   align-items: center; }
 
 input {
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 10px;
-  border: 2px solid #9BC47e;
+  border: 2px solid #D97426;
   color: #D97426;
   font-size: 1.5em;
   height: 50px;
@@ -36,6 +36,9 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+#submit, #create-acct, #submit {
+  background-color: #9BC47e; }
+
 .control h4 {
   font-size: 1.2em;
   font-weight: 700;
@@ -43,9 +46,9 @@ input[type='number']::-webkit-outer-spin-button {
   line-height: 1.2em; }
 
 button {
-  background-color: transparent;
+  background-color: #9BC47e;
   border-radius: 10px;
-  border: 2px solid #9BC47e;
+  border: 2px solid #D97426;
   color: #D97426;
   font-size: 1.5em;
   height: 100px;
