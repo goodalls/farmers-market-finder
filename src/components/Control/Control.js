@@ -84,7 +84,7 @@ export class Control extends Component {
   };
 
   updateMarketDetails = async id => {
-    const fetch = await api.marketDetails(id);
+    const fetch = await api.additionalFetch(id);
     return fetch;
   };
 

@@ -38,7 +38,7 @@ export class Container extends Component {
   };
 
   handleSingleMarket = async (event, id) => {
-    // const fetch = await api.marketDetails(id);
+    // const fetch = await api.additionalFetch(id);
     // this.props.marketDetails(id, fetch.marketdetails);
     this.props.history.push('/single-market/' + id);
   };
