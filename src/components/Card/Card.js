@@ -6,10 +6,6 @@ import PropTypes from 'prop-types';
 import './Card.css';
 
 export class Card extends Component {
-  componentDidMount() {
-    this.setState({favorites: this.props.user});
-  }
-
   render() {
     const { id, markets, fav } = this.props;
     const marketInfo = markets.find(market => market.id === id);
