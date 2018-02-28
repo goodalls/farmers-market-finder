@@ -12,6 +12,7 @@ describe('CONTROL', () => {
         markets={jest.fn()}
         zipMarketsArray={[]}
         history={{ push: jest.fn() }}
+        marketsArray={[]}
       />
     );
   });

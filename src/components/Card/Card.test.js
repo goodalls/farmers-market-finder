@@ -11,6 +11,7 @@ describe('CARD', () => {
           { Products: 'hello; big; string', Schedule: 'another large string' }
         ]}
         user={[]}
+        zipMarkets={[]}
       />
     );
   });

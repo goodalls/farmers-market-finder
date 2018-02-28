@@ -11,6 +11,7 @@ ShallowWrapper {
           }
     }
     markets={[Function]}
+    marketsArray={Array []}
     zipMarketsArray={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -58,7 +59,7 @@ ShallowWrapper {
                     value=""
           />
           <input
-                    id="submit"
+                    className="submit"
                     type="submit"
                     value="Search by ZIP"
           />
@@ -136,7 +137,7 @@ ShallowWrapper {
               value=""
 />,
             <input
-              id="submit"
+              className="submit"
               type="submit"
               value="Search by ZIP"
 />,
@@ -180,7 +181,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "id": "submit",
+              "className": "submit",
               "type": "submit",
               "value": "Search by ZIP",
             },
@@ -233,7 +234,7 @@ ShallowWrapper {
                         value=""
             />
             <input
-                        id="submit"
+                        className="submit"
                         type="submit"
                         value="Search by ZIP"
             />
@@ -311,7 +312,7 @@ ShallowWrapper {
                 value=""
 />,
               <input
-                id="submit"
+                className="submit"
                 type="submit"
                 value="Search by ZIP"
 />,
@@ -355,7 +356,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "id": "submit",
+                "className": "submit",
                 "type": "submit",
                 "value": "Search by ZIP",
               },
