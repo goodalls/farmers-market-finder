@@ -115,7 +115,7 @@ export class Control extends Component {
             placeholder="ZIP"
           />
           {/* <Link to="/market-list/zip"> */}
-            <input type="submit" value="Search by ZIP" />
+            <input type="submit" id='submit' value="Search by ZIP" />
           {/* </Link> */}
         </form>
       </section>
