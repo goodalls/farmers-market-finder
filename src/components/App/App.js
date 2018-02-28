@@ -21,14 +21,10 @@ export class App extends Component {
   }
 
   favorite = (event, market) => {
-    if (market.favorite === false) {
-      const newMarket = Object.assign({...market}, {favorite: true});
-      this.props.updateFavorites(newMarket);
-    } else {
-      const newMarket = Object.assign({...market}, {favorite: false});
-      this.props.removeFavorite(newMarket);
-    }
-  };
+    const newMarket = market;
+    newMarket.favorite = !newMarket.favorite;
+    newMarket.favorite ? this.props.updateFavorites(newMarket) : this.props.removeFavorite(newMarket);
+  }
 
   render() {
     return (
