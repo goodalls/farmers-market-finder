@@ -6,8 +6,14 @@ import { shallow } from 'enzyme';
 
 describe('CONTROL', () => {
   let wrapper;
-  beforeEach(()=>{
-    wrapper = shallow(<Control markets={jest.fn()} zipMarketsArray={[]} history={{ push: jest.fn() }}/>);
+  beforeEach(() => {
+    wrapper = shallow(
+      <Control
+        markets={jest.fn()}
+        zipMarketsArray={[]}
+        history={{ push: jest.fn() }}
+      />
+    );
   });
 
   it('should match the snapshot', () => {
@@ -67,7 +73,7 @@ describe('CONTROL', () => {
       const mockLat = 103.5;
       const mockLong = 1024;
       const expected =
-      // eslint-disable-next-line
+        // eslint-disable-next-line
         'http://search.ams.usda.gov/farmersmarkets/v1/data.svc/locSearch?lat=103.5&lng=1024';
       api.fetchParse = jest.fn().mockReturnValue({});
       cleaner.cleanMarkets = jest.fn();

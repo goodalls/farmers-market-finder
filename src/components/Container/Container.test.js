@@ -1,12 +1,11 @@
 import React from 'react';
 import { Container, mapStateToProps } from './Container';
-import * as api from '../../utilities/api';
 import { shallow } from 'enzyme';
 
 describe('CONTAINER', () => {
   let wrapper;
   beforeEach(() => {
-    const wrapper = shallow(
+    wrapper = shallow(
       <Container
         markets={[]}
         user={[]}

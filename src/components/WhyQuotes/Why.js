@@ -69,8 +69,7 @@ export class Why extends Component {
         <h4>Why use a local Farmers Market?</h4>
         <h4>{title[random]}</h4>
         <p>{this.props.why[title[random]]}</p>
-        {/* // eslint-disable-next-line */}
-        <a href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html">
+        <a href="https://www.huffingtonpost.com/kimberly-snyder/farmers-market_b_1118572.html"> {/* eslint-disable-line */}
           <h4>Kimberly Snyder</h4>
         </a>
       </div>
