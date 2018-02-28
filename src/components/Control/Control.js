@@ -34,32 +34,36 @@ export class Control extends Component {
   };
 
   getNearbyMarketsZip = async zip => {
-    try {
-      this.props.history.push('/market-list');
-      // eslint-disable-next-line
-      const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${zip}`;
-      const initial = await api.fetchParse(url);
-      const clean = await cleaner.cleanMarkets(initial.results);
-      const updateDetails = await clean.map(async market => {
-        const updatedMarket = await this.updateMarketDetails(market.id);
-        return { ...market, ...updatedMarket.marketdetails };
-      });
-      const promise = await Promise.all(updateDetails);
-      this.props.zipMarkets(promise);
-    } catch (error) {
-      this.setState({ error: [...this.state.error, { error }] });
+    if (!this.props.zipMarketsArray.length) {
+      try {
+        // eslint-disable-next-line
+        const url = `http://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch?zip=${zip}`;
+        const initial = await api.fetchParse(url);
+        const clean = await cleaner.cleanMarkets(initial.results);
+        const updateDetails = await clean.map(async market => {
+          const updatedMarket = await this.updateMarketDetails(market.id);
+          return { ...market, ...updatedMarket.marketdetails };
+        });
+        const promise = await Promise.all(updateDetails);
+        this.props.zipMarkets(promise);
+      } catch (error) {
+        this.setState({ error: [...this.state.error, { error }] });
+      }
     }
+    // this.props.history.push('/market-list/zip');
   };
 
   handleCurrentLocation = async () => {
-    try {
-      this.props.history.push('/market-list');
-      await navigator.geolocation.getCurrentPosition(response => {
-        const { latitude, longitude } = response.coords;
-        this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
-      });
-    } catch (error) {
-      this.setState({ error: [...this.state.error, { error }] });
+    if (!this.props.marketsArray.length) {
+      try {
+        // this.props.history.push('/market-list/current');
+        await navigator.geolocation.getCurrentPosition(response => {
+          const { latitude, longitude } = response.coords;
+          this.getNearbyMarkets(parseFloat(latitude), parseFloat(longitude));
+        });
+      } catch (error) {
+        this.setState({ error: [...this.state.error, { error }] });
+      }
     }
   };
 
@@ -89,7 +93,7 @@ export class Control extends Component {
     return (
       <section className="control">
         <User />
-        <Link to="/market-list">
+        <Link to="/market-list/current">
           <button onClick={this.handleCurrentLocation}>
             Search by Current Location
           </button>
@@ -110,7 +114,9 @@ export class Control extends Component {
             onChange={this.handleChange}
             placeholder="ZIP"
           />
-          <input type="submit" value="Search by ZIP" />
+          {/* <Link to="/market-list/zip"> */}
+            <input type="submit" value="Search by ZIP" />
+          {/* </Link> */}
         </form>
       </section>
     );
@@ -121,11 +127,13 @@ Control.propTypes = {
   markets: PropTypes.func,
   marketsArray: PropTypes.array,
   history: PropTypes.object,
-  zipMarkets: PropTypes.func
+  zipMarkets: PropTypes.func,
+  zipMarketsArray: PropTypes.array
 };
 
 export const mapStateToProps = store => ({
-  marketsArray: store.markets
+  marketsArray: store.markets,
+  zipMarketsArray: store.zipMarkets
 });
 
 export const mapDispatchToProps = dispatch => ({

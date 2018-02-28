@@ -6,18 +6,18 @@ import './Card.css';
 
 export class Card extends Component {
   render() {
+    console.log(this.props); //need to check what is being passed because of router in app
     const { id, markets, fav } = this.props;
     const marketInfo = markets.find(market => market.id === id);
     const schedule = marketInfo.Schedule.slice(0, -16);
     const products = marketInfo.Products.split(';').map((product, index) => {
       return <li key={index}>{product}</li>;
     });
-    const isFavorite = this.props.user.some(userFav => userFav.id === id);
 
     return (
       <div className="text-card">
         <span
-          className={isFavorite ? 'favorite active' : 'favorite'}
+          className={marketInfo.favorite ? 'favorite active' : 'favorite'}
           onClick={event => fav(event, marketInfo)}
         >
           &#9829;

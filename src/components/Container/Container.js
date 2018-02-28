@@ -7,15 +7,23 @@ import PropTypes from 'prop-types';
 import './Container.css';
 
 export class Container extends Component {
+  activeListCheck() {
+    console.log(this.props);
+    if (this.props.id === 'zip') {
+      return 'zipMarkets';
+    } else if (this.props.id === 'current') {
+      return 'markets';
+    }
+  }
+
   markets = () => {
-    return this.props.markets.map((market, index) => {
-      const isFavorite = this.props.user.some(
-        userFav => userFav.id === market.id
-      );
+    const marketList = this.activeListCheck();
+    console.log('markets');
+    return this.props[marketList].map((market, index) => {
       return (
         <li key={index}>
           <span
-            className={isFavorite ? 'favorite active' : 'favorite'}
+            className={market.favorite ? 'favorite active' : 'favorite'}
             onClick={event => this.props.fav(event, market)}
           >
             &#9829;
@@ -30,13 +38,13 @@ export class Container extends Component {
   };
 
   handleSingleMarket = async (event, id) => {
-    const fetch = await api.marketDetails(id);
-    this.props.marketDetails(id, fetch.marketdetails);
+    // const fetch = await api.marketDetails(id);
+    // this.props.marketDetails(id, fetch.marketdetails);
     this.props.history.push('/single-market/' + id);
   };
 
   loadingRenderCheck = () => {
-    if (!this.props.markets.length) {
+    if (!this.props.markets.length && !this.props.zipMarkets.length) {
       return (
         <div className="loading">
           <p>Loading...</p>
@@ -56,17 +64,17 @@ Container.propTypes = {
   history: PropTypes.object,
   marketDetails: PropTypes.func,
   markets: PropTypes.array,
-  user: PropTypes.array
+  user: PropTypes.array,
+  id: PropTypes.string
 };
 
 export const mapStateToProps = store => ({
   markets: store.markets,
-  user: store.user.favorites
+  user: store.user.favorites,
+  zipMarkets: store.zipMarkets
 });
 
-export const mapDispatchToProps = dispatch => ({
-  marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail))
-});
+export const mapDispatchToProps = dispatch => ({});
 
 export default withRouter(
   connect(mapStateToProps, mapDispatchToProps)(Container)
