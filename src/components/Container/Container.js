@@ -41,25 +41,6 @@ export class Container extends Component {
     }
   };
 
-  // markets = () => {
-  //   return this.props.markets.map((market, index) => {
-  //     return (
-  //       <li key={index}>
-  //         <span
-  //           className={market.favorite ? 'favorite active' : 'favorite'}
-  //           onClick={event => this.props.fav(event, market)}
-  //         >
-  //           &#9829;
-  //         </span>
-  //         <div onClick={event => this.handleSingleMarket(event, market.id)}>
-  //           <p>Distance: {market.distance}</p>
-  //           <p>{market.marketname}</p>
-  //         </div>
-  //       </li>
-  //     );
-  //   });
-  // };
-
   render = () => {
     return <div className="container">{this.loadingRenderCheck()}</div>;
   };
@@ -70,7 +51,8 @@ Container.propTypes = {
   marketDetails: PropTypes.func,
   markets: PropTypes.array,
   user: PropTypes.array,
-  id: PropTypes.string
+  id: PropTypes.string,
+  zipMarkets: PropTypes.array
 };
 
 export const mapStateToProps = store => ({

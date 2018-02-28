@@ -13,18 +13,13 @@ import Card from '../Card/Card';
 import './App.css';
 
 export class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: []
-    };
-  }
-
   favorite = (event, market) => {
     const newMarket = market;
     newMarket.favorite = !newMarket.favorite;
-    newMarket.favorite ? this.props.updateFavorites(newMarket) : this.props.removeFavorite(newMarket);
-  }
+    newMarket.favorite
+      ? this.props.updateFavorites(newMarket)
+      : this.props.removeFavorite(newMarket);
+  };
 
   render() {
     return (
@@ -36,8 +31,8 @@ export class App extends Component {
           <Route
             exact
             path="/market-list/:id"
-            render={({match}) => {
-              const {id} = match.params;
+            render={({ match }) => {
+              const { id } = match.params;
               return <Container id={id} fav={this.favorite} />;
             }}
           />
@@ -52,8 +47,12 @@ export class App extends Component {
             path="/single-market/:id"
             render={({ match }) => {
               const { id } = match.params;
-              const singleMarket = this.props.markets.find(market => market.id === id);
-              const zipMarket = this.props.zipMarkets.find(market => market.id === id);
+              const singleMarket = this.props.markets.find(
+                market => market.id === id
+              );
+              const zipMarket = this.props.zipMarkets.find(
+                market => market.id === id
+              );
 
               if (singleMarket) {
                 return <Card {...singleMarket} fav={this.favorite} />;
