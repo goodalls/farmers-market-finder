@@ -7,8 +7,12 @@ import './Card.css';
 
 export class Card extends Component {
   render() {
-    const { id, markets, fav } = this.props;
-    const marketInfo = markets.find(market => market.id === id);
+    const { id, markets, fav, zipMarkets } = this.props;
+    const marketList = (zipMarkets.find(market => id === market.id))
+      ? zipMarkets
+      : markets;
+    const marketInfo = marketList.find(market => id === market.id);
+    debugger;
     const schedule = marketInfo.Schedule.slice(0, -16);
     const products = marketInfo.Products.split(';').map((product, index) => {
       return <li key={index}>{product}</li>;
@@ -41,12 +45,14 @@ Card.propTypes = {
   fav: PropTypes.func,
   user: PropTypes.array,
   updateFavorites: PropTypes.func,
-  removeFavorite: PropTypes.func
+  removeFavorite: PropTypes.func,
+  zipMarkets: PropTypes.array
 };
 
 export const mapStateToProps = state => ({
   markets: state.markets,
-  user: state.user.favorites
+  user: state.user.favorites,
+  zipMarkets: state.zipMarkets
 });
 
 export const mapDispatchToProps = dispatch => ({
