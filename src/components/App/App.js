@@ -10,7 +10,6 @@ import PropTypes from 'prop-types';
 import Why from '../WhyQuotes/Why';
 import '../../styles/colors.css';
 import Card from '../Card/Card';
-import Map from '../Map/Map';
 import './App.css';
 
 export class App extends Component {
@@ -40,12 +39,12 @@ export class App extends Component {
           <Route exact path="/" component={Why} />
           <Route
             exact
-            path="/market-list"
-            render={() => {
-              return <Container fav={this.favorite} />;
+            path="/market-list/:id"
+            render={({match}) => {
+              const {id} = match.params;
+              return <Container id={id} fav={this.favorite} />;
             }}
           />
-          <Route exact path="/map-list" component={Map} />
           <Route
             exact
             path="/favorite"
@@ -57,12 +56,13 @@ export class App extends Component {
             path="/single-market/:id"
             render={({ match }) => {
               const { id } = match.params;
-              const singleMarket = this.props.markets.find(
-                market => market.id === id
-              );
+              const singleMarket = this.props.markets.find(market => market.id === id);
+              const zipMarket = this.props.zipMarkets.find(market => market.id === id);
 
               if (singleMarket) {
                 return <Card {...singleMarket} fav={this.favorite} />;
+              } else if (zipMarket) {
+                return <Card {...zipMarket} fav={this.favorite} />;
               } else {
                 return null;
               }
@@ -77,11 +77,13 @@ export class App extends Component {
 App.propTypes = {
   markets: PropTypes.array,
   removeFavorite: PropTypes.func,
-  updateFavorites: PropTypes.func
+  updateFavorites: PropTypes.func,
+  zipMarkets: PropTypes.array
 };
 
 export const mapStateToProps = store => ({
-  markets: store.markets
+  markets: store.markets,
+  zipMarkets: store.zipMarkets
 });
 
 export const mapDispatchToProps = dispatch => ({

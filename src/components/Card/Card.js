@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { MapContainer } from '../MapContainer/MapContainer';
-import * as actions from '../../actions/actions';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -31,7 +29,8 @@ export class Card extends Component {
   };
 
   render() {
-    const { id, markets } = this.props;
+    console.log(this.props); //need to check what is being passed because of router in app
+    const { id, markets, fav } = this.props;
     const marketInfo = markets.find(market => market.id === id);
     const schedule = marketInfo.Schedule.slice(0, -16);
     const products = marketInfo.Products.split(';').map((product, index) => {
@@ -42,7 +41,7 @@ export class Card extends Component {
       <div className="text-card">
         <span
           className={marketInfo.favorite ? 'favorite active' : 'favorite'}
-          onClick={event => this.favorite(event, marketInfo)}
+          onClick={event => fav(event, marketInfo)}
         >
           &#9829;
         </span>
@@ -55,7 +54,6 @@ export class Card extends Component {
             {products}
           </ol>
         </div>
-        <MapContainer address={marketInfo.Address} />
       </div>
     );
   }

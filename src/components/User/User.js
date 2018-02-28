@@ -77,7 +77,7 @@ export class User extends Component {
         <h4>Welcome back {this.state.name}</h4>
         <Link to="/favorite">
           <button className="favorites">
-            favorites {this.props.user.favorites.length}
+            favorites {this.props.favoriteArray.length}
           </button>
         </Link>
         <div>
@@ -132,7 +132,7 @@ export class User extends Component {
             <input
               id="password"
               name="password"
-              type="text"
+              type="password"
               placeholder="Password"
               onChange={this.handleInputs}
               value={this.state.password}
@@ -174,11 +174,13 @@ User.propTypes = {
   logOutUser: PropTypes.func,
   loginUser: PropTypes.func,
   updateUser: PropTypes.func,
-  user: PropTypes.object
+  user: PropTypes.object,
+  favoriteArray: PropTypes.array
 };
 
 export const mapStateToProps = state => ({
-  user: state.user
+  user: state.user,
+  favoriteArray: state.favoriteArray
 });
 
 export const mapDispatchToProps = dispatch => ({
