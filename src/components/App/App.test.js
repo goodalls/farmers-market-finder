@@ -8,11 +8,6 @@ describe('APP', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should start having a default state error array', () => {
-    const wrapper = shallow(<App />);
-    expect(wrapper.state('error')).toEqual([]);
-  });
-
   it.skip('should have favorite', () => {
     const wrapper = shallow(
       <App updateFavorites={jest.fn()} removeFavorite={jest.fn()} />

@@ -14,6 +14,7 @@ ShallowWrapper {
           ]
     }
     user={Array []}
+    zipMarkets={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
