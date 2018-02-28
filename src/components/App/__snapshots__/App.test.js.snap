@@ -29,13 +29,8 @@ ShallowWrapper {
         />
         <Route
                 exact={true}
-                path="/market-list"
+                path="/market-list/:id"
                 render={[Function]}
-        />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/map-list"
         />
         <Route
                 exact={true}
@@ -65,13 +60,8 @@ ShallowWrapper {
 />,
           <Route
             exact={true}
-            path="/market-list"
+            path="/market-list/:id"
             render={[Function]}
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/map-list"
 />,
           <Route
             exact={true}
@@ -124,21 +114,8 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "exact": true,
-            "path": "/market-list",
+            "path": "/market-list/:id",
             "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/map-list",
           },
           "ref": null,
           "rendered": null,
@@ -192,13 +169,8 @@ ShallowWrapper {
           />
           <Route
                     exact={true}
-                    path="/market-list"
+                    path="/market-list/:id"
                     render={[Function]}
-          />
-          <Route
-                    component={[Function]}
-                    exact={true}
-                    path="/map-list"
           />
           <Route
                     exact={true}
@@ -228,13 +200,8 @@ ShallowWrapper {
 />,
             <Route
               exact={true}
-              path="/market-list"
+              path="/market-list/:id"
               render={[Function]}
-/>,
-            <Route
-              component={[Function]}
-              exact={true}
-              path="/map-list"
 />,
             <Route
               exact={true}
@@ -287,21 +254,8 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "exact": true,
-              "path": "/market-list",
+              "path": "/market-list/:id",
               "render": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "component": [Function],
-              "exact": true,
-              "path": "/map-list",
             },
             "ref": null,
             "rendered": null,
@@ -339,9 +293,9 @@ ShallowWrapper {
     },
   ],
   Symbol(enzyme.__options__): Object {
-    "adapter": ReactFifteenAdapter {
+    "adapter": ReactSixteenAdapter {
       "options": Object {
-        "supportPrevContextArgumentOfComponentDidUpdate": true,
+        "enableComponentDidUpdateOnSetState": true,
       },
     },
   },

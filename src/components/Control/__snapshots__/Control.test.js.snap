@@ -21,7 +21,7 @@ ShallowWrapper {
         <Connect(User) />,
         <Link
           replace={false}
-          to="/market-list"
+          to="/market-list/current"
 >
           <button
                     onClick={[Function]}
@@ -50,6 +50,7 @@ ShallowWrapper {
                     value=""
           />
           <input
+                    id="submit"
                     type="submit"
                     value="Search by ZIP"
           />
@@ -79,7 +80,7 @@ ShallowWrapper {
             Search by Current Location
 </button>,
           "replace": false,
-          "to": "/market-list",
+          "to": "/market-list/current",
         },
         "ref": null,
         "rendered": Object {
@@ -127,6 +128,7 @@ ShallowWrapper {
               value=""
 />,
             <input
+              id="submit"
               type="submit"
               value="Search by ZIP"
 />,
@@ -170,6 +172,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "id": "submit",
               "type": "submit",
               "value": "Search by ZIP",
             },
@@ -193,7 +196,7 @@ ShallowWrapper {
           <Connect(User) />,
           <Link
             replace={false}
-            to="/market-list"
+            to="/market-list/current"
 >
             <button
                         onClick={[Function]}
@@ -222,6 +225,7 @@ ShallowWrapper {
                         value=""
             />
             <input
+                        id="submit"
                         type="submit"
                         value="Search by ZIP"
             />
@@ -251,7 +255,7 @@ ShallowWrapper {
               Search by Current Location
 </button>,
             "replace": false,
-            "to": "/market-list",
+            "to": "/market-list/current",
           },
           "ref": null,
           "rendered": Object {
@@ -299,6 +303,7 @@ ShallowWrapper {
                 value=""
 />,
               <input
+                id="submit"
                 type="submit"
                 value="Search by ZIP"
 />,
@@ -342,6 +347,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "id": "submit",
                 "type": "submit",
                 "value": "Search by ZIP",
               },
@@ -357,9 +363,9 @@ ShallowWrapper {
     },
   ],
   Symbol(enzyme.__options__): Object {
-    "adapter": ReactFifteenAdapter {
+    "adapter": ReactSixteenAdapter {
       "options": Object {
-        "supportPrevContextArgumentOfComponentDidUpdate": true,
+        "enableComponentDidUpdateOnSetState": true,
       },
     },
   },

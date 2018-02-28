@@ -4,9 +4,6 @@ exports[`CARD should match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-<<<<<<< HEAD
-  Symbol(enzyme.__unrendered__): <withRouter(Connect(Card)) />,
-=======
   Symbol(enzyme.__unrendered__): <Card
     markets={
         Array [
@@ -18,7 +15,6 @@ ShallowWrapper {
     }
     user={Array []}
 />,
->>>>>>> e5ffb7be52a1157aa754c595b16801d006c7d148
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -29,15 +25,6 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-<<<<<<< HEAD
-    "nodeType": "class",
-    "props": Object {
-      "render": [Function],
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-=======
     "nodeType": "host",
     "props": Object {
       "children": Array [
@@ -73,9 +60,6 @@ ShallowWrapper {
                     </li>
           </ol>
 </div>,
-        <MapContainer
-          address={undefined}
-/>,
       ],
       "className": "text-card",
     },
@@ -232,34 +216,13 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "address": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
     ],
     "type": "div",
->>>>>>> e5ffb7be52a1157aa754c595b16801d006c7d148
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-<<<<<<< HEAD
-      "nodeType": "class",
-      "props": Object {
-        "render": [Function],
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-=======
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -295,9 +258,6 @@ ShallowWrapper {
                         </li>
             </ol>
 </div>,
-          <MapContainer
-            address={undefined}
-/>,
         ],
         "className": "text-card",
       },
@@ -454,26 +414,14 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "address": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
       ],
       "type": "div",
->>>>>>> e5ffb7be52a1157aa754c595b16801d006c7d148
     },
   ],
   Symbol(enzyme.__options__): Object {
-    "adapter": ReactFifteenAdapter {
+    "adapter": ReactSixteenAdapter {
       "options": Object {
-        "supportPrevContextArgumentOfComponentDidUpdate": true,
+        "enableComponentDidUpdateOnSetState": true,
       },
     },
   },
