@@ -36,6 +36,3 @@ export const populateZipMarkets = markets => ({
   type: 'POPULATE_ZIP_MARKETS',
   markets
 });
-
-
-
