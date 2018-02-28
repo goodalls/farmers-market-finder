@@ -11,8 +11,7 @@ export class Card extends Component {
     const marketList = (zipMarkets.find(market => id === market.id))
       ? zipMarkets
       : markets;
-    const marketInfo = marketList.find(market => id === market.id);
-    debugger;
+    const marketInfo = marketList.find(market => id === market.id); 
     const schedule = marketInfo.Schedule.slice(0, -16);
     const products = marketInfo.Products.split(';').map((product, index) => {
       return <li key={index}>{product}</li>;

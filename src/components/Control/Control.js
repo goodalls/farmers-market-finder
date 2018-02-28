@@ -113,7 +113,7 @@ export class Control extends Component {
             onChange={this.handleChange}
             placeholder="ZIP"
           />
-            <input type="submit" id='submit' value="Search by ZIP" />
+          <input type="submit" className="submit" value="Search by ZIP" />
         </form>
       </section>
     );
