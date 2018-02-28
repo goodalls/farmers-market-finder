@@ -22,11 +22,11 @@ export class App extends Component {
 
   favorite = (event, market) => {
     if (market.favorite === false) {
-      market.favorite = true;
-      this.props.updateFavorites(market);
+      const newMarket = Object.assign({...market}, {favorite: true});
+      this.props.updateFavorites(newMarket);
     } else {
-      market.favorite = false;
-      this.props.removeFavorite(market);
+      const newMarket = Object.assign({...market}, {favorite: false});
+      this.props.removeFavorite(newMarket);
     }
   };
 
