@@ -92,7 +92,7 @@ export class User extends Component {
                 favorites: []
               });
               this.props.logOutUser();
-              this.props.history.push('/');
+              // this.props.history.push('/');
             }}
           >
             Log Out

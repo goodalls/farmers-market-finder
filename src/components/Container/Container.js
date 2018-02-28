@@ -7,26 +7,23 @@ import PropTypes from 'prop-types';
 import './Container.css';
 
 export class Container extends Component {
-  markets = () => {
-    return this.props.markets.map((market, index) => {
-      const isFavorite = this.props.user.some(
-        userFav => userFav.id === market.id
-      );
-      return (
-        <li key={index}>
-          <span
-            className={isFavorite ? 'favorite active' : 'favorite'}
-            onClick={event => this.props.fav(event, market)}
-          >
-            &#9829;
-          </span>
-          <div onClick={event => this.handleSingleMarket(event, market.id)}>
-            <p>Distance: {market.distance}</p>
-            <p>{market.marketname}</p>
-          </div>
-        </li>
-      );
-    });
+  constructor(props) {
+    super(props);
+    this.state = {
+      market: {}
+    };
+  }
+
+  favorite = (event, market) => {
+    if (market.favorite === false) {
+      market.favorite = true;
+      this.props.updateFavorites(market);
+      this.setState({ market });
+    } else {
+      market.favorite = false;
+      this.props.removeFavorite(market);
+      this.setState({ market: {} });
+    }
   };
 
   handleSingleMarket = async (event, id) => {
@@ -47,6 +44,25 @@ export class Container extends Component {
     }
   };
 
+  markets = () => {
+    return this.props.markets.map((market, index) => {
+      return (
+        <li key={index}>
+          <span
+            className={market.favorite ? 'favorite active' : 'favorite'}
+            onClick={event => this.favorite(event, market)}
+          >
+            &#9829;
+          </span>
+          <div onClick={event => this.handleSingleMarket(event, market.id)}>
+            <p>Distance: {market.distance}</p>
+            <p>{market.marketname}</p>
+          </div>
+        </li>
+      );
+    });
+  };
+
   render = () => {
     return <div className="container">{this.loadingRenderCheck()}</div>;
   };
@@ -56,7 +72,9 @@ Container.propTypes = {
   history: PropTypes.object,
   marketDetails: PropTypes.func,
   markets: PropTypes.array,
-  user: PropTypes.array
+  user: PropTypes.array,
+  updateFavorites: PropTypes.func,
+  removeFavorite: PropTypes.func
 };
 
 export const mapStateToProps = store => ({
@@ -65,7 +83,9 @@ export const mapStateToProps = store => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail))
+  marketDetails: (id, detail) => dispatch(actions.addDetails(id, detail)),
+  updateFavorites: favorite => dispatch(actions.updateFavorites(favorite)),
+  removeFavorite: favorite => dispatch(actions.removeFavorite(favorite))
 });
 
 export default withRouter(
