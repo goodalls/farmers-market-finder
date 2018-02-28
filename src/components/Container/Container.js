@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import * as actions from '../../actions/actions';
-import * as api from '../../utilities/api';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Container.css';
@@ -9,7 +7,6 @@ import './Container.css';
 export class Container extends Component {
   markets = () => {
     const marketList = (this.props.id === 'zip'? 'zipMarkets' : 'markets');
-    console.log(marketList);
     return this.props[marketList].map((market, index) => {
       return (
         <li key={index}>
