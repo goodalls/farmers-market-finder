@@ -15,7 +15,7 @@ import './App.css';
 
 export class App extends Component {
   favorite = (event, market) => {
-    const newMarket = market;
+    const newMarket = {...market};
     newMarket.favorite = !newMarket.favorite;
     newMarket.favorite
       ? this.props.updateFavorites(newMarket)
