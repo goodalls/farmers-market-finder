@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import ErrorBoundrary from '../ErrorBoundary/ErrorBoundary';
 import { Route, withRouter } from 'react-router-dom';
 import * as actions from '../../actions/actions';
-import Container from '../Container/Container';
 import Favorites from '../Favorites/Favorites';
+import Container from '../Container/Container';
 import Control from '../Control/Control';
-import Header from '../Header/Header';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import Header from '../Header/Header';
 import Why from '../WhyQuotes/Why';
+import PropTypes from 'prop-types';
 import '../../styles/colors.css';
 import Card from '../Card/Card';
 import './App.css';
