@@ -1,4 +1,4 @@
-* Farmers Market Finder
+# Farmers Market Finder
 
 ## Installation
 
