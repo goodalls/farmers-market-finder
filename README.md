@@ -1,5 +1,31 @@
 * Farmers Market Finder
 
+## Installation
+
+Clone down this repo.
+
+To install the dependencies:
+
+```
+npm install
+```
+
+To fire up a development server:
+
+```
+npm start
+```
+
+Once the server is running, you can visit:
+
+* Open http://localhost:3000 to view it in the browser.
+
+To build the static files:
+
+```js
+npm run build
+```
+
 #### Project Pitch
 
   - I struggle finding a valid organic farmers market or CSA (Community Supported Agriculture). I would like to make an app that takes out the hassle of when and where Farmers markets are at and what products that they have. My app would be able to take a zip code and show you the closest farmers markets to your location. by clicking on the location you like it will show you the details of that farmers market.
