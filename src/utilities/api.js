@@ -6,7 +6,7 @@ export const fetchParse = async url => {
     const response = await initialFetch.json();
     return response;
   } catch (err) {
-    return 'fetchParse error';
+    return 'fetchParse error '+ err;
   }
 };
 
@@ -18,6 +18,6 @@ export const additionalFetch = async details => {
     const initialFetch = await fetchParse(url);
     return initialFetch;
   } catch (err) {
-    return 'AdditionalFetch error';
+    return 'AdditionalFetch error '+ err;
   }
 };

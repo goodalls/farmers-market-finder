@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Favorites.css';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import './Favorites.css';
 
 export class Favorites extends Component {
   favCards = () => {
